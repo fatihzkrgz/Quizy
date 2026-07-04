@@ -2120,6 +2120,408 @@ const horrorDeckEn = {
   ][index])
 };
 
+const extraQuestionSets = [
+  {
+    category: "Love",
+    count: 17,
+    nlTemplate: (left, right) => `Wat doe je als ${left} en ${right}?`,
+    enTemplate: (left, right) => `What do you do if ${left} and ${right}?`,
+    nlLeft: [
+      "een oude video van ons een extra persoon laat zien",
+      "mijn stem opneemt terwijl ik niks zeg",
+      "een vreemde precies weet hoe jij mij aankijkt",
+      "ons favoriete lied ineens als waarschuwing klinkt"
+    ],
+    enLeft: [
+      "an old video of us shows one extra person",
+      "my voice records while I am saying nothing",
+      "a stranger knows exactly how you look at me",
+      "our favorite song suddenly sounds like a warning"
+    ],
+    nlRight: [
+      "ik zeg dat jij mij toch moet vertrouwen",
+      "alle deuren vanzelf op slot gaan",
+      "je hart zegt blijven maar je buik zegt rennen",
+      "dezelfde zin elke nacht terugkomt",
+      "niemand anders het raar vindt"
+    ],
+    enRight: [
+      "I say you still have to trust me",
+      "all doors lock by themselves",
+      "your heart says stay but your gut says run",
+      "the same sentence returns every night",
+      "nobody else thinks it is weird"
+    ]
+  },
+  {
+    category: "Deep",
+    count: 17,
+    nlTemplate: (left, right) => `Welke keuze maak je als ${left}, maar ${right}?`,
+    enTemplate: (left, right) => `What choice do you make if ${left}, but ${right}?`,
+    nlLeft: [
+      "eerlijk zijn iemand kapot maakt",
+      "zwijgen iedereen veilig houdt",
+      "vergeven voelt als jezelf verraden",
+      "weggaan de liefste optie lijkt"
+    ],
+    enLeft: [
+      "being honest breaks someone",
+      "staying quiet keeps everyone safe",
+      "forgiving feels like betraying yourself",
+      "leaving seems like the kindest option"
+    ],
+    nlRight: [
+      "je nooit mag uitleggen waarom",
+      "de ander jou daarna niet meer herkent",
+      "je pas over tien jaar weet of het goed was",
+      "iedereen denkt dat jij fout zit",
+      "je hart het tegenovergestelde wil"
+    ],
+    enRight: [
+      "you may never explain why",
+      "the other person no longer recognizes you after",
+      "you only know in ten years if it was right",
+      "everyone thinks you were wrong",
+      "your heart wants the opposite"
+    ]
+  },
+  {
+    category: "Weird",
+    count: 17,
+    nlTemplate: (left, right) => `Wat als ${left} telkens ${right}?`,
+    enTemplate: (left, right) => `What if ${left} keeps ${right}?`,
+    nlLeft: [
+      "je schaduw",
+      "mijn telefoon",
+      "de spiegel in de badkamer",
+      "een onbekende kalender"
+    ],
+    enLeft: [
+      "your shadow",
+      "my phone",
+      "the bathroom mirror",
+      "an unknown calendar"
+    ],
+    nlRight: [
+      "een minuut voorloopt",
+      "jouw naam schrijft",
+      "dezelfde datum laat zien",
+      "een plek tekent waar wij nooit zijn geweest",
+      "antwoord geeft voordat je iets vraagt"
+    ],
+    enRight: [
+      "moving one minute ahead",
+      "writing your name",
+      "showing the same date",
+      "drawing a place we have never been",
+      "answering before you ask anything"
+    ]
+  },
+  {
+    category: "Cash",
+    count: 17,
+    nlTemplate: (left, right) => `Voor ${left}: ${right}?`,
+    enTemplate: (left, right) => `For ${left}: would you ${right}?`,
+    nlLeft: [
+      "250 euro",
+      "2.500 euro",
+      "25.000 euro",
+      "250.000 euro"
+    ],
+    enLeft: [
+      "$250",
+      "$2,500",
+      "$25,000",
+      "$250,000"
+    ],
+    nlRight: [
+      "slaap je een nacht naast een gesloten kist die soms beweegt",
+      "open je een brief die zegt dat hij na middernacht gelezen moet worden",
+      "laat je je telefoon een uur opnemen in een lege kamer",
+      "loop je terug naar een plek waar alle lampen uitgaan",
+      "kijk je in een spiegel die niet in jouw huis hoort"
+    ],
+    enRight: [
+      "sleep one night beside a closed chest that sometimes moves",
+      "open a letter that says it must be read after midnight",
+      "let your phone record for one hour in an empty room",
+      "walk back to a place where every light goes out",
+      "look into a mirror that does not belong in your house"
+    ]
+  },
+  {
+    category: "Choices",
+    count: 17,
+    nlTemplate: (left, right) => `Wat kies je: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `Would you rather ${left}, or ${right}?`,
+    nlLeft: [
+      "een waarschuwing krijgen die je niet begrijpt",
+      "de waarheid zien in elke spiegel",
+      "een dag met je toekomstige zelf praten",
+      "een deur openen die je naam zegt"
+    ],
+    enLeft: [
+      "get a warning you do not understand",
+      "see the truth in every mirror",
+      "talk to your future self for one day",
+      "open a door that says your name"
+    ],
+    nlRight: [
+      "een geheim houden dat je relatie redt",
+      "een droom vergeten die belangrijk voelt",
+      "een vreemde geloven die alles van je weet",
+      "een foto verbranden die nog niet gemaakt is",
+      "weten wie jou ooit gaat missen"
+    ],
+    enRight: [
+      "keep a secret that saves your relationship",
+      "forget a dream that feels important",
+      "believe a stranger who knows everything about you",
+      "burn a photo that has not been taken yet",
+      "know who will miss you one day"
+    ]
+  },
+  {
+    category: "Impossible",
+    count: 17,
+    nlTemplate: (left, right) => `Wat kies je: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `Would you choose to ${left}, or ${right}?`,
+    nlLeft: [
+      "een geliefde redden die later iemand pijn doet",
+      "honderd vreemden redden die jouw naam nooit leren",
+      "de waarheid vertellen waardoor je alles verliest",
+      "een kind beschermen dat later jou haat"
+    ],
+    enLeft: [
+      "save someone you love who later hurts someone",
+      "save one hundred strangers who never learn your name",
+      "tell the truth and lose everything",
+      "protect a child who later hates you"
+    ],
+    nlRight: [
+      "een goede leugen leven met iemand die je vertrouwt",
+      "jezelf opofferen zonder dat iemand het weet",
+      "een schuld dragen voor iets dat je niet deed",
+      "iedereen teleurstellen maar niemand verliezen",
+      "een ander laten kiezen en ermee moeten leven"
+    ],
+    enRight: [
+      "live a good lie with someone you trust",
+      "sacrifice yourself without anyone knowing",
+      "carry blame for something you did not do",
+      "disappoint everyone but lose nobody",
+      "let someone else choose and live with it"
+    ]
+  },
+  {
+    category: "Dares",
+    count: 17,
+    nlTemplate: (left, right) => `Dare: ${left} alsof ${right}.`,
+    enTemplate: (left, right) => `Dare: ${left} like ${right}.`,
+    nlLeft: [
+      "zeg mijn naam heel zacht",
+      "kijk naar de dichtstbijzijnde deur",
+      "wijs naar een object in de kamer",
+      "maak een waarschuwing van vijf woorden"
+    ],
+    enLeft: [
+      "say my name very softly",
+      "look at the nearest door",
+      "point at an object in the room",
+      "make a five-word warning"
+    ],
+    nlRight: [
+      "je net iets hoorde",
+      "iemand meeluistert",
+      "de kamer jou niet vertrouwt",
+      "je ons uit een horrorfilm redt",
+      "je niks mag uitleggen"
+    ],
+    enRight: [
+      "you just heard something",
+      "someone is listening",
+      "the room does not trust you",
+      "you are saving us from a horror movie",
+      "you are not allowed to explain anything"
+    ]
+  },
+  {
+    category: "Chaos",
+    count: 17,
+    nlTemplate: (left, right) => `Wat doen wij als ${left} en ${right}?`,
+    enTemplate: (left, right) => `What do we do if ${left} and ${right}?`,
+    nlLeft: [
+      "de stroom uitvalt",
+      "mijn telefoon vanzelf opneemt",
+      "iemand drie keer klopt",
+      "de voordeur openstaat"
+    ],
+    enLeft: [
+      "the power goes out",
+      "my phone answers by itself",
+      "someone knocks three times",
+      "the front door is open"
+    ],
+    nlRight: [
+      "niemand durft als eerste te bewegen",
+      "er een nieuwe foto in je galerij staat",
+      "de klok precies 03:13 blijft",
+      "we allebei doen alsof we niet bang zijn",
+      "de slechtste keuze grappig lijkt"
+    ],
+    enRight: [
+      "nobody dares to move first",
+      "there is a new photo in your gallery",
+      "the clock stays exactly at 3:13",
+      "we both pretend we are not scared",
+      "the worst choice seems funny"
+    ]
+  },
+  {
+    category: "Funny",
+    count: 16,
+    nlTemplate: (left, right) => `Hoe verpesten wij ${left} met ${right}?`,
+    enTemplate: (left, right) => `How do we ruin ${left} with ${right}?`,
+    nlLeft: [
+      "een demonische scene",
+      "een spookjacht",
+      "een enge filmavond",
+      "een dramatische ontsnapping"
+    ],
+    enLeft: [
+      "a demonic scene",
+      "a ghost hunt",
+      "a scary movie night",
+      "a dramatic escape"
+    ],
+    nlRight: [
+      "slechte snacks",
+      "te veel discussie",
+      "een dom lied",
+      "een fake stoere houding"
+    ],
+    enRight: [
+      "bad snacks",
+      "too much arguing",
+      "a dumb song",
+      "a fake brave attitude"
+    ]
+  },
+  {
+    category: "Future",
+    count: 16,
+    nlTemplate: (left, right) => `Wat als future-us ${left} en ${right}?`,
+    enTemplate: (left, right) => `What if future-us ${left} and ${right}?`,
+    nlLeft: [
+      "terugkomt met een waarschuwing",
+      "een kamer in ons huis afsluit",
+      "een foto naar nu stuurt",
+      "ons vraagt om iets nooit te beloven"
+    ],
+    enLeft: [
+      "comes back with a warning",
+      "locks one room in our house",
+      "sends a photo to the present",
+      "asks us never to promise something"
+    ],
+    nlRight: [
+      "geen uitleg wil geven",
+      "alleen naar jou durft te kijken",
+      "zegt dat liefde niet genoeg was",
+      "een datum op tafel legt"
+    ],
+    enRight: [
+      "refuses to explain",
+      "only dares to look at you",
+      "says love was not enough",
+      "puts a date on the table"
+    ]
+  },
+  {
+    category: "Flirty",
+    count: 16,
+    nlTemplate: (left, right) => `Wat is spannender: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `What is more tense: ${left}, or ${right}?`,
+    nlLeft: [
+      "een blik die langer blijft",
+      "een fluistering in het donker",
+      "handen vasthouden tijdens angst",
+      "een geheim dat alleen wij weten"
+    ],
+    enLeft: [
+      "a look that stays too long",
+      "a whisper in the dark",
+      "holding hands while scared",
+      "a secret only we know"
+    ],
+    nlRight: [
+      "een stilte die iets zegt",
+      "een kus na een waarschuwing",
+      "dichtbij blijven als het eng wordt",
+      "lachen omdat je eigenlijk bang bent"
+    ],
+    enRight: [
+      "a silence that says something",
+      "a kiss after a warning",
+      "staying close when it gets scary",
+      "laughing because you are actually scared"
+    ]
+  },
+  {
+    category: "Wildcard",
+    count: 16,
+    nlTemplate: (left, right) => `Welke is enger: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `Which is scarier: ${left}, or ${right}?`,
+    nlLeft: [
+      "een foto die jou terug aankijkt",
+      "een voicemail zonder geluid",
+      "een sleutel zonder deur",
+      "een droom die precies klopt"
+    ],
+    enLeft: [
+      "a photo that looks back at you",
+      "a voicemail with no sound",
+      "a key with no door",
+      "a dream that is exactly right"
+    ],
+    nlRight: [
+      "een deur die vanzelf sluit",
+      "een onbekende die jouw verhaal kent",
+      "een klok die stopt als je liegt",
+      "een cadeau zonder afzender"
+    ],
+    enRight: [
+      "a door that closes by itself",
+      "a stranger who knows your story",
+      "a clock that stops when you lie",
+      "a gift with no sender"
+    ]
+  }
+];
+
+function buildExtraQuestions(set) {
+  const nlItems = [];
+  const enItems = [];
+
+  for (let leftIndex = 0; leftIndex < set.nlLeft.length; leftIndex += 1) {
+    for (let rightIndex = 0; rightIndex < set.nlRight.length; rightIndex += 1) {
+      nlItems.push(set.nlTemplate(set.nlLeft[leftIndex], set.nlRight[rightIndex]));
+      enItems.push(set.enTemplate(set.enLeft[leftIndex], set.enRight[rightIndex]));
+      if (nlItems.length === set.count) {
+        return { nlItems, enItems };
+      }
+    }
+  }
+
+  return { nlItems, enItems };
+}
+
+extraQuestionSets.forEach((set) => {
+  const { nlItems, enItems } = buildExtraQuestions(set);
+  horrorDeckNl[set.category].push(...nlItems);
+  horrorDeckEn[set.category].push(...enItems);
+});
+
 Object.keys(rawQuestions).forEach((category) => {
   delete rawQuestions[category];
 });
