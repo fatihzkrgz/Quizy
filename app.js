@@ -2522,6 +2522,480 @@ extraQuestionSets.forEach((set) => {
   horrorDeckEn[set.category].push(...enItems);
 });
 
+const mindfuckQuestionSets = [
+  {
+    category: "Love",
+    count: 32,
+    nlTemplate: (left, right) => `Wat zou jij kiezen als onze relatie ${left}, maar ${right}?`,
+    enTemplate: (left, right) => `What would you choose if our relationship ${left}, but ${right}?`,
+    nlLeft: [
+      "perfect lijkt voor iedereen",
+      "elke gedachte eerlijk maakt",
+      "alle kleine ruzies meteen wist",
+      "jou precies laat voelen wat ik voel"
+    ],
+    enLeft: [
+      "looks perfect to everyone",
+      "makes every thought honest",
+      "erases every small fight right away",
+      "lets you feel exactly what I feel"
+    ],
+    nlRight: [
+      "we minder vrij worden",
+      "een kleine leugen alles rustiger houdt",
+      "je niet meer weet welke keuze van jou was",
+      "comfort en groei niet samen kunnen",
+      "iedereen gelijk krijgt behalve jij",
+      "we elkaars antwoord al kennen",
+      "de beste herinnering nooit besproken mag worden",
+      "vertrouwen elke dag opnieuw gekozen moet worden"
+    ],
+    enRight: [
+      "we become less free",
+      "one small lie keeps everything calmer",
+      "you no longer know which choice was yours",
+      "comfort and growth cannot exist together",
+      "everyone is right except you",
+      "we already know each other's answer",
+      "the best memory may never be discussed",
+      "trust has to be chosen again every day"
+    ]
+  },
+  {
+    category: "Deep",
+    count: 32,
+    nlTemplate: (left, right) => `Welke waarheid kies je als ${left}, maar ${right}?`,
+    enTemplate: (left, right) => `Which truth do you choose if ${left}, but ${right}?`,
+    nlLeft: [
+      "het over jezelf gaat",
+      "het over je verleden gaat",
+      "het over iemand gaat van wie je houdt",
+      "het over ons gaat"
+    ],
+    enLeft: [
+      "it is about yourself",
+      "it is about your past",
+      "it is about someone you love",
+      "it is about us"
+    ],
+    nlRight: [
+      "je hem maar een keer mag zeggen",
+      "niemand daarna hetzelfde naar je kijkt",
+      "een simpele leugen veel makkelijker is",
+      "je pas later weet of het goed was",
+      "iemand anders er rust door verliest",
+      "jij er eindelijk rust door krijgt",
+      "je geen uitleg mag geven",
+      "de ander alleen je antwoord ziet, niet je reden"
+    ],
+    enRight: [
+      "you can only say it once",
+      "nobody looks at you the same after",
+      "a simple lie would be much easier",
+      "you only know later if it was right",
+      "someone else loses peace because of it",
+      "you finally gain peace because of it",
+      "you are not allowed to explain",
+      "the other person only sees your answer, not your reason"
+    ]
+  },
+  {
+    category: "Weird",
+    count: 32,
+    nlTemplate: (left, right) => `Wat als ${left} precies ${right}?`,
+    enTemplate: (left, right) => `What if ${left} exactly ${right}?`,
+    nlLeft: [
+      "je geheugen",
+      "je gevoel voor tijd",
+      "je smaak in mensen",
+      "je geweten"
+    ],
+    enLeft: [
+      "your memory",
+      "your sense of time",
+      "your taste in people",
+      "your conscience"
+    ],
+    nlRight: [
+      "kiest wat jij vergeet",
+      "een andere versie van jou beschermt",
+      "alleen eerlijk is als niemand kijkt",
+      "jou laat winnen maar slechter maakt",
+      "je gelukkig maakt met de verkeerde reden",
+      "je gelijk geeft maar je eenzaam maakt",
+      "een dag vooruitloopt op je gevoel",
+      "niet van jou blijkt te zijn"
+    ],
+    enRight: [
+      "chooses what you forget",
+      "protects another version of you",
+      "is only honest when nobody watches",
+      "lets you win but makes you worse",
+      "makes you happy for the wrong reason",
+      "makes you right but lonely",
+      "runs one day ahead of your feelings",
+      "turns out not to be yours"
+    ]
+  },
+  {
+    category: "Cash",
+    count: 32,
+    nlTemplate: (left, right) => `Voor ${left}: zou je ${right}?`,
+    enTemplate: (left, right) => `For ${left}: would you ${right}?`,
+    nlLeft: [
+      "100 euro",
+      "1.000 euro",
+      "10.000 euro",
+      "100.000 euro"
+    ],
+    enLeft: [
+      "$100",
+      "$1,000",
+      "$10,000",
+      "$100,000"
+    ],
+    nlRight: [
+      "een week lang elke gedachte eerlijk uitspreken",
+      "je partner tien minuten jouw gedachten laten raden",
+      "een oude mening openbaar terugnemen",
+      "een jaar geen smoesjes meer gebruiken",
+      "een geheim vertellen dat niemand schade doet maar wel ongemakkelijk is",
+      "een dag leven volgens de keuzes van je partner",
+      "je meest nutteloze trots opgeven",
+      "een ongemakkelijke waarheid op tafel leggen"
+    ],
+    enRight: [
+      "say every thought honestly for one week",
+      "let your partner guess your thoughts for ten minutes",
+      "publicly take back an old opinion",
+      "use no excuses for one year",
+      "tell a secret that hurts nobody but feels awkward",
+      "live one day by your partner's choices",
+      "give up your most useless pride",
+      "put an uncomfortable truth on the table"
+    ]
+  },
+  {
+    category: "Choices",
+    count: 32,
+    nlTemplate: (left, right) => `Wat kies je: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `Would you rather ${left}, or ${right}?`,
+    nlLeft: [
+      "altijd weten wanneer iemand liegt",
+      "altijd weten wanneer jij jezelf voorliegt",
+      "een jaar lang precies genoeg geld hebben",
+      "iedereen kunnen begrijpen"
+    ],
+    enLeft: [
+      "always know when someone lies",
+      "always know when you are lying to yourself",
+      "have exactly enough money for one year",
+      "be able to understand everyone"
+    ],
+    nlRight: [
+      "een keer per maand iemands echte reden horen",
+      "nooit meer twijfelen maar soms fout zitten",
+      "een droom opgeven die niet meer bij je past",
+      "gelijk krijgen maar niet begrepen worden",
+      "rust kiezen boven spanning",
+      "liefde kiezen boven controle",
+      "een pijnlijke waarheid nu horen",
+      "een mooie leugen pas later ontdekken"
+    ],
+    enRight: [
+      "hear someone's real reason once a month",
+      "never doubt again but sometimes be wrong",
+      "give up a dream that no longer fits you",
+      "be right but not understood",
+      "choose peace over tension",
+      "choose love over control",
+      "hear a painful truth now",
+      "discover a beautiful lie later"
+    ]
+  },
+  {
+    category: "Impossible",
+    count: 47,
+    nlTemplate: (left, right) => `Wat kies je: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `Would you choose ${left}, or ${right}?`,
+    nlLeft: [
+      "je familie teleurstellen om eerlijk te blijven",
+      "je partner kwetsen met de waarheid",
+      "een droom opgeven voor iemand die jou nodig heeft",
+      "iemand vergeven die het niet verdient",
+      "jezelf kiezen terwijl iemand anders op jou rekent",
+      "geliefd worden om een leugen"
+    ],
+    enLeft: [
+      "disappointing your family to stay honest",
+      "hurting your partner with the truth",
+      "giving up a dream for someone who needs you",
+      "forgiving someone who does not deserve it",
+      "choosing yourself while someone else depends on you",
+      "being loved for a lie"
+    ],
+    nlRight: [
+      "vrede houden en jezelf kwijtraken",
+      "gelijk hebben en alleen eindigen",
+      "een fout toegeven die niemand kon bewijzen",
+      "een geheim bewaren dat iemand beschermt",
+      "een kans missen die jou beter had gemaakt",
+      "een ander gelukkig maken met iets dat jou leeg maakt",
+      "je trots verliezen maar rust krijgen",
+      "de makkelijke keuze nemen en het altijd weten"
+    ],
+    enRight: [
+      "keeping peace and losing yourself",
+      "being right and ending up alone",
+      "admitting a mistake nobody could prove",
+      "keeping a secret that protects someone",
+      "missing a chance that would have made you better",
+      "making someone else happy with something that empties you",
+      "losing your pride but gaining peace",
+      "taking the easy choice and always knowing it"
+    ]
+  },
+  {
+    category: "Dares",
+    count: 32,
+    nlTemplate: (left, right) => `Challenge: ${left} en ${right}.`,
+    enTemplate: (left, right) => `Challenge: ${left} and ${right}.`,
+    nlLeft: [
+      "antwoord in drie woorden",
+      "geef eerst het tegenovergestelde antwoord",
+      "laat de ander jouw antwoord raden",
+      "rangschik beide opties hardop"
+    ],
+    enLeft: [
+      "answer in three words",
+      "give the opposite answer first",
+      "let the other person guess your answer",
+      "rank both options out loud"
+    ],
+    nlRight: [
+      "leg daarna uit waarom",
+      "zeg wat je bijna koos",
+      "maak het ongemakkelijk eerlijk",
+      "verander een detail en kies opnieuw",
+      "doe alsof je future-you bent",
+      "geef een antwoord dat je over een jaar nog snapt",
+      "laat trots niet meetellen",
+      "maak er een relatie-regel van"
+    ],
+    enRight: [
+      "then explain why",
+      "say what you almost chose",
+      "make it awkwardly honest",
+      "change one detail and choose again",
+      "act like future-you",
+      "give an answer you still understand in a year",
+      "do not count pride",
+      "turn it into a relationship rule"
+    ]
+  },
+  {
+    category: "Chaos",
+    count: 32,
+    nlTemplate: (left, right) => `Wat doen wij als ${left}, maar ${right}?`,
+    enTemplate: (left, right) => `What do we do if ${left}, but ${right}?`,
+    nlLeft: [
+      "we allebei hetzelfde antwoord geven",
+      "een van ons mag liegen",
+      "de vraag twee juiste antwoorden heeft",
+      "we moeten kiezen binnen vijf seconden"
+    ],
+    enLeft: [
+      "we both give the same answer",
+      "one of us is allowed to lie",
+      "the question has two right answers",
+      "we have to choose within five seconds"
+    ],
+    nlRight: [
+      "de reden belangrijker is dan de keuze",
+      "de verliezer de volgende vraag kiest",
+      "je pas wint als je eerlijk twijfelt",
+      "de grappigste uitleg telt",
+      "de meest rustige keuze verdacht voelt",
+      "de ander jouw antwoord mag veranderen",
+      "we daarna van kant moeten wisselen",
+      "niemand mag zeggen: ligt eraan"
+    ],
+    enRight: [
+      "the reason matters more than the choice",
+      "the loser picks the next question",
+      "you only win if you honestly doubt",
+      "the funniest explanation counts",
+      "the calmest choice feels suspicious",
+      "the other person may change your answer",
+      "we have to switch sides after",
+      "nobody may say: it depends"
+    ]
+  },
+  {
+    category: "Funny",
+    count: 31,
+    nlTemplate: (left, right) => `Wat is dommer: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `What is dumber: ${left}, or ${right}?`,
+    nlLeft: [
+      "altijd gelijk willen hebben",
+      "een discussie winnen maar de sfeer verliezen",
+      "een compliment te serieus analyseren",
+      "doen alsof je niet jaloers bent"
+    ],
+    enLeft: [
+      "always wanting to be right",
+      "winning an argument but losing the mood",
+      "overanalyzing a compliment",
+      "pretending you are not jealous"
+    ],
+    nlRight: [
+      "een snack kiezen als persoonlijkheid",
+      "je eigen advies niet volgen",
+      "te lang doen over een simpel appje",
+      "een mini-probleem behandelen als rechtbank",
+      "trots zijn op koppigheid",
+      "een slechte keuze goed uitleggen",
+      "je gevoel rationaliseren tot het erger wordt",
+      "een grap maken omdat het te echt wordt"
+    ],
+    enRight: [
+      "choosing a snack as a personality",
+      "not following your own advice",
+      "taking too long over a simple text",
+      "treating a tiny problem like a court case",
+      "being proud of stubbornness",
+      "explaining a bad choice well",
+      "rationalizing your feeling until it gets worse",
+      "making a joke because it gets too real"
+    ]
+  },
+  {
+    category: "Future",
+    count: 31,
+    nlTemplate: (left, right) => `Wat als future-us ${left}, maar ${right}?`,
+    enTemplate: (left, right) => `What if future-us ${left}, but ${right}?`,
+    nlLeft: [
+      "zegt dat een kleine gewoonte alles veranderde",
+      "ons een belofte laat schrappen",
+      "een lijst geeft met drie keuzes",
+      "vertelt dat rust belangrijker werd dan spanning"
+    ],
+    enLeft: [
+      "says one small habit changed everything",
+      "makes us delete one promise",
+      "gives us a list of three choices",
+      "says peace became more important than tension"
+    ],
+    nlRight: [
+      "niet zegt welke keuze goed is",
+      "maar een van ons het gelooft",
+      "het iets kost dat nu leuk voelt",
+      "we het pas later begrijpen",
+      "het klinkt als saai advies",
+      "we er vandaag al mee moeten beginnen",
+      "het betekent dat iemand ongelijk moet toegeven",
+      "het ons allebei een beetje stoort"
+    ],
+    enRight: [
+      "does not say which choice is right",
+      "only one of us believes it",
+      "it costs something that feels fun now",
+      "we only understand it later",
+      "it sounds like boring advice",
+      "we have to start today",
+      "it means someone has to admit they were wrong",
+      "it bothers both of us a little"
+    ]
+  },
+  {
+    category: "Flirty",
+    count: 31,
+    nlTemplate: (left, right) => `Wat is spannender: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `What is more tense: ${left}, or ${right}?`,
+    nlLeft: [
+      "weten wat ik denk maar niet mag zeggen",
+      "een blik na een eerlijk antwoord",
+      "een stilte die expres blijft hangen",
+      "een compliment dat bijna te eerlijk is"
+    ],
+    enLeft: [
+      "knowing what I think but not being allowed to say it",
+      "a look after an honest answer",
+      "a silence that stays on purpose",
+      "a compliment that is almost too honest"
+    ],
+    nlRight: [
+      "toegeven dat je aandacht wilde",
+      "de ander jouw keuze laten bepalen",
+      "een antwoord dat je normaal zou ontwijken",
+      "lachen omdat het antwoord raak is",
+      "dichtbij blijven tijdens een moeilijke vraag",
+      "zeggen wat je eigenlijk hoopte",
+      "een waarheid verpakken als grap",
+      "een keuze maken zonder controle te houden"
+    ],
+    enRight: [
+      "admitting you wanted attention",
+      "letting the other person decide your choice",
+      "an answer you would normally avoid",
+      "laughing because the answer is accurate",
+      "staying close during a hard question",
+      "saying what you secretly hoped",
+      "wrapping a truth as a joke",
+      "making a choice without keeping control"
+    ]
+  },
+  {
+    category: "Wildcard",
+    count: 31,
+    nlTemplate: (left, right) => `Welke vraag breekt je hoofd meer: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `Which question breaks your brain more: ${left}, or ${right}?`,
+    nlLeft: [
+      "ben je nog jezelf als je je redenen vergeet",
+      "is een goede leugen beter dan een slechte waarheid",
+      "kan liefde eerlijk zijn zonder alles te zeggen",
+      "is kiezen ook verliezen"
+    ],
+    enLeft: [
+      "are you still yourself if you forget your reasons",
+      "is a good lie better than a bad truth",
+      "can love be honest without saying everything",
+      "is choosing also losing"
+    ],
+    nlRight: [
+      "wie ben je als niemand jou herinnert",
+      "wat als twijfel slimmer is dan zekerheid",
+      "wat als je beste keuze nooit fijn voelt",
+      "kan iemand gelijk hebben om de verkeerde reden",
+      "is rust soms gewoon twijfel met nette kleren",
+      "wat als je gevoel gelijk heeft maar je uitleg niet",
+      "ben je vrij als je altijd krijgt wat je wilt",
+      "wat als het antwoord verandert zodra je het uitspreekt"
+    ],
+    enRight: [
+      "who are you if nobody remembers you",
+      "what if doubt is smarter than certainty",
+      "what if your best choice never feels good",
+      "can someone be right for the wrong reason",
+      "is peace sometimes just doubt in nice clothes",
+      "what if your feeling is right but your explanation is not",
+      "are you free if you always get what you want",
+      "what if the answer changes as soon as you say it"
+    ]
+  }
+];
+
+Object.keys(horrorDeckNl).forEach((category) => {
+  horrorDeckNl[category] = [];
+  horrorDeckEn[category] = [];
+});
+
+mindfuckQuestionSets.forEach((set) => {
+  const { nlItems, enItems } = buildExtraQuestions(set);
+  horrorDeckNl[set.category].push(...nlItems);
+  horrorDeckEn[set.category].push(...enItems);
+});
+
 Object.keys(rawQuestions).forEach((category) => {
   delete rawQuestions[category];
 });
@@ -2540,33 +3014,33 @@ Object.keys(dutchQuestionDeck).forEach((category) => {
 Object.assign(dutchQuestionDeck, horrorDeckNl);
 
 Object.assign(uiCopy.en.filters, {
-  Love: "Dark",
+  Love: "Love",
   Deep: "Deep",
-  Weird: "Creepy",
-  Cash: "Price",
+  Weird: "Mindbend",
+  Cash: "Money",
   Choices: "Choices",
   Impossible: "Impossible",
-  Dares: "Rituals",
-  Chaos: "Panic",
-  Funny: "Twist",
+  Dares: "Challenges",
+  Chaos: "Chaos",
+  Funny: "Jokes",
   Future: "Future",
   Flirty: "Tension",
-  Wildcard: "Cursed"
+  Wildcard: "Random"
 });
 
 Object.assign(uiCopy.nl.filters, {
-  Love: "Donker",
+  Love: "Liefde",
   Deep: "Diep",
-  Weird: "Eng",
-  Cash: "Prijs",
+  Weird: "Mindfuck",
+  Cash: "Geld",
   Choices: "Keuzes",
   Impossible: "Onmogelijk",
-  Dares: "Rituelen",
-  Chaos: "Paniek",
-  Funny: "Twist",
+  Dares: "Challenges",
+  Chaos: "Chaos",
+  Funny: "Grappen",
   Future: "Toekomst",
   Flirty: "Spanning",
-  Wildcard: "Vloek"
+  Wildcard: "Random"
 });
 
 Object.assign(generatedTemplates, {
@@ -2692,6 +3166,132 @@ Object.assign(generatedTemplatesNl, {
     () => `Welke vraag mag je nooit na middernacht stellen?`,
     () => `Welk bijgeloof zou je vanavond volgen?`,
     () => `Welk object neem je nooit mee uit een verlaten huis?`
+  ]
+});
+
+Object.assign(generatedTemplates, {
+  Love: [
+    () => `What would change if ${pick(["honesty", "comfort", "trust", "freedom"])} mattered more than being right?`,
+    () => `What would you choose if love made ${pick(["one truth", "one habit", "one excuse", "one doubt"])} impossible to hide?`,
+    () => `Which small relationship rule would break your brain if we followed it for one month?`
+  ],
+  Deep: [
+    () => `Which truth would you choose if the reason mattered more than the answer?`,
+    () => `What part of yourself is hardest to explain without making it smaller?`,
+    () => `What would you admit if nobody could judge the answer, only the honesty?`
+  ],
+  Weird: [
+    () => `What if your ${pick(["memory", "mood", "taste", "pride"])} was trying to protect you from a better choice?`,
+    () => `What if the answer changed every time you explained it?`,
+    () => `What if being certain was the least smart option?`
+  ],
+  Cash: [
+    () => `For $${pick(["100", "1,000", "10,000", "100,000"])}: would you say one uncomfortable truth out loud?`,
+    () => `For $${pick(["500", "5,000", "50,000"])}: would you let the other person choose your answer?`,
+    () => `How much money would it take to give up one useless pride for a year?`
+  ],
+  Choices: [
+    () => `Would you rather know the reason or keep the peace?`,
+    () => `Would you rather be right and misunderstood, or wrong and loved?`,
+    () => `Would you rather choose fast and honest, or slow and perfect?`
+  ],
+  Impossible: [
+    () => `Would you choose the truth that costs peace, or the lie that costs self-respect?`,
+    () => `Would you disappoint someone else or betray yourself?`,
+    () => `Would you keep the easy life or take the answer you cannot ignore?`
+  ],
+  Dares: [
+    () => `Challenge: answer in three words, then explain the missing part.`,
+    () => `Challenge: give the opposite answer first, then your real answer.`,
+    () => `Challenge: let the other person guess your choice before you explain.`
+  ],
+  Chaos: [
+    () => `What if both answers are right, but only one reason is honest?`,
+    () => `What if the funniest answer is also the most true?`,
+    () => `What if nobody may say "it depends" for the next question?`
+  ],
+  Funny: [
+    () => `What is dumber: winning the argument or saving the mood?`,
+    () => `Which tiny opinion would you defend like it is a life philosophy?`,
+    () => `What answer sounds stupid until you explain it too well?`
+  ],
+  Future: [
+    () => `What would future-us say was a small choice with a huge effect?`,
+    () => `Which promise sounds romantic now but needs a smarter version later?`,
+    () => `What would we start today if we were not trying to look cool?`
+  ],
+  Flirty: [
+    () => `What is more tense: eye contact after honesty, or silence before an answer?`,
+    () => `Which truth would feel bold but still sweet?`,
+    () => `What would you admit if the answer had to be playful and honest?`
+  ],
+  Wildcard: [
+    () => `Which breaks your brain more: choice or chance?`,
+    () => `What if your best reason is not your real reason?`,
+    () => `Is a good lie better than a truth used badly?`
+  ]
+});
+
+Object.assign(generatedTemplatesNl, {
+  Love: [
+    () => `Wat verandert er als ${pick(["eerlijkheid", "rust", "vertrouwen", "vrijheid"])} belangrijker is dan gelijk krijgen?`,
+    () => `Wat kies je als liefde ${pick(["een waarheid", "een gewoonte", "een smoes", "een twijfel"])} onmogelijk maakt om te verbergen?`,
+    () => `Welke kleine relatie-regel breekt je hoofd als we hem een maand volgen?`
+  ],
+  Deep: [
+    () => `Welke waarheid kies je als de reden belangrijker is dan het antwoord?`,
+    () => `Welk deel van jezelf is het moeilijkst uit te leggen zonder het kleiner te maken?`,
+    () => `Wat zou je toegeven als niemand het antwoord mag beoordelen, alleen de eerlijkheid?`
+  ],
+  Weird: [
+    () => `Wat als je ${pick(["geheugen", "mood", "smaak", "trots"])} jou probeert te beschermen tegen een betere keuze?`,
+    () => `Wat als het antwoord verandert elke keer dat je het uitlegt?`,
+    () => `Wat als zeker zijn de minst slimme optie is?`
+  ],
+  Cash: [
+    () => `Voor ${pick(["100", "1.000", "10.000", "100.000"])} euro: zeg je een ongemakkelijke waarheid hardop?`,
+    () => `Voor ${pick(["500", "5.000", "50.000"])} euro: laat je de ander jouw antwoord kiezen?`,
+    () => `Hoeveel geld moet je krijgen om een nutteloze trots een jaar op te geven?`
+  ],
+  Choices: [
+    () => `Wat kies je: de reden weten, of de rust houden?`,
+    () => `Wat kies je: gelijk hebben en niet begrepen worden, of fout zitten en geliefd blijven?`,
+    () => `Wat kies je: snel en eerlijk, of langzaam en perfect?`
+  ],
+  Impossible: [
+    () => `Wat kies je: de waarheid die rust kost, of de leugen die zelfrespect kost?`,
+    () => `Wat kies je: iemand teleurstellen, of jezelf verraden?`,
+    () => `Wat kies je: het makkelijke leven, of het antwoord dat je niet kunt negeren?`
+  ],
+  Dares: [
+    () => `Challenge: antwoord in drie woorden en leg daarna uit wat mist.`,
+    () => `Challenge: geef eerst het tegenovergestelde antwoord en daarna je echte antwoord.`,
+    () => `Challenge: laat de ander jouw keuze raden voordat je uitlegt.`
+  ],
+  Chaos: [
+    () => `Wat als beide antwoorden kloppen, maar maar een reden eerlijk is?`,
+    () => `Wat als het grappigste antwoord ook het meest waar is?`,
+    () => `Wat als niemand bij de volgende vraag "ligt eraan" mag zeggen?`
+  ],
+  Funny: [
+    () => `Wat is dommer: de discussie winnen of de sfeer redden?`,
+    () => `Welke mini-mening verdedig jij alsof het een levensfilosofie is?`,
+    () => `Welk antwoord klinkt dom totdat je het te goed uitlegt?`
+  ],
+  Future: [
+    () => `Welke kleine keuze zou future-us later enorm noemen?`,
+    () => `Welke belofte klinkt nu romantisch maar heeft later een slimmere versie nodig?`,
+    () => `Waar zouden we vandaag mee beginnen als we niet cool probeerden te lijken?`
+  ],
+  Flirty: [
+    () => `Wat is spannender: oogcontact na eerlijkheid, of stilte voor een antwoord?`,
+    () => `Welke waarheid voelt brutaal maar nog steeds lief?`,
+    () => `Wat zou je toegeven als het antwoord speels en eerlijk moet zijn?`
+  ],
+  Wildcard: [
+    () => `Wat breekt je hoofd meer: keuze of toeval?`,
+    () => `Wat als je beste reden niet je echte reden is?`,
+    () => `Is een goede leugen beter dan een waarheid die verkeerd gebruikt wordt?`
   ]
 });
 
