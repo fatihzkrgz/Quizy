@@ -1665,6 +1665,547 @@ dutchQuestionDeck.Choices.push(
   "Wat kies je: altijd winnen met games, of altijd gelijk krijgen in discussies?"
 );
 
+const horrorDeckNl = {
+  Love: [
+    "Wat zou je doen als ik midden in de nacht bel en alleen fluister: doe niet open?",
+    "Welke lieve herinnering aan ons zou eng worden als je hem in een verlaten huis terugzag?",
+    "Als een vreemde zei dat hij ons allebei uit een droom kent, wat vraag je eerst?",
+    "Welke gewoonte van mij zou verdacht voelen als ik hem ineens nooit meer deed?",
+    "Wat is het engste bewijs dat iemand echt van je houdt?",
+    "Als ik morgen alles over jou wist zonder dat jij het vertelde, wat zou je willen weten?",
+    "Welke kamer zou jij niet met mij ingaan, zelfs niet voor liefde?",
+    "Wat zou jij doen als je een foto van ons vindt die pas volgende week genomen wordt?",
+    "Welke zin van mij zou romantisch zijn overdag, maar eng in het donker?",
+    "Als liefde een waarschuwing had, wat stond er bij ons op?",
+    "Wat zou je eerder geloven: dat ik lieg, of dat iemand mij nadoet?",
+    "Welke plek met mij voelt mooi, maar ook een beetje verkeerd?",
+    "Als een stem mijn stem nadeed, waaraan zou jij merken dat ik het niet ben?",
+    "Wat is iets liefs dat meteen creepy wordt als iemand het te vaak doet?",
+    "Als wij samen verdwijnen voor een avond, waar zouden mensen ons zoeken?"
+  ],
+  Deep: [
+    "Welke waarheid over jou zou het hardst aankomen als ik hem ineens wist?",
+    "Wat is een angst die je meestal grappig maakt zodat niemand het merkt?",
+    "Welke kant van jezelf wil je liever niet in de spiegel zien?",
+    "Wat zou je doen als je toekomstige zelf zegt: vertrouw niemand vanavond?",
+    "Welke herinnering voelt alsof hij niet helemaal van jou is?",
+    "Wat maakt stilte tussen twee mensen enger dan ruzie?",
+    "Wanneer voelt iemand te dichtbij, zelfs als je diegene leuk vindt?",
+    "Wat is iets dat je zou willen vergeten, maar ook niet kwijt wilt?",
+    "Welke vraag zou je bang maken als ik hem precies goed stelde?",
+    "Als schuld een geluid had, hoe zou het klinken?",
+    "Wat is enger: verlaten worden of echt gezien worden?",
+    "Welke geheimen maken iemand interessant, en welke maken iemand gevaarlijk?",
+    "Wat zou jij nooit willen dromen over mij?",
+    "Wat is de donkerste gedachte die toch onschuldig blijft?",
+    "Als je een brief van jezelf kreeg met 'sorry' erop, waar zou die over gaan?"
+  ],
+  Weird: [
+    "Wat als je wakker wordt en mijn naam staat op je arm geschreven?",
+    "Wat als de spiegel een seconde te laat meebeweegt?",
+    "Wat als je telefoon een foto maakt terwijl niemand hem aanraakt?",
+    "Wat als iemand achter ons meeluistert, maar alleen jij hem kunt horen?",
+    "Wat als dezelfde zwarte auto drie keer langsrijdt vanavond?",
+    "Wat als er onder je bed een brief ligt met mijn handschrift?",
+    "Wat als je een voicemail krijgt van jezelf van morgen?",
+    "Wat als de lamp knippert elke keer dat iemand liegt?",
+    "Wat als je in mijn ogen iemand anders ziet staan?",
+    "Wat als een onbekend nummer alleen jouw geheime codewoord kent?",
+    "Wat als je op een foto een hand op je schouder ziet die er niet was?",
+    "Wat als een deur in huis ineens naar een andere plek gaat?",
+    "Wat als de klok steeds teruggaat naar hetzelfde moment?",
+    "Wat als je mijn stem hoort terwijl ik naast je stil ben?",
+    "Wat als er op het raam staat: ik weet wat jullie kozen?"
+  ],
+  Cash: [
+    "Voor 100 euro: loop je vijf minuten door een donkere kamer zonder je telefoonlamp?",
+    "Voor 500 euro: luister je een minuut naar een onbekende voicemail in het donker?",
+    "Voor 1.000 euro: laat je iemand anders een enge foto voor je kiezen als achtergrond voor een dag?",
+    "Voor 2.000 euro: slaap je met de kastdeur open?",
+    "Voor 5.000 euro: blijf je een nacht in een leeg huis waar de lampen vanzelf aangaan?",
+    "Voor 10.000 euro: kijk je een uur naar een babyfoon waarop niemand hoort te zijn?",
+    "Voor 25.000 euro: open je een doos die aan jou geadresseerd is maar gisteren al bezorgd had moeten zijn?",
+    "Voor 50.000 euro: ga je terug naar een plek waar jij ooit een slecht gevoel had?",
+    "Voor 100.000 euro: lees je hardop een brief die begint met 'als je dit leest, ben ik weg'?",
+    "Voor 1.000.000 euro: blijf je een week in een huis waar elke nacht om 03:13 wordt aangeklopt?",
+    "Hoeveel geld moet je krijgen om een onbekende sleutel te gebruiken op een onbekende deur?",
+    "Hoeveel geld moet je krijgen om een nacht geen gordijnen dicht te doen?",
+    "Hoeveel geld moet je krijgen om een oude pop mee naar huis te nemen?",
+    "Hoeveel geld moet je krijgen om te reageren op een appje van een dood nummer?",
+    "Hoeveel geld moet je krijgen om precies te doen wat een briefje onder je deur zegt?"
+  ],
+  Choices: [
+    "Wat kies je: een stem in de muur horen, of voetstappen op zolder?",
+    "Wat kies je: een dag niemand kunnen vertrouwen, of een dag weten wanneer iedereen liegt?",
+    "Wat kies je: een foto zien van je toekomst, of een opname horen van je laatste woorden?",
+    "Wat kies je: een spiegel die soms niet klopt, of een deur die soms ergens anders uitkomt?",
+    "Wat kies je: elke nacht dezelfde droom, of elke ochtend een onbekende herinnering?",
+    "Wat kies je: een geheim weten over mij, of weten dat ik een geheim over jou weet?",
+    "Wat kies je: een waarschuwing krijgen zonder uitleg, of uitleg zonder oplossing?",
+    "Wat kies je: verdwalen in een bos, of vastzitten in een huis met alle deuren op slot?",
+    "Wat kies je: iemand zien die jou niet mag zien, of gehoord worden door iets dat jij niet ziet?",
+    "Wat kies je: een onbekend dagboek lezen, of jouw eigen dagboek terugvinden met extra pagina's?",
+    "Wat kies je: een week geen spiegels, of een week geen ramen?",
+    "Wat kies je: een waarschuwing van je ex, of een waarschuwing van je toekomstige kind?",
+    "Wat kies je: wakker worden met modder aan je schoenen, of met zand in je bed?",
+    "Wat kies je: een nummer bellen dat zichzelf belt, of opnemen als jouw eigen nummer jou belt?",
+    "Wat kies je: de waarheid weten over een oude foto, of hem nooit meer kunnen zien?"
+  ],
+  Dares: [
+    "Dare: doe alle lichten tien seconden uit en zeg wat je het eerst dacht.",
+    "Dare: fluister mijn naam alsof je mij niet wilt wakker maken.",
+    "Dare: kijk zeven seconden naar een donkere hoek zonder te lachen.",
+    "Dare: lees de vraag alsof er iemand achter je staat.",
+    "Dare: stuur jezelf een appje met alleen: niet omkijken.",
+    "Dare: maak een voice memo van vijf seconden waarin je doet alsof je verdwaald bent.",
+    "Dare: kies een object in de kamer dat vanaf nu verdacht is.",
+    "Dare: doe alsof je net iets onder de tafel hoorde.",
+    "Dare: zeg heel rustig: we hadden hier niet moeten komen.",
+    "Dare: vertel in een zin waarom de deur dicht moet blijven.",
+    "Dare: doe je beste nep-schrikreactie zonder geluid.",
+    "Dare: wijs naar iets in de kamer en zeg: dat stond daar net niet.",
+    "Dare: maak een waarschuwing voor future-us in zes woorden.",
+    "Dare: praat tien seconden alsof je bezeten bent door een chique geest.",
+    "Dare: beschrijf mij alsof ik de verdachte ben in een thriller."
+  ],
+  Chaos: [
+    "Wat is het eerste wat fout gaat als wij in een horrorfilm zitten?",
+    "Wie van ons zegt te vroeg: dit is vast niks?",
+    "Welke domme beslissing zouden wij maken in een spookhuis?",
+    "Wat zou onze slechtste horrorfilm-titel zijn?",
+    "Wie raakt als eerste de verkeerde deur aan?",
+    "Wat is het meest verdachte object in deze kamer?",
+    "Welke normale zin klinkt nu ineens eng?",
+    "Wat zou jij doen als ik ineens heel serieus zeg: hij staat achter je?",
+    "Welk geluid zou ons meteen stil krijgen?",
+    "Wat is ons noodplan als de lampen uitgaan?",
+    "Wat zou jij doen als mijn telefoon vanzelf jouw naam typt?",
+    "Welke plek in huis vertrouw jij het minst?",
+    "Wat is de domste reden om toch naar de kelder te gaan?",
+    "Wat zou de geest over ons roddelen?",
+    "Welke van ons zou proberen te onderhandelen met iets engs?"
+  ],
+  Funny: [
+    "Welke horrorfilm zouden wij verpesten door te veel te praten?",
+    "Wat is de minst enge manier om een geest te beledigen?",
+    "Welke snack neem jij mee naar een spookhuis?",
+    "Wat zou jij schreeuwen als je stoer probeert te blijven?",
+    "Welke domme outfit draag jij tijdens een achtervolging?",
+    "Wat is de slechtste smoes om niet naar de kelder te hoeven?",
+    "Hoe zou jij een monster proberen af te leiden?",
+    "Welke playlist maakt een enge scene meteen belachelijk?",
+    "Wat zou onze ghost-hunting teamnaam zijn?",
+    "Welk object gebruik jij als nep-wapen dat niks helpt?",
+    "Wat is de grappigste manier om dramatisch te verdwijnen?",
+    "Welke zin maakt elke horrorfilm minder serieus?",
+    "Wat zou jij tegen een geest zeggen om vrienden te worden?",
+    "Welke slechte horrorregel zouden wij toch breken?",
+    "Wat is de domste reden dat wij zouden overleven?"
+  ],
+  Future: [
+    "Wat als future-us terugkomt om ons deze relatie af te raden?",
+    "Wat zou jij vragen aan ons over tien jaar als ze bang kijken?",
+    "Welke keuze van vandaag kan later creepy belangrijk worden?",
+    "Wat als ons toekomstige huis een kamer heeft die niemand gebruikt?",
+    "Wat als we later elk jaar dezelfde onbekende kaart krijgen?",
+    "Wat zou een waarschuwing van future-us kort maar eng maken?",
+    "Welke plek wil je nooit met mij bezoeken, zelfs later niet?",
+    "Wat als onze kinderen ooit zeggen dat ze iemand in huis zien?",
+    "Wat moet future-us absoluut nooit verbergen voor ons?",
+    "Wat als een foto van onze toekomst een persoon te veel heeft?",
+    "Welke gewoonte moeten wij stoppen voordat hij raar wordt?",
+    "Wat als wij later een dag missen die niemand kan verklaren?",
+    "Wat als we later een huis kopen met een dichtgetimmerde deur?",
+    "Welke belofte voelt lief maar kan later gevaarlijk worden?",
+    "Wat zou jij tegen future-me zeggen als ik jou niet herken?"
+  ],
+  Flirty: [
+    "Wat is een blik van mij die in het donker gevaarlijker voelt?",
+    "Welke fluisterzin van mij zou je kippenvel geven?",
+    "Wat is aantrekkelijker: spanning of veiligheid?",
+    "Wat zou jij doen als ik midden in een enge film alleen naar jou kijk?",
+    "Welke aanraking is lief, maar ook spannend in het donker?",
+    "Wat maakt iemand mysterieus op een aantrekkelijke manier?",
+    "Welke date voelt een beetje verboden maar nog steeds goed?",
+    "Wat is de spannendste plek voor een geheime kus?",
+    "Wat zou je willen dat ik zeg als de lichten uitgaan?",
+    "Wat is enger: te veel voelen, of niets durven zeggen?",
+    "Welke outfit van mij past bij een thriller?",
+    "Wat is een compliment dat klinkt als een dreiging maar lief is?",
+    "Wat maakt stilte tussen ons spannend?",
+    "Wat zou jij doen als ik zeg: kom dichterbij, maar niet omkijken?",
+    "Welke kant van mij is een beetje gevaarlijk leuk?"
+  ],
+  Wildcard: [
+    "Welke urban legend zou jij bijna geloven?",
+    "Wat is het engste dat je ooit verkeerd hoorde?",
+    "Welke droom bleef te lang in je hoofd hangen?",
+    "Wat is jouw raarste onderbuikgevoel ooit?",
+    "Welke plek voelt slecht zonder reden?",
+    "Wat is een object dat nooit in een kinderkamer hoort?",
+    "Wat is enger: oude foto's of oude voicemail?",
+    "Wat zou jij doen als een vreemde jouw jeugdherinnering kent?",
+    "Welke zin wil je nooit horen in het donker?",
+    "Wat is iets dat alleen eng is als je alleen bent?",
+    "Welke deur in een horrorfilm open jij toch?",
+    "Wat zou je doen als iemand in je droom je echte naam zegt?",
+    "Welke bijgeloof-regel volg jij stiekem toch?",
+    "Wat is het meest verdachte cadeau dat je kunt krijgen?",
+    "Wat is een vraag die je liever niet beantwoordt na middernacht?"
+  ]
+};
+
+const horrorDeckEn = {
+  Love: horrorDeckNl.Love.map((_, index) => [
+    "What would you do if I called at midnight and only whispered: do not open the door?",
+    "Which sweet memory of us would become scary if you saw it again in an empty house?",
+    "If a stranger said they knew us both from a dream, what would you ask first?",
+    "Which habit of mine would feel suspicious if I suddenly stopped doing it?",
+    "What is the scariest proof that someone truly loves you?",
+    "If I knew everything about you tomorrow without you telling me, what would you ask?",
+    "What room would you not enter with me, even for love?",
+    "What would you do if you found a photo of us that will only be taken next week?",
+    "Which sentence from me is romantic in daylight but scary in the dark?",
+    "If love had a warning label, what would ours say?",
+    "What would you believe first: that I am lying, or that someone is copying me?",
+    "Which place with me feels beautiful but a little wrong?",
+    "If a voice copied my voice, how would you know it is not me?",
+    "What sweet thing becomes creepy if someone does it too often?",
+    "If we disappeared for one evening, where would people look for us?"
+  ][index]),
+  Deep: horrorDeckNl.Deep.map((_, index) => [
+    "Which truth about you would hit hardest if I suddenly knew it?",
+    "What fear do you usually make funny so nobody notices?",
+    "Which side of yourself would you rather not see in the mirror?",
+    "What would you do if your future self said: trust nobody tonight?",
+    "Which memory feels like it is not fully yours?",
+    "What makes silence between two people scarier than a fight?",
+    "When does someone feel too close, even if you like them?",
+    "What is something you want to forget but also do not want to lose?",
+    "Which question would scare you if I asked it exactly right?",
+    "If guilt had a sound, what would it sound like?",
+    "What is scarier: being left, or being truly seen?",
+    "Which secrets make someone interesting, and which make someone dangerous?",
+    "What would you never want to dream about me?",
+    "What is the darkest thought that still stays harmless?",
+    "If you got a letter from yourself saying 'sorry', what would it be about?"
+  ][index]),
+  Weird: horrorDeckNl.Weird.map((_, index) => [
+    "What if you woke up and my name was written on your arm?",
+    "What if the mirror moved one second too late?",
+    "What if your phone took a photo while nobody touched it?",
+    "What if someone behind us was listening, but only you could hear them?",
+    "What if the same black car drove past three times tonight?",
+    "What if there was a letter under your bed in my handwriting?",
+    "What if you got a voicemail from yourself from tomorrow?",
+    "What if the lamp flickered every time someone lied?",
+    "What if you saw someone else standing in my eyes?",
+    "What if an unknown number only knew your secret code word?",
+    "What if a photo showed a hand on your shoulder that was not there?",
+    "What if a door in the house suddenly led somewhere else?",
+    "What if the clock kept going back to the same moment?",
+    "What if you heard my voice while I sat next to you silently?",
+    "What if the window said: I know what you chose?"
+  ][index]),
+  Cash: horrorDeckNl.Cash.map((_, index) => [
+    "For $100: would you walk through a dark room for five minutes with no phone light?",
+    "For $500: would you listen to an unknown voicemail in the dark?",
+    "For $1,000: would you let someone choose a scary photo as your wallpaper for one day?",
+    "For $2,000: would you sleep with the closet door open?",
+    "For $5,000: would you stay one night in an empty house where lights turn on by themselves?",
+    "For $10,000: would you watch a baby monitor for one hour when nobody should be there?",
+    "For $25,000: would you open a box addressed to you that should have arrived yesterday?",
+    "For $50,000: would you return to a place that once gave you a bad feeling?",
+    "For $100,000: would you read a letter out loud that starts with 'if you read this, I am gone'?",
+    "For $1,000,000: would you stay a week in a house where someone knocks every night at 3:13?",
+    "How much money would it take to use an unknown key on an unknown door?",
+    "How much money would it take to sleep one night with no curtains closed?",
+    "How much money would it take to bring home an old doll?",
+    "How much money would it take to reply to a text from a dead number?",
+    "How much money would it take to do exactly what a note under your door says?"
+  ][index]),
+  Choices: horrorDeckNl.Choices.map((_, index) => [
+    "Would you rather hear a voice in the wall or footsteps in the attic?",
+    "Would you rather trust nobody for a day or know whenever everyone lies?",
+    "Would you rather see a photo of your future or hear a recording of your last words?",
+    "Would you rather have a mirror that is sometimes wrong or a door that sometimes opens somewhere else?",
+    "Would you rather have the same dream every night or wake up with a memory you do not know?",
+    "Would you rather know a secret about me or know that I know a secret about you?",
+    "Would you rather get a warning with no explanation or an explanation with no solution?",
+    "Would you rather get lost in a forest or locked inside a house?",
+    "Would you rather see someone who must not see you, or be heard by something you cannot see?",
+    "Would you rather read a stranger's diary or find your own diary with extra pages?",
+    "Would you rather have no mirrors for a week or no windows for a week?",
+    "Would you rather get a warning from your ex or from your future child?",
+    "Would you rather wake up with mud on your shoes or sand in your bed?",
+    "Would you rather call a number that calls itself or answer when your own number calls you?",
+    "Would you rather know the truth about an old photo or never see it again?"
+  ][index]),
+  Dares: horrorDeckNl.Dares.map((_, index) => [
+    "Dare: turn off all lights for ten seconds and say the first thing you thought.",
+    "Dare: whisper my name like you do not want to wake me.",
+    "Dare: stare at a dark corner for seven seconds without laughing.",
+    "Dare: read the question like someone is standing behind you.",
+    "Dare: text yourself only this: do not look back.",
+    "Dare: make a five-second voice memo pretending you are lost.",
+    "Dare: choose one object in the room that is now suspicious.",
+    "Dare: act like you just heard something under the table.",
+    "Dare: say very calmly: we should not have come here.",
+    "Dare: explain in one sentence why the door must stay closed.",
+    "Dare: do your best fake scare reaction without sound.",
+    "Dare: point at something in the room and say: that was not there before.",
+    "Dare: make a six-word warning for future-us.",
+    "Dare: talk for ten seconds like you are possessed by a fancy ghost.",
+    "Dare: describe me like I am the suspect in a thriller."
+  ][index]),
+  Chaos: horrorDeckNl.Chaos.map((_, index) => [
+    "What is the first thing that goes wrong if we are in a horror movie?",
+    "Which one of us says too early: it is probably nothing?",
+    "What dumb choice would we make in a haunted house?",
+    "What would our worst horror movie title be?",
+    "Who touches the wrong door first?",
+    "What is the most suspicious object in this room?",
+    "Which normal sentence sounds scary right now?",
+    "What would you do if I suddenly said very seriously: he is behind you?",
+    "What sound would make us both go silent?",
+    "What is our emergency plan if the lights go out?",
+    "What would you do if my phone typed your name by itself?",
+    "Which place in the house do you trust the least?",
+    "What is the dumbest reason to still go to the basement?",
+    "What would the ghost gossip about us?",
+    "Which one of us would try to negotiate with something scary?"
+  ][index]),
+  Funny: horrorDeckNl.Funny.map((_, index) => [
+    "Which horror movie would we ruin by talking too much?",
+    "What is the least scary way to insult a ghost?",
+    "Which snack do you bring to a haunted house?",
+    "What would you scream while trying to act brave?",
+    "What dumb outfit would you wear during a chase scene?",
+    "What is the worst excuse to avoid going to the basement?",
+    "How would you distract a monster?",
+    "Which playlist would make a scary scene ridiculous?",
+    "What would our ghost-hunting team name be?",
+    "What object would you use as a fake weapon that does not help?",
+    "What is the funniest way to disappear dramatically?",
+    "Which sentence makes every horror movie less serious?",
+    "What would you say to a ghost to become friends?",
+    "Which bad horror rule would we still break?",
+    "What is the dumbest reason we would survive?"
+  ][index]),
+  Future: horrorDeckNl.Future.map((_, index) => [
+    "What if future-us came back to warn us against this relationship?",
+    "What would you ask us in ten years if they looked scared?",
+    "Which choice today could become creepy important later?",
+    "What if our future house has a room nobody uses?",
+    "What if we later get the same unknown card every year?",
+    "What would make a warning from future-us short but scary?",
+    "Which place would you never visit with me, even later?",
+    "What if our future kids say they see someone in the house?",
+    "What must future-us never hide from us?",
+    "What if a photo of our future has one person too many?",
+    "Which habit should we stop before it becomes weird?",
+    "What if we later miss one day nobody can explain?",
+    "What if we buy a house with a boarded-up door?",
+    "Which promise feels sweet but could become dangerous later?",
+    "What would you say to future-me if I did not recognize you?"
+  ][index]),
+  Flirty: horrorDeckNl.Flirty.map((_, index) => [
+    "Which look from me feels more dangerous in the dark?",
+    "Which whispered sentence from me would give you chills?",
+    "What is more attractive: tension or safety?",
+    "What would you do if I looked only at you during a scary movie?",
+    "Which touch is sweet but also tense in the dark?",
+    "What makes someone mysterious in an attractive way?",
+    "Which date feels a little forbidden but still good?",
+    "What is the most tense place for a secret kiss?",
+    "What would you want me to say when the lights go out?",
+    "What is scarier: feeling too much, or not daring to say it?",
+    "Which outfit of mine belongs in a thriller?",
+    "What compliment sounds like a threat but is still sweet?",
+    "What makes silence between us tense?",
+    "What would you do if I said: come closer, but do not look back?",
+    "Which side of me is a little dangerously fun?"
+  ][index]),
+  Wildcard: horrorDeckNl.Wildcard.map((_, index) => [
+    "Which urban legend would you almost believe?",
+    "What is the scariest thing you ever misheard?",
+    "Which dream stayed in your head too long?",
+    "What is your strangest gut feeling ever?",
+    "Which place feels wrong for no reason?",
+    "What object should never be in a child's room?",
+    "What is scarier: old photos or old voicemail?",
+    "What would you do if a stranger knew your childhood memory?",
+    "Which sentence do you never want to hear in the dark?",
+    "What is only scary when you are alone?",
+    "Which door in a horror movie do you still open?",
+    "What would you do if someone in your dream said your real name?",
+    "Which superstition rule do you secretly follow?",
+    "What is the most suspicious gift someone can give?",
+    "What question would you rather not answer after midnight?"
+  ][index])
+};
+
+Object.keys(rawQuestions).forEach((category) => {
+  delete rawQuestions[category];
+});
+
+Object.entries(horrorDeckEn).forEach(([category, items]) => {
+  rawQuestions[category] = {
+    mood: ["Cash", "Funny", "Chaos"].includes(category) ? "Light" : ["Choices", "Dares", "Flirty"].includes(category) ? "Bold" : "Deep",
+    items
+  };
+});
+
+Object.keys(dutchQuestionDeck).forEach((category) => {
+  delete dutchQuestionDeck[category];
+});
+
+Object.assign(dutchQuestionDeck, horrorDeckNl);
+
+Object.assign(uiCopy.en.filters, {
+  Love: "Dark",
+  Deep: "Deep",
+  Weird: "Creepy",
+  Cash: "Price",
+  Choices: "Choices",
+  Dares: "Rituals",
+  Chaos: "Panic",
+  Funny: "Twist",
+  Future: "Future",
+  Flirty: "Tension",
+  Wildcard: "Cursed"
+});
+
+Object.assign(uiCopy.nl.filters, {
+  Love: "Donker",
+  Deep: "Diep",
+  Weird: "Eng",
+  Cash: "Prijs",
+  Choices: "Keuzes",
+  Dares: "Rituelen",
+  Chaos: "Paniek",
+  Funny: "Twist",
+  Future: "Toekomst",
+  Flirty: "Spanning",
+  Wildcard: "Vloek"
+});
+
+Object.assign(generatedTemplates, {
+  Love: [
+    () => `What if ${pick(["a photo", "a mirror", "a voice note", "a locked door"])} knew something about us?`,
+    () => `What would make a sweet moment with me feel scary?`,
+    () => `What warning would a stranger give us tonight?`
+  ],
+  Deep: [
+    () => `What truth would be hardest to hear in the dark?`,
+    () => `What fear gets stronger when everything is quiet?`,
+    () => `What memory would you not want to find written down?`
+  ],
+  Weird: [
+    () => `What if ${pick(["the window", "your phone", "the mirror", "the clock"])} suddenly showed my name?`,
+    () => `What if we heard ${pick(["footsteps", "whispering", "a knock", "breathing"])} from the wrong room?`,
+    () => `What if ${pick(["a stranger", "future you", "a child", "my voice"])} warned you about tonight?`
+  ],
+  Cash: [
+    () => `For $${pick(["100", "1,000", "10,000", "100,000"])}: would you open a door that knocks back?`,
+    () => `For $${pick(["500", "5,000", "50,000"])}: would you sleep with no curtains and no lights?`,
+    () => `How much money would it take to answer a call from your own number?`
+  ],
+  Choices: [
+    () => `Would you rather hear ${pick(["footsteps", "whispers", "scratching"])} or see ${pick(["a shadow", "a face", "a handprint"])}?`,
+    () => `Would you rather know the secret or stay safe?`,
+    () => `Would you rather open the wrong door or ignore the right warning?`
+  ],
+  Dares: [
+    () => `Dare: whisper "${pick(["do not open it", "we should leave", "it knows us"])}" like you mean it.`,
+    () => `Dare: point at ${pick(["a corner", "a door", "a window", "an object"])} and say why it is suspicious.`,
+    () => `Dare: make a six-word warning for us.`
+  ],
+  Chaos: [
+    () => `What is our worst decision if ${pick(["the lights go out", "the phone rings", "someone knocks"])}?`,
+    () => `What would make us panic first in ${pick(["a forest", "a hallway", "a basement", "an empty hotel"])}?`,
+    () => `What object here would betray us in a horror movie?`
+  ],
+  Funny: [
+    () => `How would we ruin a scary scene with ${pick(["snacks", "arguing", "bad jokes", "singing"])}?`,
+    () => `What would be our dumb ghost-hunting rule?`,
+    () => `What snack saves us from the monster?`
+  ],
+  Future: [
+    () => `What would future-us warn us about?`,
+    () => `What room should our future house never have?`,
+    () => `What photo from the future would scare you most?`
+  ],
+  Flirty: [
+    () => `What whispered sentence would feel tense in the dark?`,
+    () => `What makes mystery attractive instead of scary?`,
+    () => `What would you do if I said: come closer, but do not look back?`
+  ],
+  Wildcard: [
+    () => `What question should never be asked after midnight?`,
+    () => `Which superstition would you follow tonight?`,
+    () => `What object would you never take from an abandoned house?`
+  ]
+});
+
+Object.assign(generatedTemplatesNl, {
+  Love: [
+    () => `Wat als ${pick(["een foto", "een spiegel", "een voice memo", "een gesloten deur"])} iets over ons wist?`,
+    () => `Wat maakt een lief moment met mij ineens eng?`,
+    () => `Welke waarschuwing zou een vreemde ons vanavond geven?`
+  ],
+  Deep: [
+    () => `Welke waarheid wil je niet horen in het donker?`,
+    () => `Welke angst wordt groter als alles stil is?`,
+    () => `Welke herinnering wil je niet op papier terugvinden?`
+  ],
+  Weird: [
+    () => `Wat als ${pick(["het raam", "je telefoon", "de spiegel", "de klok"])} ineens mijn naam laat zien?`,
+    () => `Wat als wij ${pick(["voetstappen", "gefluister", "geklop", "ademhaling"])} uit de verkeerde kamer horen?`,
+    () => `Wat als ${pick(["een vreemde", "future-you", "een kind", "mijn stem"])} je waarschuwt voor vanavond?`
+  ],
+  Cash: [
+    () => `Voor ${pick(["100", "1.000", "10.000", "100.000"])} euro: open je een deur die terugklopt?`,
+    () => `Voor ${pick(["500", "5.000", "50.000"])} euro: slaap je zonder gordijnen en zonder licht?`,
+    () => `Hoeveel geld moet je krijgen om op te nemen als je eigen nummer belt?`
+  ],
+  Choices: [
+    () => `Wat kies je: ${pick(["voetstappen", "gefluister", "gekrab"])} horen, of ${pick(["een schaduw", "een gezicht", "een handafdruk"])} zien?`,
+    () => `Wat kies je: het geheim weten, of veilig blijven?`,
+    () => `Wat kies je: de verkeerde deur openen, of de juiste waarschuwing negeren?`
+  ],
+  Dares: [
+    () => `Dare: fluister "${pick(["doe hem niet open", "we moeten weg", "het kent ons"])}" alsof je het meent.`,
+    () => `Dare: wijs naar ${pick(["een hoek", "een deur", "een raam", "een object"])} en zeg waarom het verdacht is.`,
+    () => `Dare: maak een waarschuwing voor ons in zes woorden.`
+  ],
+  Chaos: [
+    () => `Wat is onze slechtste keuze als ${pick(["de lampen uitgaan", "de telefoon gaat", "iemand klopt"])}?`,
+    () => `Wat laat ons als eerste panieken in ${pick(["een bos", "een gang", "een kelder", "een leeg hotel"])}?`,
+    () => `Welk object hier verraadt ons in een horrorfilm?`
+  ],
+  Funny: [
+    () => `Hoe verpesten wij een enge scene met ${pick(["snacks", "ruzie", "slechte grappen", "zingen"])}?`,
+    () => `Wat is onze domme ghost-hunting-regel?`,
+    () => `Welke snack redt ons van het monster?`
+  ],
+  Future: [
+    () => `Waarvoor zou future-us ons waarschuwen?`,
+    () => `Welke kamer mag ons toekomstige huis nooit hebben?`,
+    () => `Welke foto uit de toekomst maakt jou het bangst?`
+  ],
+  Flirty: [
+    () => `Welke fluisterzin voelt spannend in het donker?`,
+    () => `Wat maakt mysterie aantrekkelijk in plaats van eng?`,
+    () => `Wat doe je als ik zeg: kom dichterbij, maar kijk niet om?`
+  ],
+  Wildcard: [
+    () => `Welke vraag mag je nooit na middernacht stellen?`,
+    () => `Welk bijgeloof zou je vanavond volgen?`,
+    () => `Welk object neem je nooit mee uit een verlaten huis?`
+  ]
+});
+
 const deck = Object.entries(rawQuestions).flatMap(([category, data]) => {
   return data.items.map((text, index) => ({
     id: `${category}-${index}`,

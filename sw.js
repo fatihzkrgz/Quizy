@@ -1,4 +1,4 @@
-const CACHE_NAME = "love-loop-v10";
+const CACHE_NAME = "love-loop-v11";
 const APP_SHELL = [
   "./",
   "./index.html",
