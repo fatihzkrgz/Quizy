@@ -2985,12 +2985,387 @@ const mindfuckQuestionSets = [
   }
 ];
 
+const moreMindfuckQuestionSets = [
+  {
+    category: "Love",
+    count: 16,
+    nlTemplate: (left, right) => `Wat als je moet kiezen tussen ${left} en ${right} in onze relatie?`,
+    enTemplate: (left, right) => `What if you had to choose between ${left} and ${right} in our relationship?`,
+    nlLeft: [
+      "altijd eerlijk zijn",
+      "altijd zacht blijven",
+      "elkaars gedachten raden",
+      "elkaar volledige vrijheid geven"
+    ],
+    enLeft: [
+      "always being honest",
+      "always staying gentle",
+      "guessing each other's thoughts",
+      "giving each other total freedom"
+    ],
+    nlRight: [
+      "soms je trots inslikken",
+      "soms geen gelijk krijgen",
+      "elke kleine twijfel uitspreken",
+      "een ongemakkelijk antwoord accepteren"
+    ],
+    enRight: [
+      "sometimes swallowing your pride",
+      "sometimes not being right",
+      "saying every small doubt out loud",
+      "accepting an uncomfortable answer"
+    ]
+  },
+  {
+    category: "Deep",
+    count: 17,
+    nlTemplate: (left, right) => `Welke is eerlijker: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `Which is more honest: ${left}, or ${right}?`,
+    nlLeft: [
+      "zeggen wat je voelt zonder bewijs",
+      "toegeven dat je iets niet weet",
+      "een keuze maken met twijfel",
+      "je mening veranderen waar iemand bij is"
+    ],
+    enLeft: [
+      "saying what you feel without proof",
+      "admitting you do not know something",
+      "making a choice with doubt",
+      "changing your opinion in front of someone"
+    ],
+    nlRight: [
+      "rust houden terwijl je nog vragen hebt",
+      "een simpel antwoord weigeren",
+      "iemand gelijk geven terwijl het prikt",
+      "je eigen aandeel groter maken",
+      "zeggen dat je reden niet perfect is"
+    ],
+    enRight: [
+      "keeping peace while you still have questions",
+      "refusing a simple answer",
+      "letting someone be right while it stings",
+      "making your own part bigger",
+      "saying your reason is not perfect"
+    ]
+  },
+  {
+    category: "Weird",
+    count: 17,
+    nlTemplate: (left, right) => `Wat als ${left} eigenlijk ${right}?`,
+    enTemplate: (left, right) => `What if ${left} is actually ${right}?`,
+    nlLeft: [
+      "je slechtste gewoonte",
+      "je beste eigenschap",
+      "je favoriete smoes",
+      "je gevoel van gelijk"
+    ],
+    enLeft: [
+      "your worst habit",
+      "your best quality",
+      "your favorite excuse",
+      "your sense of being right"
+    ],
+    nlRight: [
+      "een bescherming die te lang bleef",
+      "een keuze die je ooit vergat",
+      "een mening van iemand anders",
+      "een gewoonte met een goede bedoeling",
+      "een antwoord op een oude vraag"
+    ],
+    enRight: [
+      "protection that stayed too long",
+      "a choice you once forgot",
+      "someone else's opinion",
+      "a habit with a good intention",
+      "an answer to an old question"
+    ]
+  },
+  {
+    category: "Cash",
+    count: 17,
+    nlTemplate: (left, right) => `Voor ${left}: zou je ${right}?`,
+    enTemplate: (left, right) => `For ${left}: would you ${right}?`,
+    nlLeft: [
+      "50 euro",
+      "750 euro",
+      "7.500 euro",
+      "75.000 euro"
+    ],
+    enLeft: [
+      "$50",
+      "$750",
+      "$7,500",
+      "$75,000"
+    ],
+    nlRight: [
+      "een maand lang elke smoes vervangen met de echte reden",
+      "de ander een dag je planning laten bepalen",
+      "een oude discussie opnieuw voeren maar nu rustig",
+      "toegeven welke kleine luxe jij te belangrijk maakt",
+      "je telefoon een uur wegleggen tijdens elk gesprek"
+    ],
+    enRight: [
+      "replace every excuse with the real reason for one month",
+      "let the other person decide your schedule for one day",
+      "redo an old argument but calmly this time",
+      "admit which small luxury you make too important",
+      "put your phone away for one hour during every conversation"
+    ]
+  },
+  {
+    category: "Choices",
+    count: 17,
+    nlTemplate: (left, right) => `Wat kies je: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `Would you rather ${left}, or ${right}?`,
+    nlLeft: [
+      "iedereen snappen maar jezelf minder",
+      "jezelf snappen maar anderen minder",
+      "altijd precies weten wat je wilt",
+      "nooit meer een excuus nodig hebben"
+    ],
+    enLeft: [
+      "understand everyone but yourself less",
+      "understand yourself but others less",
+      "always know exactly what you want",
+      "never need an excuse again"
+    ],
+    nlRight: [
+      "een keer per week je echte reden horen",
+      "elke maand een oude overtuiging verliezen",
+      "rust krijgen maar minder controle",
+      "controle houden maar minder rust",
+      "een mooi antwoord krijgen dat niet compleet is"
+    ],
+    enRight: [
+      "hear your real reason once a week",
+      "lose an old belief every month",
+      "gain peace but less control",
+      "keep control but less peace",
+      "get a beautiful answer that is not complete"
+    ]
+  },
+  {
+    category: "Impossible",
+    count: 25,
+    nlTemplate: (left, right) => `Wat kies je: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `Would you choose ${left}, or ${right}?`,
+    nlLeft: [
+      "je eigen toekomst kleiner maken voor iemand anders",
+      "iemand verliezen omdat je eindelijk eerlijk bent",
+      "de schuld krijgen voor de juiste keuze",
+      "een kans nemen die je relatie test",
+      "blijven terwijl weggaan makkelijker is"
+    ],
+    enLeft: [
+      "making your own future smaller for someone else",
+      "losing someone because you finally tell the truth",
+      "getting blamed for the right choice",
+      "taking a chance that tests your relationship",
+      "staying when leaving is easier"
+    ],
+    nlRight: [
+      "winnen en weten dat je vals speelde",
+      "verliezen en weten dat je eerlijk bleef",
+      "rust kopen met een halve waarheid",
+      "alles uitleggen en toch niet geloofd worden",
+      "een antwoord accepteren dat nooit lekker voelt"
+    ],
+    enRight: [
+      "winning while knowing you cheated",
+      "losing while knowing you stayed honest",
+      "buying peace with a half-truth",
+      "explaining everything and still not being believed",
+      "accepting an answer that never feels good"
+    ]
+  },
+  {
+    category: "Dares",
+    count: 16,
+    nlTemplate: (left, right) => `Challenge: ${left} en ${right}.`,
+    enTemplate: (left, right) => `Challenge: ${left} and ${right}.`,
+    nlLeft: [
+      "kies binnen drie seconden",
+      "laat de ander jouw antwoord voorspellen",
+      "antwoord zonder het woord misschien",
+      "geef eerst het antwoord dat het meest pijn doet aan je ego"
+    ],
+    enLeft: [
+      "choose within three seconds",
+      "let the other person predict your answer",
+      "answer without using the word maybe",
+      "give the answer that hurts your ego most first"
+    ],
+    nlRight: [
+      "zeg daarna wat je probeerde te beschermen",
+      "maak de andere optie aantrekkelijker",
+      "leg uit wat je antwoord over jou zegt",
+      "laat de ander een detail veranderen"
+    ],
+    enRight: [
+      "then say what you tried to protect",
+      "make the other option more tempting",
+      "explain what your answer says about you",
+      "let the other person change one detail"
+    ]
+  },
+  {
+    category: "Chaos",
+    count: 16,
+    nlTemplate: (left, right) => `Wat gebeurt er als ${left}, maar ${right}?`,
+    enTemplate: (left, right) => `What happens if ${left}, but ${right}?`,
+    nlLeft: [
+      "we allebei zeker zijn",
+      "we allebei twijfelen",
+      "de verliezer eerlijker was",
+      "de winnaar het slechter uitlegt"
+    ],
+    enLeft: [
+      "we are both certain",
+      "we both doubt",
+      "the loser was more honest",
+      "the winner explains it worse"
+    ],
+    nlRight: [
+      "de grappigste reden telt",
+      "de rustigste keuze wint",
+      "de ander een veto krijgt",
+      "we meteen van kant wisselen"
+    ],
+    enRight: [
+      "the funniest reason counts",
+      "the calmest choice wins",
+      "the other person gets a veto",
+      "we switch sides immediately"
+    ]
+  },
+  {
+    category: "Funny",
+    count: 14,
+    nlTemplate: (left, right) => `Wat is belachelijker: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `What is more ridiculous: ${left}, or ${right}?`,
+    nlLeft: [
+      "een gevoel behandelen als spreadsheet",
+      "een appje analyseren alsof het literatuur is",
+      "je trots verdedigen met slechte logica",
+      "een klein probleem een titel geven"
+    ],
+    enLeft: [
+      "treating a feeling like a spreadsheet",
+      "analyzing a text like literature",
+      "defending your pride with bad logic",
+      "giving a small problem a title"
+    ],
+    nlRight: [
+      "boos zijn op een hypothetische situatie",
+      "een slechte keuze romantisch uitleggen",
+      "een mini-crisis plannen",
+      "doen alsof je spontaan bent met een schema"
+    ],
+    enRight: [
+      "being mad at a hypothetical situation",
+      "explaining a bad choice romantically",
+      "planning a tiny crisis",
+      "pretending to be spontaneous with a schedule"
+    ]
+  },
+  {
+    category: "Future",
+    count: 14,
+    nlTemplate: (left, right) => `Wat als wij later ${left}, maar ${right}?`,
+    enTemplate: (left, right) => `What if later we ${left}, but ${right}?`,
+    nlLeft: [
+      "precies krijgen wat we nu willen",
+      "een oude droom ontgroeien",
+      "rustiger worden dan verwacht",
+      "een kleine gewoonte enorm belangrijk maken"
+    ],
+    enLeft: [
+      "get exactly what we want now",
+      "outgrow an old dream",
+      "become calmer than expected",
+      "make one small habit hugely important"
+    ],
+    nlRight: [
+      "iets missen dat nu normaal voelt",
+      "het pas laat durven toegeven",
+      "de reden anders is dan we dachten",
+      "we allebei moesten veranderen"
+    ],
+    enRight: [
+      "miss something that feels normal now",
+      "only admit it late",
+      "the reason is different than we thought",
+      "we both had to change"
+    ]
+  },
+  {
+    category: "Flirty",
+    count: 15,
+    nlTemplate: (left, right) => `Wat voelt spannender: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `What feels more tense: ${left}, or ${right}?`,
+    nlLeft: [
+      "een eerlijk antwoord dat je laat glimlachen",
+      "een compliment dat te raak is",
+      "weten dat de ander je keuze al ziet",
+      "een stilte omdat het antwoord duidelijk is"
+    ],
+    enLeft: [
+      "an honest answer that makes you smile",
+      "a compliment that lands too well",
+      "knowing the other person already sees your choice",
+      "a silence because the answer is obvious"
+    ],
+    nlRight: [
+      "toegeven dat je indruk wilde maken",
+      "de ander laten winnen omdat het leuker is",
+      "een waarheid zeggen met een grap eromheen",
+      "niet doen alsof je neutraal bent"
+    ],
+    enRight: [
+      "admitting you wanted to impress",
+      "letting the other person win because it is more fun",
+      "saying a truth with a joke around it",
+      "not pretending to be neutral"
+    ]
+  },
+  {
+    category: "Wildcard",
+    count: 16,
+    nlTemplate: (left, right) => `Wat breekt je hoofd meer: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `What breaks your brain more: ${left}, or ${right}?`,
+    nlLeft: [
+      "een keuze zonder goede reden",
+      "een reden zonder echte keuze",
+      "een leugen die iemand beter maakt",
+      "een waarheid die iemand slechter maakt"
+    ],
+    enLeft: [
+      "a choice without a good reason",
+      "a reason without a real choice",
+      "a lie that makes someone better",
+      "a truth that makes someone worse"
+    ],
+    nlRight: [
+      "een gevoel dat klopt maar niet logisch is",
+      "een logica die klopt maar koud voelt",
+      "vrijheid die te veel opties geeft",
+      "zekerheid die te veel kost"
+    ],
+    enRight: [
+      "a feeling that is right but not logical",
+      "logic that is correct but feels cold",
+      "freedom that gives too many options",
+      "certainty that costs too much"
+    ]
+  }
+];
+
 Object.keys(horrorDeckNl).forEach((category) => {
   horrorDeckNl[category] = [];
   horrorDeckEn[category] = [];
 });
 
-mindfuckQuestionSets.forEach((set) => {
+[...mindfuckQuestionSets, ...moreMindfuckQuestionSets].forEach((set) => {
   const { nlItems, enItems } = buildExtraQuestions(set);
   horrorDeckNl[set.category].push(...nlItems);
   horrorDeckEn[set.category].push(...enItems);
