@@ -1,7 +1,7 @@
 :root {
   --paper: #06070d;
-  --surface: rgba(10, 13, 24, 0.78);
-  --surface-strong: rgba(18, 22, 36, 0.9);
+  --surface: rgba(10, 13, 24, 0.56);
+  --surface-strong: rgba(18, 22, 36, 0.68);
   --ink: #f8fbff;
   --muted: #a8b4c4;
   --line: rgba(255, 255, 255, 0.15);
@@ -79,12 +79,13 @@ input:focus-visible {
 .visualizer {
   position: fixed;
   inset: 0;
-  z-index: 0;
+  z-index: 3;
   width: 100%;
   height: 100%;
   height: 100dvh;
   pointer-events: none;
-  opacity: 0.9;
+  opacity: 0.34;
+  mix-blend-mode: screen;
 }
 
 .scene-art {
@@ -124,8 +125,20 @@ input:focus-visible {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
-  box-shadow: 0 22px 60px var(--shadow), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(18px) saturate(1.25);
+  box-shadow:
+    0 22px 60px var(--shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 34px rgba(76, 201, 240, 0.035);
+  backdrop-filter: blur(12px) saturate(1.2);
+}
+
+.topbar :is(h1, p, span, strong),
+.control-panel :is(h2, label span, button),
+.question-stage :is(.category-badge, .turn-badge, .mood-label, #questionText, .follow-text, button),
+.saved-panel :is(h2, button, strong, p) {
+  text-shadow:
+    0 0 8px rgba(248, 251, 255, 0.22),
+    0 0 18px rgba(76, 201, 240, 0.16);
 }
 
 .topbar {
@@ -259,8 +272,9 @@ input {
   padding: 0.6rem 0.7rem;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.06);
   color: var(--ink);
+  text-shadow: 0 0 12px rgba(32, 232, 193, 0.18);
 }
 
 input::selection {
@@ -283,7 +297,7 @@ input::selection {
   padding: 0.45rem 0.55rem;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.055);
   color: var(--ink);
   font-size: 0.9rem;
   transition: transform 140ms ease, border-color 140ms ease, background 140ms ease, box-shadow 140ms ease;
@@ -331,6 +345,7 @@ input::selection {
   border-radius: 8px;
   font-size: 0.85rem;
   font-weight: 800;
+  box-shadow: inset 0 0 18px rgba(255, 255, 255, 0.04), 0 0 18px rgba(76, 201, 240, 0.08);
 }
 
 .category-badge {
@@ -357,9 +372,12 @@ input::selection {
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 8px;
   background:
-    linear-gradient(180deg, rgba(28, 33, 52, 0.86), rgba(9, 12, 24, 0.92)),
+    linear-gradient(180deg, rgba(28, 33, 52, 0.58), rgba(9, 12, 24, 0.7)),
     var(--surface-strong);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 0 52px rgba(245, 80, 255, 0.055),
+    0 0 34px rgba(32, 232, 193, 0.08);
 }
 
 .question-card::before {
@@ -394,15 +412,22 @@ input::selection {
   line-height: 1.08;
   letter-spacing: 0;
   overflow-wrap: anywhere;
-  text-shadow: 0 0 22px rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  text-shadow:
+    0 0 7px rgba(255, 255, 255, 0.42),
+    0 0 18px rgba(32, 232, 193, 0.34),
+    0 0 34px rgba(245, 80, 255, 0.22),
+    0 0 58px rgba(255, 107, 92, 0.14);
+  animation: textGlow 3.4s ease-in-out infinite alternate;
 }
 
 .follow-text {
   max-width: 42rem;
-  color: var(--muted);
+  color: #cbd8e8;
   font-size: 1.05rem;
   line-height: 1.55;
   overflow-wrap: anywhere;
+  text-shadow: 0 0 14px rgba(76, 201, 240, 0.22);
 }
 
 .action-row {
@@ -428,7 +453,7 @@ input::selection {
 
 .icon-button {
   width: 3.15rem;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.06);
   color: var(--ink);
 }
 
@@ -521,7 +546,8 @@ svg {
   padding: 0.65rem;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.055);
+  box-shadow: inset 0 0 22px rgba(76, 201, 240, 0.035);
 }
 
 .saved-item strong {
@@ -572,10 +598,28 @@ svg {
   }
 }
 
+@keyframes textGlow {
+  from {
+    text-shadow:
+      0 0 7px rgba(255, 255, 255, 0.36),
+      0 0 16px rgba(32, 232, 193, 0.28),
+      0 0 30px rgba(245, 80, 255, 0.18),
+      0 0 48px rgba(255, 107, 92, 0.12);
+  }
+  to {
+    text-shadow:
+      0 0 9px rgba(255, 255, 255, 0.55),
+      0 0 22px rgba(32, 232, 193, 0.42),
+      0 0 44px rgba(245, 80, 255, 0.3),
+      0 0 70px rgba(255, 209, 102, 0.18);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   body::before,
   .question-card::before,
-  .question-card.is-changing {
+  .question-card.is-changing,
+  #questionText {
     animation: none;
   }
 }
@@ -628,7 +672,7 @@ svg {
   }
 
   .visualizer {
-    opacity: 0.62;
+    opacity: 0.24;
   }
 
   .scene-art {
@@ -787,7 +831,7 @@ svg {
     padding: 0.45rem;
     border: 1px solid rgba(255, 255, 255, 0.13);
     border-radius: 8px;
-    background: rgba(7, 9, 17, 0.82);
+    background: rgba(7, 9, 17, 0.62);
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.34);
     backdrop-filter: blur(14px) saturate(1.15);
   }
