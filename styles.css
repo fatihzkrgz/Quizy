@@ -337,6 +337,14 @@ input::selection {
   font-weight: 800;
 }
 
+#categoryFilters button.is-active {
+  border-color: rgba(255, 209, 102, 0.72);
+  background: rgba(255, 209, 102, 0.16);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 209, 102, 0.18),
+    0 0 22px rgba(255, 209, 102, 0.16);
+}
+
 .question-stage {
   display: grid;
   grid-template-rows: auto minmax(23rem, 1fr) auto;

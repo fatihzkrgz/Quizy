@@ -698,6 +698,61 @@ partyQuestionPacks.Dares.items = [
   ...extraDaresEn
 ];
 
+const extraChoicesEn = [
+  "Would you rather get $5,000 today or one free date night every week for a year?",
+  "Would you rather let me pick your next tattoo design or your next haircut idea, without actually doing it?",
+  "Would you rather have to laugh at every bad joke or cry at every cute video?",
+  "Would you rather your phone read your texts out loud or your face show every thought?",
+  "Would you rather be unable to say 'no' to snacks or unable to say 'yes' to plans?",
+  "Would you rather have your family hear your couple voice or your friends see your baby photos?",
+  "Would you rather wear one terrible outfit for a week or smell like fries for a month?",
+  "Would you rather get $1,000 for every awkward silence or lose $10 every time you overthink?",
+  "Would you rather have to wink after every compliment or salute after every apology?",
+  "Would you rather go on a fancy date with no phones or a cheap date with unlimited snacks?",
+  "Would you rather know every time I think you look cute or every time I think you are annoying?",
+  "Would you rather share a toothbrush for one emergency night or wear wet socks for one full day?",
+  "Would you rather always be 10 minutes early or always arrive with a dramatic entrance?",
+  "Would you rather have me choose your playlist or your dessert forever?",
+  "Would you rather fight one tiny argument every day or one big silly argument once a month?",
+  "Would you rather have to say 'my love' before every request or end every text with 'boss'?",
+  "Would you rather live in a tiny beach house or a huge boring mansion?",
+  "Would you rather have your search history shown to me or your drafts folder shown to me?",
+  "Would you rather be able to teleport to me once a week or pause time for one date?",
+  "Would you rather only be able to flirt badly or only be able to flirt in poetry?",
+  "Would you rather your parents plan our date or strangers vote on our outfits?",
+  "Would you rather never get jealous but never get butterflies, or get both very easily?",
+  "Would you rather have to send a voice note for every text or only use emojis for one day?",
+  "Would you rather win every debate but lose every board game, or the opposite?",
+  "Would you rather have a truth button or a mute button for arguments?",
+  "Would you rather have every kiss interrupted by applause or every hug scored by judges?",
+  "Would you rather spend $10,000 on travel or $10,000 making the perfect home?",
+  "Would you rather have to wear matching shoes or matching sunglasses every weekend?",
+  "Would you rather be stuck in a lift with me for two hours or on a silent retreat with me for two days?",
+  "Would you rather know my exact first impression of you or my exact favorite memory of you?",
+  "Would you rather have to cook for me blindfolded or let me cook with no recipe?",
+  "Would you rather answer one brutal question or do three embarrassing dares?",
+  "Would you rather have a shared bank account for snacks only or a shared calendar for romance only?",
+  "Would you rather be famous as a perfect couple or secretly be the funniest couple alive?",
+  "Would you rather have to say yes to one safe dare or answer one spicy question?",
+  "Would you rather give up takeout or give up watching shows together?",
+  "Would you rather have one amazing long hug every day or ten tiny kisses every day?",
+  "Would you rather your laugh be louder or your texts be more dramatic?",
+  "Would you rather go camping with no internet or hotel with no snacks?",
+  "Would you rather I pick your outfit for family dinner or your caption for a post?",
+  "Would you rather have to tell me every crush you ever had or every lie you told as a kid?",
+  "Would you rather get caught stalking my old photos or caught practicing a cute text?",
+  "Would you rather do karaoke in front of strangers or slow dance in front of friends?",
+  "Would you rather be unable to hide when you miss me or unable to hide when you are hungry?",
+  "Would you rather have $50,000 but no cuddles for a year, or normal life with unlimited cuddles?",
+  "Would you rather let me choose your phone wallpaper or your morning alarm sound?",
+  "Would you rather relive our first date or see a preview of our next best date?",
+  "Would you rather always know what I want to eat or always know what mood I am in?",
+  "Would you rather be called cute in public or hot in private?",
+  "Would you rather do one bold romantic thing now or one funny dare now?"
+];
+
+partyQuestionPacks.Choices.items.push(...extraChoicesEn);
+
 Object.entries({ ...extraQuestionPacks, ...partyQuestionPacks }).forEach(([category, pack]) => {
   if (!rawQuestions[category]) {
     rawQuestions[category] = { mood: pack.mood || "Deep", items: [] };
@@ -1552,6 +1607,64 @@ dutchQuestionDeck.Dares = [
   "Dare: geef een compliment dat begint met 'irritant genoeg...'."
 ];
 
+dutchQuestionDeck.Choices.push(
+  "Wat kies je: vandaag 5.000 euro, of een jaar lang elke week een gratis date night?",
+  "Wat kies je: ik bedenk je volgende tattoo-idee, of je volgende kapsel-idee, zonder het echt te doen?",
+  "Wat kies je: lachen om elke slechte grap, of huilen om elke schattige video?",
+  "Wat kies je: je telefoon leest je appjes hardop, of je gezicht laat elke gedachte zien?",
+  "Wat kies je: nooit nee kunnen zeggen tegen snacks, of nooit ja kunnen zeggen tegen plannen?",
+  "Wat kies je: je familie hoort jouw koppelstem, of je vrienden zien je babyfoto's?",
+  "Wat kies je: een week een vreselijke outfit, of een maand naar friet ruiken?",
+  "Wat kies je: 1.000 euro voor elke awkward stilte, of 10 euro verliezen elke keer dat je overdenkt?",
+  "Wat kies je: knipogen na elk compliment, of salueren na elke sorry?",
+  "Wat kies je: een chique date zonder telefoons, of een goedkope date met oneindig snacks?",
+  "Wat kies je: altijd weten wanneer ik je cute vind, of altijd weten wanneer ik je irritant vind?",
+  "Wat kies je: in noodgeval een tandenborstel delen, of een hele dag natte sokken?",
+  "Wat kies je: altijd tien minuten te vroeg, of altijd binnenkomen met een dramatische entree?",
+  "Wat kies je: ik kies je playlist voor altijd, of je dessert voor altijd?",
+  "Wat kies je: elke dag een mini-ruzie, of een keer per maand een grote domme ruzie?",
+  "Wat kies je: voor elk verzoek 'mijn lief' zeggen, of elk appje eindigen met 'baas'?",
+  "Wat kies je: een klein strandhuis, of een enorm saai landhuis?",
+  "Wat kies je: je zoekgeschiedenis aan mij tonen, of je concept-appjes aan mij tonen?",
+  "Wat kies je: een keer per week naar mij teleporteren, of tijd pauzeren voor een date?",
+  "Wat kies je: alleen slecht flirten, of alleen flirten in gedichten?",
+  "Wat kies je: je ouders plannen onze date, of vreemden stemmen op onze outfits?",
+  "Wat kies je: nooit jaloers maar ook nooit vlinders, of allebei heel snel?",
+  "Wat kies je: voor elk appje een voice note sturen, of een dag alleen emojis gebruiken?",
+  "Wat kies je: elke discussie winnen maar elk bordspel verliezen, of andersom?",
+  "Wat kies je: een waarheidsknop, of een mute-knop voor ruzies?",
+  "Wat kies je: elke kus krijgt applaus, of elke knuffel krijgt jurycijfers?",
+  "Wat kies je: 10.000 euro aan reizen, of 10.000 euro voor het perfecte huis?",
+  "Wat kies je: elk weekend matchende schoenen, of matchende zonnebrillen?",
+  "Wat kies je: twee uur met mij vast in een lift, of twee dagen samen in stilte?",
+  "Wat kies je: mijn exacte eerste indruk van jou weten, of mijn favoriete herinnering aan jou?",
+  "Wat kies je: blinddoek koken voor mij, of mij laten koken zonder recept?",
+  "Wat kies je: een harde vraag beantwoorden, of drie gênante dares doen?",
+  "Wat kies je: een gezamenlijke snack-bankrekening, of een gezamenlijke romance-kalender?",
+  "Wat kies je: bekend staan als perfect koppel, of stiekem het grappigste koppel zijn?",
+  "Wat kies je: nu een veilige dare doen, of een spicy vraag beantwoorden?",
+  "Wat kies je: nooit meer eten bestellen, of nooit meer samen series kijken?",
+  "Wat kies je: elke dag een lange goede knuffel, of elke dag tien kleine kusjes?",
+  "Wat kies je: je lach wordt harder, of je appjes worden dramatischer?",
+  "Wat kies je: kamperen zonder internet, of hotel zonder snacks?",
+  "Wat kies je: ik kies je outfit voor familiediner, of je caption voor een post?",
+  "Wat kies je: elke crush ooit vertellen, of elke leugen die je als kind zei?",
+  "Wat kies je: betrapt worden op oude foto's stalken, of op een cute appje oefenen?",
+  "Wat kies je: karaoke voor vreemden, of slow dance voor vrienden?",
+  "Wat kies je: niet kunnen verbergen dat je mij mist, of niet kunnen verbergen dat je honger hebt?",
+  "Wat kies je: 50.000 euro maar een jaar geen knuffels, of normaal leven met oneindig knuffels?",
+  "Wat kies je: ik kies je telefoonachtergrond, of je wekker-geluid?",
+  "Wat kies je: onze eerste date opnieuw beleven, of een preview zien van onze volgende beste date?",
+  "Wat kies je: altijd weten wat ik wil eten, of altijd weten in welke mood ik ben?",
+  "Wat kies je: cute genoemd worden in publiek, of hot genoemd worden prive?",
+  "Wat kies je: nu een bold romantisch ding doen, of nu een grappige dare doen?",
+  "Wat kies je: ik mag je playlist kiezen, of jij mag mijn snack kiezen?",
+  "Wat kies je: een dag alleen fluisteren, of een dag alles zingen?",
+  "Wat kies je: ik zie je meest awkward foto, of jij ziet de mijne?",
+  "Wat kies je: een maand geen memes, of een maand geen desserts?",
+  "Wat kies je: altijd winnen met games, of altijd gelijk krijgen in discussies?"
+);
+
 const deck = Object.entries(rawQuestions).flatMap(([category, data]) => {
   return data.items.map((text, index) => ({
     id: `${category}-${index}`,
@@ -1564,7 +1677,7 @@ const deck = Object.entries(rawQuestions).flatMap(([category, data]) => {
 
 const state = {
   language: loadLanguage(),
-  filter: "All",
+  filters: new Set(["All"]),
   mood: "Any",
   queue: [],
   history: [],
@@ -1627,7 +1740,7 @@ function shuffle(list) {
 }
 
 function matchesFilters(question) {
-  const categoryMatch = state.filter === "All" || question.category === state.filter;
+  const categoryMatch = state.filters.has("All") || state.filters.has(question.category);
   const moodMatch = state.mood === "Any" || question.mood === state.mood;
   return categoryMatch && moodMatch;
 }
@@ -1638,12 +1751,13 @@ function filteredBaseDeck() {
     return exactMatches;
   }
 
-  return deck.filter((question) => state.filter === "All" || question.category === state.filter);
+  return deck.filter((question) => state.filters.has("All") || state.filters.has(question.category));
 }
 
 function generateQuestion(categoryOverride) {
+  const selectedCategories = state.filters.has("All") ? null : state.filters;
   const possibleCategories = Object.keys(generatedTemplates).filter((category) => {
-    const categoryMatch = categoryOverride ? category === categoryOverride : state.filter === "All" || category === state.filter;
+    const categoryMatch = categoryOverride ? category === categoryOverride : !selectedCategories || selectedCategories.has(category);
     const mood = rawQuestions[category].mood;
     const moodMatch = state.mood === "Any" || mood === state.mood;
     return categoryMatch && moodMatch;
@@ -1694,14 +1808,15 @@ function markQuestionSeen(question) {
 function generateUniqueQuestions(count, categoryOverride) {
   const generated = [];
   const generatedTexts = new Set();
+  let attempts = 0;
+  const maxAttempts = count * 120;
 
-  for (let index = 0; index < count; index += 1) {
-    let candidate = generateQuestion(categoryOverride);
-
-    for (let attempt = 0; attempt < 18 && hasSeenQuestionText(candidate, generatedTexts); attempt += 1) {
-      candidate = generateQuestion(categoryOverride);
+  while (generated.length < count && attempts < maxAttempts) {
+    attempts += 1;
+    const candidate = generateQuestion(categoryOverride);
+    if (hasSeenQuestionText(candidate, generatedTexts)) {
+      continue;
     }
-
     questionTextKeys(candidate).forEach((key) => generatedTexts.add(key));
     generated.push(candidate);
   }
@@ -1713,7 +1828,7 @@ function refillQueue() {
   const base = filteredBaseDeck();
   const unseen = base.filter((question) => !state.seen.has(question.id) && !hasSeenQuestionText(question));
   const source = unseen.length > 0 ? unseen : base;
-  const generated = generateUniqueQuestions(24, state.filter === "All" ? undefined : state.filter);
+  const generated = generateUniqueQuestions(24);
   state.queue = shuffle([...source, ...generated]);
 }
 
@@ -2038,8 +2153,33 @@ function toggleLanguage() {
 
 function setActiveButton(container, attribute, value) {
   container.querySelectorAll("button").forEach((button) => {
-    button.classList.toggle("is-active", button.dataset[attribute] === value);
+    const currentValue = button.dataset[attribute];
+    const isActive = attribute === "filter"
+      ? state.filters.has(currentValue)
+      : currentValue === value;
+    button.classList.toggle("is-active", isActive);
   });
+}
+
+function toggleCategoryFilter(filter) {
+  if (filter === "All") {
+    state.filters = new Set(["All"]);
+    return;
+  }
+
+  if (state.filters.has("All")) {
+    state.filters.delete("All");
+  }
+
+  if (state.filters.has(filter)) {
+    state.filters.delete(filter);
+  } else {
+    state.filters.add(filter);
+  }
+
+  if (state.filters.size === 0) {
+    state.filters.add("All");
+  }
 }
 
 function isNextKey(event) {
@@ -2298,8 +2438,8 @@ els.categoryFilters.addEventListener("click", (event) => {
     return;
   }
 
-  state.filter = button.dataset.filter;
-  setActiveButton(els.categoryFilters, "filter", state.filter);
+  toggleCategoryFilter(button.dataset.filter);
+  setActiveButton(els.categoryFilters, "filter");
   resetRound();
 });
 
@@ -2349,8 +2489,8 @@ function handleGlobalKeydown(event) {
   const categories = ["All", "Love", "Deep", "Weird", "Cash", "Choices", "Dares", "Chaos", "Funny", "Future", "Flirty", "Wildcard"];
   const numericIndex = Number(event.key);
   if (numericIndex >= 1 && numericIndex <= categories.length) {
-    state.filter = categories[numericIndex - 1];
-    setActiveButton(els.categoryFilters, "filter", state.filter);
+    toggleCategoryFilter(categories[numericIndex - 1]);
+    setActiveButton(els.categoryFilters, "filter");
     resetRound();
   }
 }
