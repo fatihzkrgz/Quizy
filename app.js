@@ -281,6 +281,181 @@ const rawQuestions = {
   }
 };
 
+const extraQuestionPacks = {
+  Love: {
+    items: [
+      "What part of me do you think I protect like a locked room?",
+      "What kind of love do you think we are inventing that neither of us saw growing up?",
+      "If my heart had a weather system, what climate have you learned how to survive?",
+      "What is a quiet proof of love that most people would miss if they watched us?",
+      "What is something about me you would defend even when I am not in the room?",
+      "What version of us only appears when nobody is performing?",
+      "What is the difference between wanting me and choosing me for you?",
+      "What is a tiny moment where you realized I am not like other people you have known?",
+      "What would you want me to know about loving you on your hardest day?",
+      "What part of our love feels ancient, like it was already waiting for us?",
+      "What do you think I secretly need more tenderness about?",
+      "What is a strange little signal that tells you we are okay?",
+      "If our relationship had a hidden room, what would be inside it?",
+      "What is one way you want to be loved that feels almost too specific to explain?",
+      "What do you hope never becomes ordinary between us?"
+    ]
+  },
+  Deep: {
+    items: [
+      "What is one truth about you that people keep simplifying until it becomes wrong?",
+      "Which version of you had to disappear so the current you could survive?",
+      "What do you fear I would misunderstand if I saw your whole inner world at once?",
+      "What is a belief you inherited that you are quietly uninstalling?",
+      "When have you confused peace with boredom or chaos with chemistry?",
+      "What emotion do you treat like evidence against yourself?",
+      "What do you wish I could feel for ten seconds so I would understand you better?",
+      "What is a part of you that asks for love in a language you barely speak?",
+      "Which apology are you still waiting to receive from life?",
+      "What do you do when you are scared of being fully known?",
+      "What is a wound that made you funny, independent, or charming before it made you tired?",
+      "What does your silence usually mean: peace, protection, punishment, or processing?",
+      "What kind of closeness makes you want to run even though you want it?",
+      "What is something you have outgrown but still dress up as loyalty?",
+      "What do you want to stop proving before it turns into your personality?",
+      "Which part of your softness survived the worst year of your life?",
+      "What do you secretly test in people before you let them close?",
+      "What is one way love can become a mirror you were not ready for?",
+      "What is the most expensive emotional lesson you ever learned?",
+      "What does your nervous system mistake for danger in relationships?",
+      "What kind of honesty feels like freedom instead of attack?",
+      "What are you afraid will happen if you are easy to love?",
+      "What is one memory that still controls a room inside you?",
+      "Where do you need patience, and where do you actually need courage?",
+      "What would you ask your future self if they could only answer with a feeling?"
+    ]
+  },
+  Funny: {
+    items: [
+      "If our emotional baggage had names, which one would always be late?",
+      "What would our couple therapist write in all caps after one session?",
+      "Which tiny inconvenience could almost defeat our love story?",
+      "If our relationship had a cursed object, what would it be?",
+      "What would be the worst possible documentary title about our daily life?",
+      "If one of my habits became a courtroom trial, what would the charges be?",
+      "What is the funniest thing your brain has decided is romantic?",
+      "If our arguments had commercial breaks, what product would sponsor them?",
+      "What would our love story be called if it was written by someone very dramatic?",
+      "What is one totally harmless thing I do with villain energy?"
+    ]
+  },
+  Future: {
+    items: [
+      "What future problem do you think we should learn how to solve before it arrives?",
+      "What would our life look like if we designed it around nervous-system peace instead of impressing people?",
+      "What should future us never sacrifice just to look successful?",
+      "If our future home had one rule written on the wall, what would it say?",
+      "What kind of freedom do you want us to build together?",
+      "What does a brave future with me require from you now?",
+      "What boring routine could become sacred if we protected it?",
+      "What future temptation could make us forget who we are as a team?",
+      "What do you want us to become unusually good at together?",
+      "What should we practice now so older us feels grateful?"
+    ]
+  },
+  Flirty: {
+    items: [
+      "What is attractive about me in a way that has nothing to do with looking good?",
+      "What part of my energy feels dangerous in the best harmless way?",
+      "What is one sentence from me that would stay in your head all night?",
+      "What makes you feel pulled toward me before you even think about it?",
+      "What is the most magnetic version of me?",
+      "What is a look I give you that should probably have a warning label?",
+      "What normal thing could I do slowly and make it feel romantic?",
+      "What kind of confidence do you want to see more from me?",
+      "What is one thing about me that feels quietly addictive?",
+      "What would make tonight feel like a scene we should remember?"
+    ]
+  },
+  Wildcard: {
+    items: [
+      "If your inner world was a house, which room would you refuse to renovate?",
+      "What is a completely irrational thing that still tells the truth about you?",
+      "If your intuition had a voice, what annoying thing would it keep repeating?",
+      "What do you think your dreams are trying to make you admit?",
+      "What is a personality trait you use as a disguise?",
+      "If your life had a glitch, what moment would keep replaying?",
+      "What invisible scoreboard do you need to stop checking?",
+      "What is something you pretend is a preference but is actually protection?",
+      "If your future self sent you a warning label, what would it say?",
+      "What do you find beautiful that would make no sense on paper?",
+      "What is one thing you know before you have proof?",
+      "What would your shadow self order at a restaurant?",
+      "What is a harmless delusion that makes life more fun?",
+      "What is the weirdest evidence that you are healing?",
+      "What question would make tonight impossible to forget?"
+    ]
+  },
+  Mindbend: {
+    mood: "Deep",
+    items: [
+      "If I could walk through your mind for one minute, what door would you beg me not to open?",
+      "What part of you loves me, and what part of you is still interviewing me?",
+      "If our souls had a group chat before we met, what did yours warn mine about?",
+      "What is one thing you are scared I might be able to see through?",
+      "Which memory of us feels like it belongs to a parallel universe?",
+      "If your trust had a control room, which button is hardest for you to let me near?",
+      "What would your childhood self find suspicious about how I love you?",
+      "What is the strangest way I have changed the atmosphere inside your head?",
+      "If our relationship was a dream, what symbol would keep appearing?",
+      "What secret contract do you think couples accidentally sign without reading?",
+      "What part of loving me feels like stepping through a mirror?",
+      "If I met the version of you that exists only at 3 a.m., what would they confess?",
+      "What is one emotional superstition you still obey?",
+      "What do you think our biggest unspoken question is?",
+      "If your fear could text me, what would it accuse me of?",
+      "What kind of tenderness scares you because it feels too accurate?",
+      "What have you been calling independence that might actually be armor?",
+      "If we switched hearts for one day, what would shock you about mine?",
+      "What is the most intimate thing someone can notice without touching you?",
+      "What is one truth about us that sounds insane but feels correct?",
+      "Which part of you is hardest to date because it keeps changing the rules?",
+      "What invisible test did I pass without knowing?",
+      "If our love had a monster under the bed, what would feed it?",
+      "What future version of us would current us be afraid to disappoint?",
+      "What is the difference between being obsessed, attached, chosen, and calm?",
+      "What do you want me to understand before I understand the facts?",
+      "If every ex, crush, and almost-love taught you one curse, which curse are you breaking with me?",
+      "What would make love feel like a portal instead of a trap?",
+      "What part of your ego gets loudest when you feel deeply wanted?",
+      "What is the scariest compliment I could give you because it would be true?",
+      "If our relationship had a secret boss level, what would it test?",
+      "What do you think we are both pretending is simpler than it is?",
+      "Which emotion do you want me to hold without trying to fix it?",
+      "What would your shadow say is the real reason you like me?",
+      "If the universe forced us to be radically honest for five minutes, what would you say first?",
+      "What is one beautiful thing about us that could become dangerous if ignored?",
+      "What question would make you feel naked in your personality?",
+      "If our chemistry was a spell, what ingredient would make it unstable?",
+      "What part of you trusts me, but only in whispers?",
+      "What do you think I am teaching your nervous system without trying?",
+      "What would you want to ask me if there were no consequences to the answer?",
+      "What kind of love feels almost illegal because it is so specific?",
+      "If we were both myths, what warning would people tell about us?",
+      "What is something your body knew about me before your mind agreed?",
+      "What would make you feel chosen in a way that reaches the oldest part of you?",
+      "If our relationship had a hidden prophecy, what would be the first line?",
+      "Which truth about love did you learn too early?",
+      "What do you think we are here to heal in each other, if anything?",
+      "What are you afraid will become possible if this actually works?",
+      "What question should we ask only after midnight?"
+    ]
+  }
+};
+
+Object.entries(extraQuestionPacks).forEach(([category, pack]) => {
+  if (!rawQuestions[category]) {
+    rawQuestions[category] = { mood: pack.mood || "Deep", items: [] };
+  }
+
+  rawQuestions[category].items.push(...pack.items);
+});
+
 const followUps = {
   Love: [
     "Bonus: trade answers after the first response.",
@@ -291,6 +466,11 @@ const followUps = {
     "Bonus: let the answer breathe before responding.",
     "Bonus: answer with one memory and one feeling.",
     "Bonus: say what support would look like in real life."
+  ],
+  Mindbend: [
+    "Bonus: answer the beautiful version first, then the dangerous version.",
+    "Bonus: say what your body knows before your logic edits it.",
+    "Bonus: name the fear hiding underneath the answer."
   ],
   Funny: [
     "Bonus: give the serious answer, then the worst possible answer.",
@@ -365,6 +545,26 @@ const generatedParts = {
     "calm",
     "excited"
   ],
+  strangeSymbols: [
+    "a locked hallway",
+    "a mirror that answers back",
+    "a city under the bed",
+    "a phone call from future us",
+    "a room full of versions of you",
+    "a staircase that keeps changing",
+    "a candle that remembers everything",
+    "a map with one missing country"
+  ],
+  hiddenForces: [
+    "jealousy disguised as intuition",
+    "fear wearing confidence",
+    "comfort that feels suspicious",
+    "chemistry that refuses to behave",
+    "a boundary pretending to be a wall",
+    "a fantasy asking for evidence",
+    "trust arriving before logic",
+    "softness with a knife behind its back"
+  ],
   lifeChapters: [
     "moving somewhere new",
     "having less free time",
@@ -387,6 +587,11 @@ const generatedTemplates = {
     () => `What would you need from me during a season of ${pick(generatedParts.lifeChapters)}?`,
     () => `What does feeling ${pick(generatedParts.feelings)} unlock in you?`,
     () => `What part of love gets harder for you during ${pick(generatedParts.timeWindows)}?`
+  ],
+  Mindbend: [
+    () => `If our relationship was haunted by ${pick(generatedParts.hiddenForces)}, what would it make us do?`,
+    () => `What would ${pick(generatedParts.strangeSymbols)} reveal about the way you love?`,
+    () => `Which version of you shows up when you feel ${pick(generatedParts.feelings)} but do not trust it?`
   ],
   Funny: [
     () => `How would we survive for a day with only ${pick(generatedParts.sillyObjects)}?`,
@@ -413,6 +618,7 @@ const generatedTemplates = {
 const categoryStyles = {
   Love: { background: "rgba(255, 107, 92, 0.2)", color: "#ffb3a8" },
   Deep: { background: "rgba(76, 201, 240, 0.18)", color: "#c9f3ff" },
+  Mindbend: { background: "rgba(245, 80, 255, 0.2)", color: "#f8c2ff" },
   Funny: { background: "rgba(255, 209, 102, 0.18)", color: "#ffe39b" },
   Future: { background: "rgba(32, 232, 193, 0.18)", color: "#a8ffed" },
   Flirty: { background: "rgba(181, 116, 255, 0.2)", color: "#dec4ff" },
@@ -738,6 +944,8 @@ function startVisualizer() {
     && window.matchMedia("(pointer: coarse)").matches;
   const layerCount = isCoarsePointer ? 10 : 18;
   const ribbonCount = isCoarsePointer ? 4 : 7;
+  const tunnelCount = isCoarsePointer ? 20 : 34;
+  const spiralArms = isCoarsePointer ? 5 : 8;
   const targetFrameMs = isCoarsePointer ? 1000 / 30 : 1000 / 60;
   let width = 0;
   let height = 0;
@@ -762,10 +970,64 @@ function startVisualizer() {
     const centerX = width * 0.54 + Math.sin(t * 0.4) * width * 0.04;
     const centerY = height * 0.5 + Math.cos(t * 0.33) * height * 0.05;
     const baseRadius = Math.min(width, height) * 0.12;
+    const maxRadius = Math.hypot(width, height) * 0.62;
     const pulse = state.visualPulse;
 
     ctx.clearRect(0, 0, width, height);
     ctx.globalCompositeOperation = "lighter";
+
+    for (let ring = 0; ring < tunnelCount; ring += 1) {
+      const progress = (ring / tunnelCount + (t * 0.055) % 1) % 1;
+      const radius = 18 + progress * maxRadius;
+      const twist = t * 0.65 + ring * 0.21 + pulse * 0.38;
+      const sides = 42;
+
+      ctx.beginPath();
+      for (let point = 0; point <= sides; point += 1) {
+        const angle = (Math.PI * 2 * point) / sides + twist;
+        const ripple = Math.sin(point * 0.9 + t * 2.4 + ring) * (6 + pulse * 18);
+        const pinch = 1 + Math.sin(angle * 3 + t * 1.8) * 0.045;
+        const x = centerX + Math.cos(angle) * (radius * pinch + ripple);
+        const y = centerY + Math.sin(angle) * (radius / (1.22 + Math.sin(t * 0.4) * 0.08) + ripple);
+
+        if (point === 0) {
+          ctx.moveTo(x, y);
+        } else {
+          ctx.lineTo(x, y);
+        }
+      }
+
+      ctx.strokeStyle = `hsl(${(ring * 18 + t * 90) % 360} 96% 64%)`;
+      ctx.globalAlpha = (1 - progress) * (0.13 + pulse * 0.04);
+      ctx.lineWidth = 0.9 + (1 - progress) * 2.2 + pulse * 1.4;
+      ctx.stroke();
+    }
+
+    for (let arm = 0; arm < spiralArms; arm += 1) {
+      ctx.beginPath();
+      for (let step = 0; step < 150; step += 1) {
+        const progress = step / 149;
+        const radius = 14 + progress * maxRadius * 0.72;
+        const angle = arm * ((Math.PI * 2) / spiralArms)
+          + progress * 12.5
+          - t * (0.82 + arm * 0.035)
+          + Math.sin(progress * 8 + t * 1.3) * 0.18;
+        const wobble = Math.sin(step * 0.23 + t * 3 + arm) * (5 + pulse * 10);
+        const x = centerX + Math.cos(angle) * (radius + wobble);
+        const y = centerY + Math.sin(angle) * (radius * 0.74 + wobble);
+
+        if (step === 0) {
+          ctx.moveTo(x, y);
+        } else {
+          ctx.lineTo(x, y);
+        }
+      }
+
+      ctx.strokeStyle = palette[arm % palette.length];
+      ctx.globalAlpha = 0.08 + pulse * 0.035;
+      ctx.lineWidth = 1.1 + pulse * 1.6;
+      ctx.stroke();
+    }
 
     for (let layer = 0; layer < layerCount; layer += 1) {
       const sides = 5 + (layer % 5);
@@ -813,6 +1075,17 @@ function startVisualizer() {
       ctx.strokeStyle = color;
       ctx.globalAlpha = 0.055 + pulse * 0.02;
       ctx.lineWidth = 1.4 + ribbon * 0.25;
+      ctx.stroke();
+    }
+
+    const scanlineGap = isCoarsePointer ? 34 : 22;
+    for (let y = ((t * 36) % scanlineGap) - scanlineGap; y < height + scanlineGap; y += scanlineGap) {
+      ctx.beginPath();
+      ctx.moveTo(0, y + Math.sin(t * 2 + y * 0.01) * 12);
+      ctx.lineTo(width, y + Math.cos(t * 1.7 + y * 0.012) * 12);
+      ctx.strokeStyle = `hsl(${(y + t * 120) % 360} 100% 62%)`;
+      ctx.globalAlpha = 0.025 + pulse * 0.012;
+      ctx.lineWidth = 1;
       ctx.stroke();
     }
 
@@ -930,7 +1203,7 @@ function handleGlobalKeydown(event) {
     toggleSaved();
   }
 
-  const categories = ["All", "Love", "Deep", "Funny", "Future", "Flirty", "Wildcard"];
+  const categories = ["All", "Love", "Deep", "Mindbend", "Funny", "Future", "Flirty", "Wildcard"];
   const numericIndex = Number(event.key);
   if (numericIndex >= 1 && numericIndex <= categories.length) {
     state.filter = categories[numericIndex - 1];
