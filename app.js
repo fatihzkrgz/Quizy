@@ -767,6 +767,11 @@ const followUps = {
     "Bonus: name the smallest real example you can remember.",
     "Bonus: turn the answer into a tiny plan for this week."
   ],
+  Relationship: [
+    "Bonus: answer with one real example from us.",
+    "Bonus: say what you would need from me in that moment.",
+    "Bonus: turn the answer into one small agreement."
+  ],
   Deep: [
     "Bonus: give a short example.",
     "Bonus: say one feeling and one reason.",
@@ -1121,6 +1126,7 @@ const generatedTemplatesNl = {
 
 const categoryStyles = {
   Love: { background: "rgba(255, 107, 92, 0.2)", color: "#ffb3a8" },
+  Relationship: { background: "rgba(124, 255, 203, 0.18)", color: "#c9ffef" },
   Deep: { background: "rgba(76, 201, 240, 0.18)", color: "#c9f3ff" },
   Weird: { background: "rgba(245, 80, 255, 0.2)", color: "#f8c2ff" },
   Cash: { background: "rgba(84, 255, 140, 0.2)", color: "#b9ffd0" },
@@ -1236,6 +1242,11 @@ const followUpsNl = {
     "Bonus: geef allebei antwoord.",
     "Bonus: noem een klein echt voorbeeld.",
     "Bonus: maak er een mini-plan van voor deze week."
+  ],
+  Relationship: [
+    "Bonus: geef een echt voorbeeld van ons.",
+    "Bonus: zeg wat je dan van mij nodig zou hebben.",
+    "Bonus: maak er een kleine afspraak van."
   ],
   Deep: [
     "Bonus: geef een kort voorbeeld.",
@@ -3360,12 +3371,154 @@ const moreMindfuckQuestionSets = [
   }
 ];
 
+const relationshipQuestionSets = [
+  {
+    category: "Relationship",
+    count: 24,
+    nlTemplate: (left, right) => `Wat moeten wij eerlijk bespreken als ${left}, maar ${right}?`,
+    enTemplate: (left, right) => `What should we honestly talk about if ${left}, but ${right}?`,
+    nlLeft: [
+      "een ruzie eigenlijk over iets anders gaat",
+      "we allebei gelijk willen hebben",
+      "een oude onzekerheid terugkomt",
+      "we elkaar minder goed lezen"
+    ],
+    enLeft: [
+      "a fight is actually about something else",
+      "we both want to be right",
+      "an old insecurity comes back",
+      "we read each other less clearly"
+    ],
+    nlRight: [
+      "niemand schuld hoeft te krijgen",
+      "het ongemakkelijk voelt om te beginnen",
+      "we de sfeer niet willen verpesten",
+      "we liever grappen maken dan eerlijk zijn",
+      "de timing slecht is",
+      "we niet weten welke vraag we echt willen stellen"
+    ],
+    enRight: [
+      "nobody has to be blamed",
+      "it feels awkward to start",
+      "we do not want to ruin the mood",
+      "we would rather joke than be honest",
+      "the timing is bad",
+      "we do not know which question we actually want to ask"
+    ]
+  },
+  {
+    category: "Relationship",
+    count: 24,
+    nlTemplate: (left, right) => `Welke afspraak zou onze relatie sterker maken als ${left}, ook al ${right}?`,
+    enTemplate: (left, right) => `Which agreement would make our relationship stronger if ${left}, even if ${right}?`,
+    nlLeft: [
+      "een van ons dichtklapt",
+      "we verschillend omgaan met stress",
+      "we elkaar per ongeluk tekort doen",
+      "we te druk zijn om goed te praten"
+    ],
+    enLeft: [
+      "one of us shuts down",
+      "we handle stress differently",
+      "we accidentally give each other too little",
+      "we are too busy to talk well"
+    ],
+    nlRight: [
+      "het niet meteen opgelost wordt",
+      "we allebei moe zijn",
+      "het eerst klein lijkt",
+      "een van ons defensief wordt",
+      "we het antwoord nog niet weten",
+      "we moeten toegeven dat we iets missen"
+    ],
+    enRight: [
+      "it is not solved right away",
+      "we are both tired",
+      "it seems small at first",
+      "one of us gets defensive",
+      "we do not know the answer yet",
+      "we have to admit something is missing"
+    ]
+  },
+  {
+    category: "Relationship",
+    count: 24,
+    nlTemplate: (left, right) => `Wat zou jij van mij nodig hebben wanneer ${left}, maar ${right}?`,
+    enTemplate: (left, right) => `What would you need from me when ${left}, but ${right}?`,
+    nlLeft: [
+      "je liefde voelt maar geen woorden vindt",
+      "je ruimte nodig hebt",
+      "je bevestiging wilt zonder erom te vragen",
+      "je iets dwarszit dat klein klinkt"
+    ],
+    enLeft: [
+      "you feel love but cannot find words",
+      "you need space",
+      "you want reassurance without asking for it",
+      "something bothers you that sounds small"
+    ],
+    nlRight: [
+      "je niet needy wilt lijken",
+      "ik het niet vanzelf merk",
+      "we net een leuke dag hebben",
+      "je zelf nog twijfelt waarom",
+      "je denkt dat ik het verkeerd begrijp",
+      "je liever sterk wilt overkomen"
+    ],
+    enRight: [
+      "you do not want to seem needy",
+      "I do not notice it by myself",
+      "we just had a good day",
+      "you still doubt why",
+      "you think I will understand it wrong",
+      "you would rather seem strong"
+    ]
+  },
+  {
+    category: "Relationship",
+    count: 24,
+    nlTemplate: (left, right) => `Welke versie van ons kies je: ${left}, of ${right}?`,
+    enTemplate: (left, right) => `Which version of us do you choose: ${left}, or ${right}?`,
+    nlLeft: [
+      "rustig maar soms te stil",
+      "eerlijk maar soms ongemakkelijk",
+      "vrij maar soms onzeker",
+      "hecht maar soms intens"
+    ],
+    enLeft: [
+      "calm but sometimes too quiet",
+      "honest but sometimes awkward",
+      "free but sometimes uncertain",
+      "close but sometimes intense"
+    ],
+    nlRight: [
+      "spannend maar minder stabiel",
+      "lief maar soms te voorzichtig",
+      "veilig maar minder verrassend",
+      "ambitieus maar sneller moe",
+      "grappig maar soms ontwijkend",
+      "serieus maar dieper verbonden"
+    ],
+    enRight: [
+      "exciting but less stable",
+      "sweet but sometimes too careful",
+      "safe but less surprising",
+      "ambitious but tired faster",
+      "funny but sometimes avoidant",
+      "serious but more deeply connected"
+    ]
+  }
+];
+
+Object.assign(horrorDeckNl, { Relationship: [] });
+Object.assign(horrorDeckEn, { Relationship: [] });
+
 Object.keys(horrorDeckNl).forEach((category) => {
   horrorDeckNl[category] = [];
   horrorDeckEn[category] = [];
 });
 
-[...mindfuckQuestionSets, ...moreMindfuckQuestionSets].forEach((set) => {
+[...mindfuckQuestionSets, ...moreMindfuckQuestionSets, ...relationshipQuestionSets].forEach((set) => {
   const { nlItems, enItems } = buildExtraQuestions(set);
   horrorDeckNl[set.category].push(...nlItems);
   horrorDeckEn[set.category].push(...enItems);
@@ -3390,6 +3543,7 @@ Object.assign(dutchQuestionDeck, horrorDeckNl);
 
 Object.assign(uiCopy.en.filters, {
   Love: "Love",
+  Relationship: "Relationship",
   Deep: "Deep",
   Weird: "Mindbend",
   Cash: "Money",
@@ -3405,6 +3559,7 @@ Object.assign(uiCopy.en.filters, {
 
 Object.assign(uiCopy.nl.filters, {
   Love: "Liefde",
+  Relationship: "Relatie",
   Deep: "Diep",
   Weird: "Mindfuck",
   Cash: "Geld",
@@ -3550,6 +3705,11 @@ Object.assign(generatedTemplates, {
     () => `What would you choose if love made ${pick(["one truth", "one habit", "one excuse", "one doubt"])} impossible to hide?`,
     () => `Which small relationship rule would break your brain if we followed it for one month?`
   ],
+  Relationship: [
+    () => `What should we do differently when ${pick(["one of us shuts down", "we both want to be right", "life gets busy", "a small thing keeps returning"])}?`,
+    () => `Which agreement would protect us from ${pick(["silent resentment", "lazy apologies", "old patterns", "guessing instead of asking"])}?`,
+    () => `What do you need from me when you are ${pick(["overthinking", "quiet", "stressed", "trying to stay strong"])}?`
+  ],
   Deep: [
     () => `Which truth would you choose if the reason mattered more than the answer?`,
     () => `What part of yourself is hardest to explain without making it smaller?`,
@@ -3612,6 +3772,11 @@ Object.assign(generatedTemplatesNl, {
     () => `Wat verandert er als ${pick(["eerlijkheid", "rust", "vertrouwen", "vrijheid"])} belangrijker is dan gelijk krijgen?`,
     () => `Wat kies je als liefde ${pick(["een waarheid", "een gewoonte", "een smoes", "een twijfel"])} onmogelijk maakt om te verbergen?`,
     () => `Welke kleine relatie-regel breekt je hoofd als we hem een maand volgen?`
+  ],
+  Relationship: [
+    () => `Wat moeten wij anders doen wanneer ${pick(["een van ons dichtklapt", "we allebei gelijk willen", "het leven druk wordt", "een klein ding blijft terugkomen"])}?`,
+    () => `Welke afspraak beschermt ons tegen ${pick(["stille irritatie", "luie excuses", "oude patronen", "raden in plaats van vragen"])}?`,
+    () => `Wat heb je van mij nodig als je ${pick(["te veel nadenkt", "stil wordt", "stress hebt", "sterk probeert te blijven"])}?`
   ],
   Deep: [
     () => `Welke waarheid kies je als de reden belangrijker is dan het antwoord?`,
