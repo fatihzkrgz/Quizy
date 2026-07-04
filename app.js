@@ -549,25 +549,19 @@ const partyQuestionPacks = {
       "Dare: let me choose one photo pose and take it right now.",
       "Dare: send a friend only three emojis and let me pick them.",
       "Dare: do your best fake proposal in ten seconds.",
-      "Dare: talk like a rich villain until the next question.",
       "Dare: let me write a harmless fake dating-app bio for you.",
       "Dare: show the weirdest safe photo in your camera roll.",
       "Dare: make a fake apology to a spoon like it broke your heart.",
       "Dare: give me a compliment that sounds like a threat but is still nice.",
-      "Dare: read the next question like you are hosting a game show.",
-      "Dare: let me pick a new nickname for you for the next five questions.",
       "Dare: perform a five-second runway walk across the room.",
       "Dare: explain why you are the best snack in the room.",
       "Dare: say 'I was wrong' in the most dramatic way possible.",
       "Dare: let me choose one word you cannot say for three questions.",
       "Dare: make the worst romantic poem you can in 20 seconds.",
       "Dare: do a serious speech about why potatoes deserve respect.",
-      "Dare: say the next answer while holding eye contact.",
       "Dare: invent a secret handshake in 15 seconds.",
-      "Dare: let me choose your fake celebrity name.",
       "Dare: make your best jealous face.",
       "Dare: give me a compliment using the word banana.",
-      "Dare: answer the next question in a whisper.",
       "Dare: pretend you are accepting an award for being difficult but cute.",
       "Dare: make a fake voicemail to your future self."
     ]
@@ -603,6 +597,106 @@ const partyQuestionPacks = {
     ]
   }
 };
+
+const extraDaresEn = [
+  "Dare: call me like you are breaking very serious news about a missing sock.",
+  "Dare: do a 10-second slow-motion entrance into the room.",
+  "Dare: let me choose one harmless emoji you must send to a friend.",
+  "Dare: make a fake perfume ad for yourself.",
+  "Dare: give a speech about why you deserve a snack right now.",
+  "Dare: do your most dramatic fake cry for five seconds.",
+  "Dare: pose like you are on the cover of a terrible romance novel.",
+  "Dare: make a fake apology to your phone for using it too much.",
+  "Dare: sell me an invisible product like your life depends on it.",
+  "Dare: do a serious interview with a pillow.",
+  "Dare: make the worst pickup line you can.",
+  "Dare: say three compliments about me as fast as possible.",
+  "Dare: make a fake trailer voice for our relationship.",
+  "Dare: recreate your most dramatic walk.",
+  "Dare: let me choose a harmless pose for your lock screen photo.",
+  "Dare: do a fake cooking show using no food.",
+  "Dare: give me your best villain laugh.",
+  "Dare: explain our relationship like a sports commentator.",
+  "Dare: make a fake news headline about us.",
+  "Dare: do a 10-second dance with only your shoulders.",
+  "Dare: try to make me laugh without touching me.",
+  "Dare: tell a fake secret in the most suspicious voice.",
+  "Dare: act like you just won an award for being cute but annoying.",
+  "Dare: make a commercial for your worst habit.",
+  "Dare: do your best rich-person laugh.",
+  "Dare: make a fake customer review of me.",
+  "Dare: stare at me for seven seconds without laughing.",
+  "Dare: say one sentence like you are in a soap opera.",
+  "Dare: make up a couple law we both must obey tonight.",
+  "Dare: do a fake runway pose using something nearby.",
+  "Dare: describe me like I am a menu item.",
+  "Dare: give a dramatic toast to the room.",
+  "Dare: make a fake weather report about your mood.",
+  "Dare: let me choose one safe photo from tonight to keep.",
+  "Dare: explain why you would survive a zombie date night.",
+  "Dare: make a fake voice note to your future self.",
+  "Dare: do the most awkward wink possible.",
+  "Dare: say 'I am innocent' like you are obviously guilty.",
+  "Dare: make up a handshake using exactly three moves.",
+  "Dare: give me a compliment using the word spaghetti.",
+  "Dare: pretend the floor is lava for five seconds.",
+  "Dare: make your most serious face while saying something dumb.",
+  "Dare: act like a bodyguard protecting the snacks.",
+  "Dare: make a fake dating rule that sounds official.",
+  "Dare: give me a one-line poem about my face.",
+  "Dare: do an evil plan speech about stealing the blanket.",
+  "Dare: let me ask one yes-or-no question you must answer fast.",
+  "Dare: say your favorite thing about me in a whisper.",
+  "Dare: make a dramatic speech about why you need attention.",
+  "Dare: show your best fake shocked face.",
+  "Dare: pretend you are a judge deciding who is cuter.",
+  "Dare: describe our love story in five words.",
+  "Dare: do a fake phone call with your future rich self.",
+  "Dare: make the ugliest romantic face you can.",
+  "Dare: tell me one tiny truth while looking serious.",
+  "Dare: act like you are selling tickets to our first date.",
+  "Dare: make a fake warning label for yourself.",
+  "Dare: do a dramatic hair flip, real or imaginary.",
+  "Dare: explain why you are the main character for 10 seconds.",
+  "Dare: make a fake recipe for a perfect relationship.",
+  "Dare: say 'I missed you' in three different moods.",
+  "Dare: pick an object nearby and flirt with it badly.",
+  "Dare: do your best secret-agent voice.",
+  "Dare: give me a fake apology for being too attractive.",
+  "Dare: make up a tiny dance move and name it.",
+  "Dare: tell me a harmless confession in a dramatic voice.",
+  "Dare: pretend you are stuck in a romantic music video.",
+  "Dare: say one nice thing about yourself without smiling.",
+  "Dare: make a fake breakup speech to your favorite snack.",
+  "Dare: let me choose one word you must say in a sentence now.",
+  "Dare: do a fake podcast intro about us.",
+  "Dare: give a serious review of my laugh.",
+  "Dare: act like you are meeting me for the first time again.",
+  "Dare: make up a cheesy couple slogan.",
+  "Dare: do a five-second victory dance.",
+  "Dare: say one sentence like you are hiding a secret.",
+  "Dare: explain why your side of the bed is better.",
+  "Dare: make a dramatic promise about snacks.",
+  "Dare: pretend you are a tour guide for this room.",
+  "Dare: give me your best fake jealous line.",
+  "Dare: describe yourself as a luxury product.",
+  "Dare: do a silent movie reaction to seeing me.",
+  "Dare: make one harmless rule for the rest of this round.",
+  "Dare: say the most romantic thing you can in exactly five words.",
+  "Dare: do your best bad magic trick with no props.",
+  "Dare: make a fake text you would send if you missed me badly.",
+  "Dare: pick a theme song for me and hum two seconds of it.",
+  "Dare: give me an honest rating for my date energy tonight.",
+  "Dare: act like you are presenting me to a royal court.",
+  "Dare: say something sweet like you are very embarrassed.",
+  "Dare: pretend the blanket is a celebrity and interview it.",
+  "Dare: make a fake motivational speech for our relationship."
+];
+
+partyQuestionPacks.Dares.items = [
+  ...partyQuestionPacks.Dares.items,
+  ...extraDaresEn
+];
 
 Object.entries({ ...extraQuestionPacks, ...partyQuestionPacks }).forEach(([category, pack]) => {
   if (!rawQuestions[category]) {
@@ -780,9 +874,16 @@ const generatedTemplates = {
     () => `Would you rather say every thought out loud for ${pick(["10 minutes", "one hour", "one whole day"])} or let me answer your texts for five minutes?`
   ],
   Dares: [
-    () => `Dare: say your next answer like ${pick(["a game show host", "a rich villain", "a sad movie hero", "a dramatic lawyer"])}.`,
-    () => `Dare: let me choose a harmless nickname for you for the next ${pick(["3", "5", "7"])} questions.`,
-    () => `Dare: make a fake speech about why ${pick(generatedParts.sillyObjects)} is romantic.`
+    () => `Dare: make a fake speech about why ${pick(generatedParts.sillyObjects)} is romantic.`,
+    () => `Dare: act like ${pick(["a game show host", "a rich villain", "a dramatic lawyer", "a secret agent"])} for ten seconds.`,
+    () => `Dare: sell me ${pick(generatedParts.sillyObjects)} like it is a luxury product.`,
+    () => `Dare: make a fake apology to ${pick(generatedParts.sillyObjects)}.`,
+    () => `Dare: do a five-second dance about ${pick(generatedParts.hiddenForces)}.`,
+    () => `Dare: give a serious news report about ${pick(generatedParts.timeWindows)}.`,
+    () => `Dare: make a tiny love poem about ${pick(generatedParts.sillyObjects)}.`,
+    () => `Dare: explain why ${pick(generatedParts.places)} should hire us as a couple.`,
+    () => `Dare: say one sweet thing in the most dramatic voice you can.`,
+    () => `Dare: make a fake warning label for yourself in one sentence.`
   ],
   Chaos: [
     () => `What is the most chaotic thing we could do with ${pick(generatedParts.sillyObjects)} and still be fine?`,
@@ -920,9 +1021,16 @@ const generatedTemplatesNl = {
     () => `Wat kies je: ${pick(["10 minuten", "een uur", "een hele dag"])} alles hardop zeggen, of ik antwoord vijf minuten op je appjes?`
   ],
   Dares: [
-    () => `Dare: geef je volgende antwoord als ${pick(["een spelshowhost", "een rijke slechterik", "een zielige filmheld", "een dramatische advocaat"])}.`,
-    () => `Dare: laat mij een onschuldige bijnaam kiezen voor de volgende ${pick(["3", "5", "7"])} vragen.`,
-    () => `Dare: geef een nep-speech over waarom ${pick(generatedPartsNl.sillyObjects)} romantisch is.`
+    () => `Dare: geef een nep-speech over waarom ${pick(generatedPartsNl.sillyObjects)} romantisch is.`,
+    () => `Dare: doe tien seconden alsof je ${pick(["een spelshowhost", "een rijke slechterik", "een dramatische advocaat", "een geheim agent"])} bent.`,
+    () => `Dare: verkoop mij ${pick(generatedPartsNl.sillyObjects)} alsof het een luxe product is.`,
+    () => `Dare: bied je excuses aan aan ${pick(generatedPartsNl.sillyObjects)}.`,
+    () => `Dare: doe een dans van vijf seconden over ${pick(generatedPartsNl.hiddenForces)}.`,
+    () => `Dare: geef een serieus nieuwsbericht over ${pick(generatedPartsNl.timeWindows)}.`,
+    () => `Dare: maak een klein liefdesgedicht over ${pick(generatedPartsNl.sillyObjects)}.`,
+    () => `Dare: leg uit waarom ${pick(generatedPartsNl.places)} ons als koppel moet inhuren.`,
+    () => `Dare: zeg iets liefs met je meest dramatische stem.`,
+    () => `Dare: maak in een zin een waarschuwingslabel voor jezelf.`
   ],
   Chaos: [
     () => `Wat is het meest chaotische dat wij kunnen doen met ${pick(generatedPartsNl.sillyObjects)} zonder problemen?`,
@@ -1216,20 +1324,16 @@ const dutchQuestionDeck = {
     "Dare: laat mij een fotopose kiezen en maak die nu.",
     "Dare: stuur een vriend drie emojis die ik kies.",
     "Dare: doe een nep-aanzoek in tien seconden.",
-    "Dare: praat als een rijke slechterik tot de volgende vraag.",
     "Dare: laat mij een onschuldige fake dating-bio voor je maken.",
     "Dare: laat de raarste veilige foto in je filmrol zien.",
     "Dare: bied je excuses aan aan een lepel alsof hij je hart brak.",
     "Dare: geef mij een compliment dat klinkt als een bedreiging maar lief is.",
-    "Dare: lees de volgende vraag alsof je een spelshow presenteert.",
-    "Dare: laat mij je bijnaam kiezen voor de volgende vijf vragen.",
     "Dare: doe een vijf-seconden catwalk door de kamer.",
     "Dare: leg uit waarom jij de beste snack in de kamer bent.",
     "Dare: zeg 'ik had ongelijk' zo dramatisch mogelijk.",
     "Dare: ik kies een woord dat jij drie vragen niet mag zeggen.",
     "Dare: maak in twintig seconden het slechtste liefdesgedicht.",
     "Dare: geef een serieuze speech over waarom aardappels respect verdienen.",
-    "Dare: geef het volgende antwoord fluisterend.",
     "Dare: bedenk een geheime handshake in vijftien seconden.",
     "Dare: doe je beste jaloerse gezicht."
   ],
@@ -1299,7 +1403,7 @@ const dutchQuestionDeck = {
     "Wat doe ik waardoor jij dichterbij wilt zitten?",
     "Welke blik van mij vind jij gevaarlijk leuk?",
     "Wat is je favoriete knuffel van mij?",
-    "Wat is een lieve bijnaam voor mij?",
+    "Wat is een lieve manier waarop ik je aandacht kan trekken?",
     "Wat moet ik dragen op onze volgende date?",
     "Wat is iets normaals dat ik doe maar jij schattig vindt?",
     "Welke zin van mij zou in je hoofd blijven?",
@@ -1330,6 +1434,124 @@ const dutchQuestionDeck = {
   ]
 };
 
+dutchQuestionDeck.Dares = [
+  "Dare: doe je meest dramatische liefdesverklaring met filmstem.",
+  "Dare: laat mij een fotopose kiezen en maak die nu.",
+  "Dare: stuur een vriend drie emojis die ik kies.",
+  "Dare: doe een nep-aanzoek in tien seconden.",
+  "Dare: laat mij een onschuldige fake dating-bio voor je maken.",
+  "Dare: laat de raarste veilige foto in je filmrol zien.",
+  "Dare: bied je excuses aan aan een lepel alsof hij je hart brak.",
+  "Dare: geef mij een compliment dat klinkt als een bedreiging maar lief is.",
+  "Dare: doe een vijf-seconden catwalk door de kamer.",
+  "Dare: leg uit waarom jij de beste snack in de kamer bent.",
+  "Dare: zeg 'ik had ongelijk' zo dramatisch mogelijk.",
+  "Dare: ik kies een woord dat jij nu in een zin moet gebruiken.",
+  "Dare: maak in twintig seconden het slechtste liefdesgedicht.",
+  "Dare: geef een serieuze speech over waarom aardappels respect verdienen.",
+  "Dare: bedenk een geheime handshake in vijftien seconden.",
+  "Dare: doe je beste jaloerse gezicht.",
+  "Dare: bel mij alsof je heel serieus nieuws hebt over een verdwenen sok.",
+  "Dare: maak een slow-motion entree van tien seconden.",
+  "Dare: maak een nep-parfumreclame voor jezelf.",
+  "Dare: geef een speech over waarom jij nu een snack verdient.",
+  "Dare: doe vijf seconden je meest dramatische nep-huil.",
+  "Dare: poseer alsof je op een slechte romantische boekcover staat.",
+  "Dare: bied je telefoon excuses aan omdat je hem te vaak gebruikt.",
+  "Dare: verkoop mij een onzichtbaar product alsof je leven ervan afhangt.",
+  "Dare: doe een serieus interview met een kussen.",
+  "Dare: verzin de slechtste openingszin die je kunt.",
+  "Dare: zeg drie complimenten over mij zo snel mogelijk.",
+  "Dare: maak een trailerstem voor onze relatie.",
+  "Dare: doe je meest dramatische loopje.",
+  "Dare: doe een kookshow zonder eten.",
+  "Dare: geef je beste slechterikenlach.",
+  "Dare: leg onze relatie uit als sportcommentator.",
+  "Dare: verzin een nep-nieuwskop over ons.",
+  "Dare: dans tien seconden alleen met je schouders.",
+  "Dare: probeer mij aan het lachen te maken zonder mij aan te raken.",
+  "Dare: vertel een nepgeheim met je meest verdachte stem.",
+  "Dare: doe alsof je een prijs wint voor schattig maar irritant zijn.",
+  "Dare: maak een reclame voor je slechtste gewoonte.",
+  "Dare: doe je beste rijke-mensen-lach.",
+  "Dare: maak een nep-klantenreview over mij.",
+  "Dare: kijk mij zeven seconden aan zonder te lachen.",
+  "Dare: zeg een zin alsof je in een soap zit.",
+  "Dare: verzin een koppelwet die wij vanavond moeten volgen.",
+  "Dare: doe een runway-pose met iets dat dichtbij ligt.",
+  "Dare: beschrijf mij alsof ik op een menu sta.",
+  "Dare: breng een dramatische toast uit op de kamer.",
+  "Dare: maak een weerbericht over je humeur.",
+  "Dare: leg uit waarom jij een zombie-date-night zou overleven.",
+  "Dare: maak een nep-voicebericht naar je toekomstige zelf.",
+  "Dare: doe de meest ongemakkelijke knipoog ooit.",
+  "Dare: zeg 'ik ben onschuldig' alsof je duidelijk schuldig bent.",
+  "Dare: maak een handshake met precies drie bewegingen.",
+  "Dare: geef mij een compliment met het woord spaghetti.",
+  "Dare: doe vijf seconden alsof de vloer lava is.",
+  "Dare: trek je meest serieuze gezicht terwijl je iets doms zegt.",
+  "Dare: doe alsof je bodyguard bent voor de snacks.",
+  "Dare: verzin een datingregel die officieel klinkt.",
+  "Dare: geef mij een gedicht van een zin over mijn gezicht.",
+  "Dare: geef een kwaadaardige speech over het stelen van de deken.",
+  "Dare: ik stel een ja-of-nee-vraag en jij antwoordt meteen.",
+  "Dare: zeg fluisterend wat je leuk aan mij vindt.",
+  "Dare: geef een dramatische speech over waarom jij aandacht nodig hebt.",
+  "Dare: laat je beste nep-geschrokken gezicht zien.",
+  "Dare: doe alsof je rechter bent en bepaalt wie schattiger is.",
+  "Dare: beschrijf ons liefdesverhaal in vijf woorden.",
+  "Dare: doe een nep-telefoongesprek met je toekomstige rijke zelf.",
+  "Dare: trek het lelijkste romantische gezicht dat je kunt.",
+  "Dare: vertel een kleine waarheid met een serieus gezicht.",
+  "Dare: doe alsof je kaartjes verkoopt voor onze eerste date.",
+  "Dare: maak een waarschuwingslabel voor jezelf.",
+  "Dare: doe een dramatische hair flip, echt of nep.",
+  "Dare: leg tien seconden uit waarom jij de main character bent.",
+  "Dare: maak een nep-recept voor een perfecte relatie.",
+  "Dare: zeg 'ik miste je' in drie verschillende stemmingen.",
+  "Dare: flirt slecht met een object in de kamer.",
+  "Dare: doe je beste geheim-agent-stem.",
+  "Dare: bied nep-excuses aan omdat je te aantrekkelijk bent.",
+  "Dare: verzin een kleine dansmove en geef hem een naam.",
+  "Dare: vertel een onschuldige bekentenis met dramatische stem.",
+  "Dare: doe alsof je vastzit in een romantische videoclip.",
+  "Dare: zeg iets liefs over jezelf zonder te glimlachen.",
+  "Dare: maak een nep-breakup speech voor je favoriete snack.",
+  "Dare: maak een podcast-intro over ons.",
+  "Dare: geef een serieuze review van mijn lach.",
+  "Dare: doe alsof je mij opnieuw voor het eerst ontmoet.",
+  "Dare: verzin een foute koppel-slogan.",
+  "Dare: doe vijf seconden een overwinningsdans.",
+  "Dare: zeg een zin alsof je een geheim verbergt.",
+  "Dare: leg uit waarom jouw kant van het bed beter is.",
+  "Dare: maak een dramatische belofte over snacks.",
+  "Dare: doe alsof je een gids bent in deze kamer.",
+  "Dare: geef je beste fake jaloerse zin.",
+  "Dare: beschrijf jezelf als een luxe product.",
+  "Dare: reageer als in een stomme film wanneer je mij ziet.",
+  "Dare: maak een onschuldige regel voor de rest van deze ronde.",
+  "Dare: zeg iets romantisch in precies vijf woorden.",
+  "Dare: doe een slechte goocheltruc zonder spullen.",
+  "Dare: verzin een appje dat je zou sturen als je mij heel erg mist.",
+  "Dare: kies een theme song voor mij en neurie twee seconden.",
+  "Dare: geef eerlijk een cijfer voor mijn date-energie vanavond.",
+  "Dare: presenteer mij alsof ik bij een koninklijk hof hoor.",
+  "Dare: zeg iets liefs alsof je je heel erg schaamt.",
+  "Dare: interview de deken alsof die beroemd is.",
+  "Dare: geef een motivatiespeech voor onze relatie.",
+  "Dare: doe alsof je in een reclame zit voor knuffels.",
+  "Dare: maak een dramatische entree terug naar je stoel.",
+  "Dare: zeg drie woorden die onze avond beschrijven.",
+  "Dare: geef mij je beste pokerface.",
+  "Dare: doe alsof je een geheim recept voor liefde uitlegt.",
+  "Dare: kies een object en geef het een liefdesadvies.",
+  "Dare: speel tien seconden een jaloerse detective.",
+  "Dare: geef een speech waarom jij gelijk had, zelfs als dat niet zo is.",
+  "Dare: maak een fake trailer voor onze volgende date.",
+  "Dare: doe een mini-roast van jezelf.",
+  "Dare: geef een compliment dat begint met 'irritant genoeg...'."
+];
+
 const deck = Object.entries(rawQuestions).flatMap(([category, data]) => {
   return data.items.map((text, index) => ({
     id: `${category}-${index}`,
@@ -1350,6 +1572,7 @@ const state = {
   turn: 0,
   visualPulse: 0,
   seen: new Set(),
+  seenTexts: new Set(),
   saved: loadSaved()
 };
 
@@ -1444,11 +1667,53 @@ function generateQuestion(categoryOverride) {
   };
 }
 
+function normalizeQuestionText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .replace(/[^\p{L}\p{N} $€.,!?-]/gu, "")
+    .trim();
+}
+
+function questionTextKeys(question) {
+  const displayedText = state.language === "nl" ? questionText(question) : "";
+  return [question.text, question.nlText, displayedText]
+    .filter(Boolean)
+    .map(normalizeQuestionText)
+    .filter(Boolean);
+}
+
+function hasSeenQuestionText(question, extraSeen = new Set()) {
+  return questionTextKeys(question).some((key) => state.seenTexts.has(key) || extraSeen.has(key));
+}
+
+function markQuestionSeen(question) {
+  questionTextKeys(question).forEach((key) => state.seenTexts.add(key));
+}
+
+function generateUniqueQuestions(count, categoryOverride) {
+  const generated = [];
+  const generatedTexts = new Set();
+
+  for (let index = 0; index < count; index += 1) {
+    let candidate = generateQuestion(categoryOverride);
+
+    for (let attempt = 0; attempt < 18 && hasSeenQuestionText(candidate, generatedTexts); attempt += 1) {
+      candidate = generateQuestion(categoryOverride);
+    }
+
+    questionTextKeys(candidate).forEach((key) => generatedTexts.add(key));
+    generated.push(candidate);
+  }
+
+  return generated;
+}
+
 function refillQueue() {
   const base = filteredBaseDeck();
-  const unseen = base.filter((question) => !state.seen.has(question.id));
+  const unseen = base.filter((question) => !state.seen.has(question.id) && !hasSeenQuestionText(question));
   const source = unseen.length > 0 ? unseen : base;
-  const generated = Array.from({ length: 24 }, () => generateQuestion(state.filter === "All" ? undefined : state.filter));
+  const generated = generateUniqueQuestions(24, state.filter === "All" ? undefined : state.filter);
   state.queue = shuffle([...source, ...generated]);
 }
 
@@ -1474,6 +1739,7 @@ function nextQuestion() {
   state.history.push(question);
   state.historyIndex = state.history.length - 1;
   state.seen.add(question.id);
+  markQuestionSeen(question);
   triggerVisualPulse();
   render();
 }
@@ -1548,6 +1814,11 @@ function stableIndex(value, length) {
   return hash % length;
 }
 
+function questionDeckIndex(question) {
+  const match = String(question.id || "").match(/-(\d+)$/);
+  return match ? Number(match[1]) : null;
+}
+
 function questionText(question) {
   if (state.language === "en") {
     return question.text;
@@ -1558,6 +1829,11 @@ function questionText(question) {
   }
 
   const list = dutchQuestionDeck[question.category] || dutchQuestionDeck.Wildcard;
+  const index = questionDeckIndex(question);
+  if (Number.isInteger(index) && index < list.length) {
+    return list[index];
+  }
+
   return list[stableIndex(question.id || question.text, list.length)];
 }
 
