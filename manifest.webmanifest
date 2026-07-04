@@ -1,7 +1,7 @@
 {
   "name": "Love Loop",
   "short_name": "Love Loop",
-  "description": "An endless two-player relationship quiz.",
+  "description": "Een eindeloze relatiequiz voor twee spelers.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

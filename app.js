@@ -281,169 +281,207 @@ const rawQuestions = {
   }
 };
 
+rawQuestions.Deep.items = [
+  "What is one thing that makes you feel loved?",
+  "What is one thing that makes you feel ignored?",
+  "What helps you feel calm?",
+  "What is one fear you have in love?",
+  "What is one thing you need more of from me?",
+  "What is one thing you are proud of?",
+  "What is one thing you want to get better at?",
+  "What makes you feel safe with someone?",
+  "What makes you lose trust?",
+  "What is a small thing that can hurt your feelings?",
+  "What is a small thing that can make your day?",
+  "When do you feel most happy with me?",
+  "When do you feel most stressed?",
+  "What do you need when you are quiet?",
+  "What do you need when you are upset?",
+  "What is one thing you wish I understood better?",
+  "What is one thing you wish people asked you more?",
+  "What is one lesson love has taught you?",
+  "What is one thing you want to stop overthinking?",
+  "What is one thing you want us to talk about more?",
+  "What does a good apology sound like to you?",
+  "What makes an argument feel less scary?",
+  "What is one thing you want us to protect?",
+  "What is one thing you never want us to forget?",
+  "What makes you feel close to me?",
+  "What makes you feel far away from me?",
+  "What is one habit you want to leave behind?",
+  "What is one habit you want us to build?",
+  "What is one way I can support you better?",
+  "What is one way you support me that I may not notice?",
+  "What is one dream you want to say out loud?",
+  "What is one thing you want to be brave about?",
+  "What does love feel like when it is healthy?",
+  "What is one thing that makes you feel chosen?",
+  "What should we do when one of us has a bad day?"
+];
+
 const extraQuestionPacks = {
   Love: {
     items: [
-      "What part of me do you think I protect like a locked room?",
-      "What kind of love do you think we are inventing that neither of us saw growing up?",
-      "If my heart had a weather system, what climate have you learned how to survive?",
-      "What is a quiet proof of love that most people would miss if they watched us?",
-      "What is something about me you would defend even when I am not in the room?",
-      "What version of us only appears when nobody is performing?",
-      "What is the difference between wanting me and choosing me for you?",
-      "What is a tiny moment where you realized I am not like other people you have known?",
-      "What would you want me to know about loving you on your hardest day?",
-      "What part of our love feels ancient, like it was already waiting for us?",
-      "What do you think I secretly need more tenderness about?",
-      "What is a strange little signal that tells you we are okay?",
-      "If our relationship had a hidden room, what would be inside it?",
-      "What is one way you want to be loved that feels almost too specific to explain?",
-      "What do you hope never becomes ordinary between us?"
+      "What is one thing I do that makes your day better?",
+      "What is a small thing we do that feels special?",
+      "What is your favorite normal moment with me?",
+      "What is one thing about me that feels like home?",
+      "What is one sweet thing we should do more often?",
+      "What is your favorite way to spend one hour with me?",
+      "What is one thing I do that makes you feel safe?",
+      "What is one cute memory you think about sometimes?",
+      "What is one thing you want us to try together?",
+      "What is one thing I should know when you are having a bad day?",
+      "What is one thing you like about how we are together?",
+      "What is a small promise we can keep this week?",
+      "What is one thing that makes us feel like a team?",
+      "What is one simple date you would love?",
+      "What is one message from me that would make you smile?"
     ]
   },
   Deep: {
     items: [
-      "What is one truth about you that people keep simplifying until it becomes wrong?",
-      "Which version of you had to disappear so the current you could survive?",
-      "What do you fear I would misunderstand if I saw your whole inner world at once?",
-      "What is a belief you inherited that you are quietly uninstalling?",
-      "When have you confused peace with boredom or chaos with chemistry?",
-      "What emotion do you treat like evidence against yourself?",
-      "What do you wish I could feel for ten seconds so I would understand you better?",
-      "What is a part of you that asks for love in a language you barely speak?",
-      "Which apology are you still waiting to receive from life?",
-      "What do you do when you are scared of being fully known?",
-      "What is a wound that made you funny, independent, or charming before it made you tired?",
-      "What does your silence usually mean: peace, protection, punishment, or processing?",
-      "What kind of closeness makes you want to run even though you want it?",
-      "What is something you have outgrown but still dress up as loyalty?",
-      "What do you want to stop proving before it turns into your personality?",
-      "Which part of your softness survived the worst year of your life?",
-      "What do you secretly test in people before you let them close?",
-      "What is one way love can become a mirror you were not ready for?",
-      "What is the most expensive emotional lesson you ever learned?",
-      "What does your nervous system mistake for danger in relationships?",
-      "What kind of honesty feels like freedom instead of attack?",
-      "What are you afraid will happen if you are easy to love?",
-      "What is one memory that still controls a room inside you?",
-      "Where do you need patience, and where do you actually need courage?",
-      "What would you ask your future self if they could only answer with a feeling?"
+      "What is one thing you wish people understood about you?",
+      "What is something that can make you sad fast?",
+      "What helps you calm down when life feels too much?",
+      "What is a fear you do not talk about a lot?",
+      "What is one thing you are proud of surviving?",
+      "What do you need when you are quiet?",
+      "What is one thing that makes trust hard for you?",
+      "What is one way I can make you feel more loved?",
+      "What is something you are still learning about yourself?",
+      "What is one thing you want to stop worrying about?",
+      "What is a hard lesson love has taught you?",
+      "What is one old habit you want to change?",
+      "When do you feel most like yourself?",
+      "What is one thing you want to be braver about?",
+      "What kind of apology feels real to you?",
+      "What is something small that can hurt your feelings?",
+      "What is something small that can fix your mood?",
+      "What is one thing you want us to be honest about?",
+      "What is one thing that makes you feel chosen?",
+      "What do you need more of this month: fun, rest, help, or love?"
     ]
   },
   Funny: {
     items: [
-      "If our emotional baggage had names, which one would always be late?",
-      "What would our couple therapist write in all caps after one session?",
-      "Which tiny inconvenience could almost defeat our love story?",
-      "If our relationship had a cursed object, what would it be?",
-      "What would be the worst possible documentary title about our daily life?",
-      "If one of my habits became a courtroom trial, what would the charges be?",
-      "What is the funniest thing your brain has decided is romantic?",
-      "If our arguments had commercial breaks, what product would sponsor them?",
-      "What would our love story be called if it was written by someone very dramatic?",
-      "What is one totally harmless thing I do with villain energy?"
+      "If I was a sandwich, what sandwich would I be?",
+      "What is my funniest face?",
+      "What is one thing I do like I am in a movie?",
+      "If our relationship had a theme song, what silly title would it have?",
+      "What is the dumbest thing we could argue about?",
+      "If I had a warning label, what would it say?",
+      "What food has the same energy as me?",
+      "What would our couple name be if we were a bad pop band?",
+      "What is my most dramatic habit?",
+      "What is one thing I say too much?",
+      "What would I be famous for if I was famous for something stupid?",
+      "If we had a tiny reality show, what would the first episode be called?",
+      "What is one thing we should never be trusted to cook?",
+      "What animal would judge our relationship the hardest?",
+      "What is the funniest fake rumor about us?",
+      "What would our couple perfume be called?",
+      "If I was a weather forecast, what would today say?",
+      "What is one thing I do that deserves background music?",
+      "If we opened a restaurant, what would be the worst item on the menu?",
+      "What is the funniest thing to whisper in a serious moment?",
+      "What would our couple handshake look like?",
+      "If my phone could talk, what would it complain about?",
+      "What would be my superhero power if it had to be useless?",
+      "What is one silly rule we should make for tonight?",
+      "Who would win in a staring contest: me, you, or a potato?",
+      "What is one thing I do like a cartoon character?",
+      "What would our fake royal titles be?",
+      "If our love was a snack, what snack would it be?",
+      "What is the worst romantic gift you can imagine?",
+      "What would our neighbors think if they heard our dumbest conversation?",
+      "What is a terrible date idea that still sounds funny?",
+      "If I was a kitchen object, what would I be?",
+      "What would our couple motto be if it had to be stupid?",
+      "What is one thing I should be banned from doing?",
+      "What is my funniest serious opinion?",
+      "What would our relationship be called as a video game?",
+      "What tiny problem makes me act dramatic?",
+      "If we had a pet rock, what would we name it?",
+      "What is the weirdest compliment you can give me?",
+      "What would be our emergency escape word at a boring party?"
     ]
   },
   Future: {
     items: [
-      "What future problem do you think we should learn how to solve before it arrives?",
-      "What would our life look like if we designed it around nervous-system peace instead of impressing people?",
-      "What should future us never sacrifice just to look successful?",
+      "What future problem should we learn to handle calmly?",
+      "What would a peaceful life together look like?",
+      "What should future us never give up?",
       "If our future home had one rule written on the wall, what would it say?",
       "What kind of freedom do you want us to build together?",
-      "What does a brave future with me require from you now?",
-      "What boring routine could become sacred if we protected it?",
-      "What future temptation could make us forget who we are as a team?",
-      "What do you want us to become unusually good at together?",
-      "What should we practice now so older us feels grateful?"
+      "What is one dream trip we should actually plan?",
+      "What boring routine could become cute if we did it together?",
+      "What could make us forget to act like a team?",
+      "What do you want us to get really good at together?",
+      "What should we start now so future us says thank you?"
     ]
   },
   Flirty: {
     items: [
-      "What is attractive about me in a way that has nothing to do with looking good?",
-      "What part of my energy feels dangerous in the best harmless way?",
+      "What is attractive about me besides my looks?",
+      "What do I do that makes you want to sit closer?",
       "What is one sentence from me that would stay in your head all night?",
-      "What makes you feel pulled toward me before you even think about it?",
-      "What is the most magnetic version of me?",
+      "What makes you want a hug from me?",
+      "What is your favorite version of me?",
       "What is a look I give you that should probably have a warning label?",
-      "What normal thing could I do slowly and make it feel romantic?",
-      "What kind of confidence do you want to see more from me?",
-      "What is one thing about me that feels quietly addictive?",
-      "What would make tonight feel like a scene we should remember?"
+      "What normal thing do I do that is secretly cute?",
+      "What kind of confidence looks good on me?",
+      "What is one thing about me that you keep liking more?",
+      "What would make tonight feel extra romantic?"
     ]
   },
   Wildcard: {
     items: [
-      "If your inner world was a house, which room would you refuse to renovate?",
-      "What is a completely irrational thing that still tells the truth about you?",
-      "If your intuition had a voice, what annoying thing would it keep repeating?",
-      "What do you think your dreams are trying to make you admit?",
-      "What is a personality trait you use as a disguise?",
-      "If your life had a glitch, what moment would keep replaying?",
-      "What invisible scoreboard do you need to stop checking?",
-      "What is something you pretend is a preference but is actually protection?",
-      "If your future self sent you a warning label, what would it say?",
-      "What do you find beautiful that would make no sense on paper?",
-      "What is one thing you know before you have proof?",
-      "What would your shadow self order at a restaurant?",
+      "If your brain had a homepage, what would be on it?",
+      "What is one thing you know is silly but still believe a little?",
+      "If your gut feeling had a voice, what would it say today?",
+      "What is a dream you had that was really weird?",
+      "What is a personality trait you pretend not to have?",
+      "If your life had a replay button, what moment would you press?",
+      "What score are you keeping in your head for no reason?",
+      "What is one thing you say you hate but secretly like?",
+      "If future you sent a warning label, what would it say?",
+      "What do you find pretty that other people may not get?",
+      "What is one thing you knew before you had proof?",
+      "What would your grumpy side order at a restaurant?",
       "What is a harmless delusion that makes life more fun?",
-      "What is the weirdest evidence that you are healing?",
+      "What is one weird sign that you are doing better?",
       "What question would make tonight impossible to forget?"
     ]
   },
-  Mindbend: {
+  Weird: {
     mood: "Deep",
     items: [
-      "If I could walk through your mind for one minute, what door would you beg me not to open?",
-      "What part of you loves me, and what part of you is still interviewing me?",
-      "If our souls had a group chat before we met, what did yours warn mine about?",
-      "What is one thing you are scared I might be able to see through?",
-      "Which memory of us feels like it belongs to a parallel universe?",
-      "If your trust had a control room, which button is hardest for you to let me near?",
-      "What would your childhood self find suspicious about how I love you?",
-      "What is the strangest way I have changed the atmosphere inside your head?",
-      "If our relationship was a dream, what symbol would keep appearing?",
-      "What secret contract do you think couples accidentally sign without reading?",
-      "What part of loving me feels like stepping through a mirror?",
-      "If I met the version of you that exists only at 3 a.m., what would they confess?",
-      "What is one emotional superstition you still obey?",
-      "What do you think our biggest unspoken question is?",
-      "If your fear could text me, what would it accuse me of?",
-      "What kind of tenderness scares you because it feels too accurate?",
-      "What have you been calling independence that might actually be armor?",
-      "If we switched hearts for one day, what would shock you about mine?",
-      "What is the most intimate thing someone can notice without touching you?",
-      "What is one truth about us that sounds insane but feels correct?",
-      "Which part of you is hardest to date because it keeps changing the rules?",
-      "What invisible test did I pass without knowing?",
-      "If our love had a monster under the bed, what would feed it?",
-      "What future version of us would current us be afraid to disappoint?",
-      "What is the difference between being obsessed, attached, chosen, and calm?",
-      "What do you want me to understand before I understand the facts?",
-      "If every ex, crush, and almost-love taught you one curse, which curse are you breaking with me?",
-      "What would make love feel like a portal instead of a trap?",
-      "What part of your ego gets loudest when you feel deeply wanted?",
-      "What is the scariest compliment I could give you because it would be true?",
-      "If our relationship had a secret boss level, what would it test?",
-      "What do you think we are both pretending is simpler than it is?",
-      "Which emotion do you want me to hold without trying to fix it?",
-      "What would your shadow say is the real reason you like me?",
-      "If the universe forced us to be radically honest for five minutes, what would you say first?",
-      "What is one beautiful thing about us that could become dangerous if ignored?",
-      "What question would make you feel naked in your personality?",
-      "If our chemistry was a spell, what ingredient would make it unstable?",
-      "What part of you trusts me, but only in whispers?",
-      "What do you think I am teaching your nervous system without trying?",
-      "What would you want to ask me if there were no consequences to the answer?",
-      "What kind of love feels almost illegal because it is so specific?",
-      "If we were both myths, what warning would people tell about us?",
-      "What is something your body knew about me before your mind agreed?",
-      "What would make you feel chosen in a way that reaches the oldest part of you?",
-      "If our relationship had a hidden prophecy, what would be the first line?",
-      "Which truth about love did you learn too early?",
-      "What do you think we are here to heal in each other, if anything?",
-      "What are you afraid will become possible if this actually works?",
-      "What question should we ask only after midnight?"
+      "If we met in another world, where would it be?",
+      "If my brain was a room, what would be on the floor?",
+      "What would your 3 a.m. self ask me?",
+      "What is one weird sign that you like someone?",
+      "If our relationship was a dream, what would keep showing up?",
+      "What would your younger self think about me?",
+      "If we swapped minds for one hour, what would surprise you?",
+      "What is a strange thing that makes you feel loved?",
+      "If your heart could send one text, what would it say?",
+      "What secret rule do you have for trusting people?",
+      "If our love was a game, what would the hard level be?",
+      "What is something you feel but cannot explain well?",
+      "If my fear could talk, what would it say?",
+      "What tiny thing tells you someone really cares?",
+      "What question feels scary but interesting?",
+      "If we had a magic button, what should it fix?",
+      "What is one thing about us that feels oddly lucky?",
+      "If your mood was a color right now, what color is it?",
+      "What would we do if tonight was a dream?",
+      "What is a silly sign from the universe we should watch for?",
+      "If our couple energy was a movie, what genre is it?",
+      "What is one thing you pretend is random but actually matters?",
+      "What would our secret mission be?",
+      "If we had to hide a message for future us, what would it say?",
+      "What is one weird question you want to ask me?"
     ]
   }
 };
@@ -463,19 +501,19 @@ const followUps = {
     "Bonus: turn the answer into a tiny plan for this week."
   ],
   Deep: [
-    "Bonus: let the answer breathe before responding.",
-    "Bonus: answer with one memory and one feeling.",
-    "Bonus: say what support would look like in real life."
+    "Bonus: give a short example.",
+    "Bonus: say one feeling and one reason.",
+    "Bonus: answer in simple words."
   ],
-  Mindbend: [
-    "Bonus: answer the beautiful version first, then the dangerous version.",
-    "Bonus: say what your body knows before your logic edits it.",
-    "Bonus: name the fear hiding underneath the answer."
+  Weird: [
+    "Bonus: make the answer funny if you can.",
+    "Bonus: say the first weird answer that comes to mind.",
+    "Bonus: ask one silly follow-up."
   ],
   Funny: [
-    "Bonus: give the serious answer, then the worst possible answer.",
+    "Bonus: give the real answer, then the dumb answer.",
     "Bonus: act out the answer for five seconds.",
-    "Bonus: make the answer sound like a movie trailer."
+    "Bonus: say it like a dramatic movie voice."
   ],
   Future: [
     "Bonus: pick one small step that could happen this month.",
@@ -546,24 +584,24 @@ const generatedParts = {
     "excited"
   ],
   strangeSymbols: [
-    "a locked hallway",
-    "a mirror that answers back",
-    "a city under the bed",
-    "a phone call from future us",
-    "a room full of versions of you",
-    "a staircase that keeps changing",
-    "a candle that remembers everything",
-    "a map with one missing country"
+    "a talking mirror",
+    "a magic button",
+    "a tiny spaceship",
+    "a dream phone",
+    "a secret door",
+    "a weird hat",
+    "a tiny dragon",
+    "a mystery snack"
   ],
   hiddenForces: [
-    "jealousy disguised as intuition",
-    "fear wearing confidence",
-    "comfort that feels suspicious",
-    "chemistry that refuses to behave",
-    "a boundary pretending to be a wall",
-    "a fantasy asking for evidence",
-    "trust arriving before logic",
-    "softness with a knife behind its back"
+    "a bad mood",
+    "a silly fear",
+    "too much pride",
+    "a tiny jealousy",
+    "a big crush",
+    "a lazy Sunday mood",
+    "a weird dream",
+    "a snack craving"
   ],
   lifeChapters: [
     "moving somewhere new",
@@ -588,10 +626,10 @@ const generatedTemplates = {
     () => `What does feeling ${pick(generatedParts.feelings)} unlock in you?`,
     () => `What part of love gets harder for you during ${pick(generatedParts.timeWindows)}?`
   ],
-  Mindbend: [
-    () => `If our relationship was haunted by ${pick(generatedParts.hiddenForces)}, what would it make us do?`,
-    () => `What would ${pick(generatedParts.strangeSymbols)} reveal about the way you love?`,
-    () => `Which version of you shows up when you feel ${pick(generatedParts.feelings)} but do not trust it?`
+  Weird: [
+    () => `If our relationship had ${pick(generatedParts.strangeSymbols)}, what would happen?`,
+    () => `What would ${pick(generatedParts.strangeSymbols)} say about us?`,
+    () => `If ${pick(generatedParts.hiddenForces)} joined our date, what would go wrong?`
   ],
   Funny: [
     () => `How would we survive for a day with only ${pick(generatedParts.sillyObjects)}?`,
@@ -615,10 +653,130 @@ const generatedTemplates = {
   ]
 };
 
+const generatedPartsNl = {
+  tinyActions: [
+    "een lief briefje",
+    "een snack als verrassing",
+    "een wandeling van tien minuten",
+    "een random compliment",
+    "een goedemorgenbericht",
+    "een rustige knuffel",
+    "een playlist samen",
+    "een lui ontbijt"
+  ],
+  timeWindows: [
+    "vanavond",
+    "dit weekend",
+    "op een regenachtige dag",
+    "op onze volgende date",
+    "op een random dinsdag",
+    "tijdens een lange rit",
+    "op een rustige ochtend"
+  ],
+  sillyObjects: [
+    "een kapotte paraplu",
+    "een lepel",
+    "een kleine koffer",
+    "een dramatische hoed",
+    "een mysterieuze sleutel",
+    "een nep snor",
+    "een verdachte boterham",
+    "een enkele kaars"
+  ],
+  places: [
+    "een rustig huisje",
+    "een druk vliegveld",
+    "een klein cafe",
+    "een dak in de stad",
+    "het strand in de avond",
+    "de keuken om middernacht",
+    "een boekenwinkel",
+    "een treinstation"
+  ],
+  feelings: [
+    "veilig",
+    "gewild",
+    "gekozen",
+    "dapper",
+    "begrepen",
+    "speels",
+    "rustig",
+    "blij"
+  ],
+  strangeSymbols: [
+    "een pratende spiegel",
+    "een magische knop",
+    "een klein ruimteschip",
+    "een droomtelefoon",
+    "een geheime deur",
+    "een rare hoed",
+    "een mini draak",
+    "een mysterieuze snack"
+  ],
+  hiddenForces: [
+    "een slechte bui",
+    "een rare angst",
+    "te veel trots",
+    "een beetje jaloezie",
+    "een grote crush",
+    "een luie-zondag-sfeer",
+    "een rare droom",
+    "trek in snacks"
+  ],
+  lifeChapters: [
+    "ergens anders wonen",
+    "minder vrije tijd hebben",
+    "een grote droom volgen",
+    "even ver uit elkaar zijn",
+    "samen geld sparen",
+    "nieuwe mensen leren kennen",
+    "een routine bouwen",
+    "familiedruk"
+  ]
+};
+
+const generatedTemplatesNl = {
+  Love: [
+    () => `Welke ${pick(generatedPartsNl.tinyActions)} zou ${pick(generatedPartsNl.timeWindows)} romantischer maken?`,
+    () => `Wanneer laat ik jou je het meest ${pick(generatedPartsNl.feelings)} voelen?`,
+    () => `Welke lieve traditie zouden wij kunnen hebben in ${pick(generatedPartsNl.places)}?`
+  ],
+  Deep: [
+    () => `Wat zou je van mij nodig hebben tijdens ${pick(generatedPartsNl.lifeChapters)}?`,
+    () => `Wat helpt jou om je ${pick(generatedPartsNl.feelings)} te voelen?`,
+    () => `Wat wordt moeilijker voor jou tijdens ${pick(generatedPartsNl.timeWindows)}?`
+  ],
+  Weird: [
+    () => `Als onze relatie ${pick(generatedPartsNl.strangeSymbols)} had, wat zou er gebeuren?`,
+    () => `Wat zou ${pick(generatedPartsNl.strangeSymbols)} over ons zeggen?`,
+    () => `Als ${pick(generatedPartsNl.hiddenForces)} op onze date kwam, wat zou er misgaan?`
+  ],
+  Funny: [
+    () => `Hoe zouden wij overleven met alleen ${pick(generatedPartsNl.sillyObjects)}?`,
+    () => `Waar zouden wij ruzie over maken met ${pick(generatedPartsNl.sillyObjects)}?`,
+    () => `Welke review zou ${pick(generatedPartsNl.places)} over ons schrijven?`
+  ],
+  Future: [
+    () => `Wat hoop je dat wij later onthouden van ${pick(generatedPartsNl.timeWindows)}?`,
+    () => `Hoe moeten wij omgaan met ${pick(generatedPartsNl.lifeChapters)} als team?`,
+    () => `Welke toekomstige versie van ons past bij ${pick(generatedPartsNl.places)}?`
+  ],
+  Flirty: [
+    () => `Wat zou ${pick(generatedPartsNl.timeWindows)} laten voelen als een geheime date?`,
+    () => `Wat kan ik doen in ${pick(generatedPartsNl.places)} waardoor jij moet lachen?`,
+    () => `Wat is een aantrekkelijke manier om jou ${pick(generatedPartsNl.feelings)} te laten voelen?`
+  ],
+  Wildcard: [
+    () => `Wat zou jouw levensmotto zijn als ${pick(generatedPartsNl.sillyObjects)} erin moest zitten?`,
+    () => `Wat is het meest chaotische dat wij kunnen doen in ${pick(generatedPartsNl.places)}?`,
+    () => `Wat is jouw sterkste mening over ${pick(generatedPartsNl.timeWindows)}?`
+  ]
+};
+
 const categoryStyles = {
   Love: { background: "rgba(255, 107, 92, 0.2)", color: "#ffb3a8" },
   Deep: { background: "rgba(76, 201, 240, 0.18)", color: "#c9f3ff" },
-  Mindbend: { background: "rgba(245, 80, 255, 0.2)", color: "#f8c2ff" },
+  Weird: { background: "rgba(245, 80, 255, 0.2)", color: "#f8c2ff" },
   Funny: { background: "rgba(255, 209, 102, 0.18)", color: "#ffe39b" },
   Future: { background: "rgba(32, 232, 193, 0.18)", color: "#a8ffed" },
   Flirty: { background: "rgba(181, 116, 255, 0.2)", color: "#dec4ff" },
@@ -629,6 +787,254 @@ const moodCopy = {
   Light: "Light",
   Deep: "Deep",
   Bold: "Bold"
+};
+
+const uiCopy = {
+  en: {
+    brandSubtitle: "Endless questions for two",
+    languageButton: "NL",
+    languageTitle: "Vertaal naar Nederlands",
+    round: "Round",
+    seen: "Seen",
+    queued: "Queued",
+    players: "Players",
+    playerOne: "Player 1",
+    playerTwo: "Player 2",
+    category: "Category",
+    mood: "Mood",
+    saved: "Saved",
+    clear: "Clear",
+    next: "Next",
+    space: "Space",
+    emptySaved: "No saved questions yet.",
+    previousTitle: "Previous question",
+    nextTitle: "Next question",
+    shuffleTitle: "Shuffle deck",
+    saveTitle: "Save question",
+    asking: (asker, answerer) => asker.toLowerCase() === "you" ? `You ask ${answerer}` : `${asker} asks ${answerer}`,
+    defaultPlayers: ["You", "Girlfriend"],
+    filters: {
+      All: "All",
+      Love: "Love",
+      Deep: "Deep",
+      Weird: "Weird",
+      Funny: "Jokes",
+      Future: "Future",
+      Flirty: "Flirty",
+      Wildcard: "Wild"
+    },
+    moods: {
+      Any: "Any",
+      Light: "Light",
+      Deep: "Deep",
+      Bold: "Bold"
+    }
+  },
+  nl: {
+    brandSubtitle: "Eindeloze vragen voor twee",
+    languageButton: "EN",
+    languageTitle: "Switch to English",
+    round: "Ronde",
+    seen: "Gezien",
+    queued: "Over",
+    players: "Spelers",
+    playerOne: "Speler 1",
+    playerTwo: "Speler 2",
+    category: "Categorie",
+    mood: "Sfeer",
+    saved: "Bewaard",
+    clear: "Leeg",
+    next: "Volgende",
+    space: "Spatie",
+    emptySaved: "Nog geen vragen bewaard.",
+    previousTitle: "Vorige vraag",
+    nextTitle: "Volgende vraag",
+    shuffleTitle: "Schud vragen",
+    saveTitle: "Vraag bewaren",
+    asking: (asker, answerer) => asker.toLowerCase() === "jij" || asker.toLowerCase() === "you" ? `Jij vraagt ${answerer}` : `${asker} vraagt ${answerer}`,
+    defaultPlayers: ["Jij", "Vriendin"],
+    filters: {
+      All: "Alles",
+      Love: "Liefde",
+      Deep: "Diep",
+      Weird: "Raar",
+      Funny: "Grappen",
+      Future: "Toekomst",
+      Flirty: "Flirty",
+      Wildcard: "Wild"
+    },
+    moods: {
+      Any: "Alles",
+      Light: "Licht",
+      Deep: "Diep",
+      Bold: "Gedurfd"
+    }
+  }
+};
+
+const followUpsNl = {
+  Love: [
+    "Bonus: geef allebei antwoord.",
+    "Bonus: noem een klein echt voorbeeld.",
+    "Bonus: maak er een mini-plan van voor deze week."
+  ],
+  Deep: [
+    "Bonus: geef een kort voorbeeld.",
+    "Bonus: zeg een gevoel en een reden.",
+    "Bonus: antwoord in simpele woorden."
+  ],
+  Weird: [
+    "Bonus: maak het antwoord grappig als dat kan.",
+    "Bonus: zeg het eerste rare antwoord dat in je hoofd komt.",
+    "Bonus: stel daarna een domme vervolgvraag."
+  ],
+  Funny: [
+    "Bonus: geef het echte antwoord en daarna het domme antwoord.",
+    "Bonus: beeld het vijf seconden uit.",
+    "Bonus: zeg het met een dramatische filmstem."
+  ],
+  Future: [
+    "Bonus: kies een kleine stap voor deze maand.",
+    "Bonus: beschrijf het alsof het een foto is.",
+    "Bonus: zeg wat het rustig zou maken."
+  ],
+  Flirty: [
+    "Bonus: antwoord alsof je een geheim briefje schrijft.",
+    "Bonus: geef een lief antwoord en een brutaal antwoord.",
+    "Bonus: kijk elkaar even aan bij het antwoord."
+  ],
+  Wildcard: [
+    "Bonus: verdedig je antwoord alsof het heel belangrijk is.",
+    "Bonus: stel een vervolg dat het nog raarder maakt.",
+    "Bonus: geef eerst een antwoord van een woord."
+  ]
+};
+
+const dutchQuestionDeck = {
+  Love: [
+    "Wat doe ik waardoor jij je geliefd voelt?",
+    "Wat is jouw favoriete kleine moment met mij?",
+    "Wanneer voelde jij voor het eerst: ik vind jou echt leuk?",
+    "Wat is iets liefs dat wij vaker moeten doen?",
+    "Welke date zou jij deze week leuk vinden?",
+    "Wat is een compliment van mij dat jij graag hoort?",
+    "Wat maakt ons volgens jou een goed team?",
+    "Wat is een herinnering met mij die jij nooit wilt vergeten?",
+    "Wat is een simpele manier om jou te laten glimlachen?",
+    "Wat voelt voor jou als thuiskomen bij mij?",
+    "Wat moet ik nooit stoppen met doen?",
+    "Wat is een kleine traditie die wij kunnen starten?",
+    "Wanneer voel jij je het meest begrepen door mij?",
+    "Wat wil je dat ik vaker aan je vraag?",
+    "Wat is het meest 'wij' aan ons?"
+  ],
+  Deep: [
+    "Wat maakt jou rustig als je stress hebt?",
+    "Wat is iets waar je bang voor bent in liefde?",
+    "Wat heb je nodig als je stil wordt?",
+    "Wat maakt vertrouwen moeilijk voor jou?",
+    "Wat kan ik doen waardoor jij je veiliger voelt?",
+    "Wat is iets waar je trots op bent?",
+    "Wat wil je minder overdenken?",
+    "Wat is een kleine opmerking die jou kan raken?",
+    "Wat helpt jou na een slechte dag?",
+    "Wanneer voel jij je het meest jezelf?",
+    "Wat is een gewoonte die je wilt veranderen?",
+    "Wat is een droom die je hardop wilt zeggen?",
+    "Wat maakt een sorry echt voor jou?",
+    "Waar moeten wij eerlijker over zijn?",
+    "Wat betekent gezonde liefde voor jou?"
+  ],
+  Weird: [
+    "Als wij in een droom zaten, wat zou er gebeuren?",
+    "Als mijn brein een kamer was, wat lag er op de grond?",
+    "Wat zou jouw 3-uur-'s-nachts-versie mij vragen?",
+    "Wat is een raar teken dat jij iemand leuk vindt?",
+    "Als wij een geheime missie hadden, wat was die?",
+    "Welke kleur heeft jouw humeur nu?",
+    "Als jouw hart een appje stuurde, wat stond erin?",
+    "Wat is een rare manier waarop jij je geliefd voelt?",
+    "Als wij een magische knop hadden, wat moest die fixen?",
+    "Wat is een vraag die eng maar interessant voelt?",
+    "Als onze relatie een film was, welk genre was het?",
+    "Wat is een teken van het universum dat wij moeten verzinnen?",
+    "Als wij van gedachten wisselden, wat zou jou verrassen?",
+    "Wat is iets dat random lijkt maar eigenlijk belangrijk is?",
+    "Wat zou future-us aan ons appen?"
+  ],
+  Funny: [
+    "Als ik een broodje was, welk broodje was ik?",
+    "Wat is mijn grappigste gezicht?",
+    "Wat doe ik alsof ik in een film zit?",
+    "Waarover zouden wij de domste ruzie ooit hebben?",
+    "Als ik een waarschuwing had, wat stond erop?",
+    "Welke snack heeft mijn energie?",
+    "Wat is mijn meest dramatische gewoonte?",
+    "Wat zeg ik veel te vaak?",
+    "Waar zou ik beroemd om worden als het iets doms moest zijn?",
+    "Wat is de slechtste romantische cadeau-idee?",
+    "Als onze relatie een game was, hoe heette die?",
+    "Wat is een vreselijke date die toch grappig klinkt?",
+    "Wat zou onze domme koppel-slogan zijn?",
+    "Als wij een restaurant hadden, wat was het slechtste gerecht?",
+    "Wat is de raarste compliment die je mij kunt geven?",
+    "Wat zou onze noodcode zijn op een saai feestje?",
+    "Als ik een keukenvoorwerp was, wat was ik?",
+    "Wie wint een staarwedstrijd: jij, ik, of een aardappel?",
+    "Wat verdient bij ons achtergrondmuziek?",
+    "Wat zou onze neppe koninklijke titel zijn?"
+  ],
+  Future: [
+    "Wat wil je ooit samen met mij doen?",
+    "Waar moeten wij beter in worden als team?",
+    "Hoe ziet een rustig leven samen eruit?",
+    "Welke reis moeten wij echt plannen?",
+    "Welke kleine gewoonte zou future-us blij maken?",
+    "Wat moeten wij nooit opgeven?",
+    "Welke traditie moeten wij later nog hebben?",
+    "Wat wil je dat wij leren samen?",
+    "Hoe ziet een perfecte ochtend samen eruit?",
+    "Wat is een droom die wij kunnen delen?",
+    "Wat moeten wij vaker vieren?",
+    "Wat moeten wij vaker nee tegen zeggen?",
+    "Welke plek wil je mij ooit laten zien?",
+    "Wat zou ons huis altijd moeten hebben?",
+    "Waar wil je dat wij bekend om staan bij vrienden?"
+  ],
+  Flirty: [
+    "Wat vind je aantrekkelijk aan mij naast mijn uiterlijk?",
+    "Wat doe ik waardoor jij dichterbij wilt zitten?",
+    "Welke blik van mij vind jij gevaarlijk leuk?",
+    "Wat is je favoriete knuffel van mij?",
+    "Wat is een lieve bijnaam voor mij?",
+    "Wat moet ik dragen op onze volgende date?",
+    "Wat is iets normaals dat ik doe maar jij schattig vindt?",
+    "Welke zin van mij zou in je hoofd blijven?",
+    "Wat maakt vanavond extra romantisch?",
+    "Wat is jouw favoriete versie van mij?",
+    "Wat is een klein gebaar dat jou laat smelten?",
+    "Wat is een flirterige opdracht voor mij?",
+    "Wat wil je dat ik vaker opmerk?",
+    "Wat maakt iemand meteen aantrekkelijker?",
+    "Wat is een excuus om naast mij te zitten?"
+  ],
+  Wildcard: [
+    "Wat is jouw meest random mening?",
+    "Wat is iets kleins dat jouw dag kan redden?",
+    "Welke hobby wil je ooit proberen?",
+    "Wat is een geluid dat verboden moet worden?",
+    "Wat is jouw perfecte snackbord?",
+    "Wat is iets waar je onnodig kieskeurig over bent?",
+    "Welke film of serie voelt als comfort voor jou?",
+    "Wat is een rare angst van jou?",
+    "Wat is een compliment dat je nooit vergeet?",
+    "Welke simpele luxe maakt jouw leven beter?",
+    "Wat is iets dat mensen aan jou onderschatten?",
+    "Wat zou jij aan jongere mensen leren over daten?",
+    "Wat is een geur die meteen een herinnering geeft?",
+    "Waar kun jij te lang over praten?",
+    "Wat is een kleine groene vlag van jou?"
+  ]
 };
 
 const deck = Object.entries(rawQuestions).flatMap(([category, data]) => {
@@ -642,6 +1048,7 @@ const deck = Object.entries(rawQuestions).flatMap(([category, data]) => {
 });
 
 const state = {
+  language: loadLanguage(),
   filter: "All",
   mood: "Any",
   queue: [],
@@ -657,9 +1064,14 @@ const els = {
   visualizer: document.querySelector("#visualizer"),
   questionStage: document.querySelector(".question-stage"),
   questionCard: document.querySelector(".question-card"),
+  brandSubtitle: document.querySelector("#brandSubtitle"),
+  languageButton: document.querySelector("#languageButton"),
   roundNumber: document.querySelector("#roundNumber"),
   seenCount: document.querySelector("#seenCount"),
   deckLeft: document.querySelector("#deckLeft"),
+  roundLabel: document.querySelector("#roundLabel"),
+  seenLabel: document.querySelector("#seenLabel"),
+  queuedLabel: document.querySelector("#queuedLabel"),
   categoryBadge: document.querySelector("#categoryBadge"),
   turnBadge: document.querySelector("#turnBadge"),
   moodLabel: document.querySelector("#moodLabel"),
@@ -672,6 +1084,14 @@ const els = {
   clearSavedButton: document.querySelector("#clearSavedButton"),
   categoryFilters: document.querySelector("#categoryFilters"),
   moodFilters: document.querySelector("#moodFilters"),
+  playersTitle: document.querySelector("#playersTitle"),
+  playerOneLabel: document.querySelector("#playerOneLabel"),
+  playerTwoLabel: document.querySelector("#playerTwoLabel"),
+  categoryTitle: document.querySelector("#categoryTitle"),
+  moodTitle: document.querySelector("#moodTitle"),
+  savedTitle: document.querySelector("#savedTitle"),
+  nextButtonText: document.querySelector("#nextButtonText"),
+  spaceKeyLabel: document.querySelector("#spaceKeyLabel"),
   playerOne: document.querySelector("#playerOne"),
   playerTwo: document.querySelector("#playerTwo"),
   savedList: document.querySelector("#savedList")
@@ -726,6 +1146,7 @@ function generateQuestion(categoryOverride) {
     category,
     mood: rawQuestions[category].mood,
     text: template(),
+    nlText: generatedTemplatesNl[category] ? pick(generatedTemplatesNl[category])() : undefined,
     generated: true
   };
 }
@@ -756,7 +1177,7 @@ function nextQuestion() {
   const question = { ...(state.queue.shift() || generateQuestion()) };
   state.turn = state.history.length === 0 ? 0 : 1 - state.turn;
   question.turn = state.turn;
-  question.follow = pick(followUps[question.category] || followUps.Love);
+  question.followIndex = Math.floor(Math.random() * 3);
   state.history.push(question);
   state.historyIndex = state.history.length - 1;
   state.seen.add(question.id);
@@ -791,8 +1212,9 @@ function shuffleCurrentDeck() {
 }
 
 function getPlayers() {
-  const first = els.playerOne.value.trim() || "Player 1";
-  const second = els.playerTwo.value.trim() || "Player 2";
+  const defaults = uiCopy[state.language].defaultPlayers;
+  const first = els.playerOne.value.trim() || defaults[0];
+  const second = els.playerTwo.value.trim() || defaults[1];
   return [first, second];
 }
 
@@ -800,12 +1222,61 @@ function turnText(turnIndex = state.turn) {
   const players = getPlayers();
   const asker = players[turnIndex];
   const answerer = players[1 - turnIndex];
+  return uiCopy[state.language].asking(asker, answerer);
+}
 
-  if (asker.toLowerCase() === "you") {
-    return `You ask ${answerer}`;
+function categoryLabel(category) {
+  const labels = uiCopy[state.language].filters;
+  if (labels[category]) {
+    return labels[category];
   }
 
-  return `${asker} asks ${answerer}`;
+  if (category === "Funny") {
+    return "Jokes";
+  }
+
+  if (category === "Wildcard") {
+    return "Wild";
+  }
+
+  if (category === "Mindbend") {
+    return "Weird";
+  }
+
+  return category;
+}
+
+function stableIndex(value, length) {
+  let hash = 0;
+  for (let index = 0; index < value.length; index += 1) {
+    hash = (hash * 31 + value.charCodeAt(index)) >>> 0;
+  }
+
+  return hash % length;
+}
+
+function questionText(question) {
+  if (state.language === "en") {
+    return question.text;
+  }
+
+  if (question.nlText) {
+    return question.nlText;
+  }
+
+  const list = dutchQuestionDeck[question.category] || dutchQuestionDeck.Wildcard;
+  return list[stableIndex(question.id || question.text, list.length)];
+}
+
+function followText(question) {
+  const list = state.language === "nl"
+    ? (followUpsNl[question.category] || followUpsNl.Love)
+    : (followUps[question.category] || followUps.Love);
+  const index = Number.isInteger(question.followIndex)
+    ? question.followIndex
+    : stableIndex(question.id || question.text, list.length);
+
+  return list[index % list.length];
 }
 
 function render() {
@@ -815,14 +1286,13 @@ function render() {
   }
 
   const style = categoryStyles[question.category] || categoryStyles.Love;
-  question.follow ||= pick(followUps[question.category] || followUps.Love);
-  els.categoryBadge.textContent = question.category;
+  els.categoryBadge.textContent = categoryLabel(question.category);
   els.categoryBadge.style.background = style.background;
   els.categoryBadge.style.color = style.color;
   els.turnBadge.textContent = turnText(question.turn ?? state.turn);
-  els.moodLabel.textContent = moodCopy[question.mood] || question.mood;
-  els.questionText.textContent = question.text;
-  els.followText.textContent = question.follow;
+  els.moodLabel.textContent = uiCopy[state.language].moods[question.mood] || moodCopy[question.mood] || question.mood;
+  els.questionText.textContent = questionText(question);
+  els.followText.textContent = followText(question);
   els.roundNumber.textContent = String(state.historyIndex + 1);
   els.seenCount.textContent = String(state.seen.size);
   els.deckLeft.textContent = String(state.queue.length);
@@ -847,7 +1317,8 @@ function toggleSaved() {
   } else {
     state.saved.unshift({
       category: question.category,
-      text: question.text
+      text: question.text,
+      nlText: question.nlText
     });
   }
 
@@ -857,13 +1328,18 @@ function toggleSaved() {
 
 function renderSaved() {
   if (state.saved.length === 0) {
-    els.savedList.innerHTML = '<p class="empty-state">No saved questions yet.</p>';
+    els.savedList.innerHTML = `<p class="empty-state">${escapeHtml(uiCopy[state.language].emptySaved)}</p>`;
     return;
   }
 
   els.savedList.innerHTML = state.saved.map((item) => {
-    const safeCategory = escapeHtml(item.category);
-    const safeText = escapeHtml(item.text);
+    const safeCategory = escapeHtml(categoryLabel(item.category));
+    const safeText = escapeHtml(questionText({
+      category: item.category,
+      text: item.text,
+      id: item.text,
+      nlText: item.nlText
+    }));
     return `<article class="saved-item"><strong>${safeCategory}</strong><p>${safeText}</p></article>`;
   }).join("");
 }
@@ -892,6 +1368,103 @@ function loadSaved() {
   } catch {
     return [];
   }
+}
+
+function loadLanguage() {
+  try {
+    const savedLanguage = localStorage.getItem("love-loop-language");
+    return savedLanguage === "en" || savedLanguage === "nl" ? savedLanguage : "nl";
+  } catch {
+    return "nl";
+  }
+}
+
+function saveLanguage() {
+  try {
+    localStorage.setItem("love-loop-language", state.language);
+  } catch {
+    // Language switching still works for the current session.
+  }
+}
+
+function setText(element, value) {
+  if (element) {
+    element.textContent = value;
+  }
+}
+
+function setButtonTitle(button, value) {
+  if (!button) {
+    return;
+  }
+
+  button.title = value;
+  button.setAttribute("aria-label", value);
+}
+
+function replaceDefaultPlayerNames(previousLanguage) {
+  const oldDefaults = uiCopy[previousLanguage].defaultPlayers;
+  const newDefaults = uiCopy[state.language].defaultPlayers;
+
+  if (els.playerOne.value === oldDefaults[0]) {
+    els.playerOne.value = newDefaults[0];
+  }
+
+  if (els.playerTwo.value === oldDefaults[1]) {
+    els.playerTwo.value = newDefaults[1];
+  }
+}
+
+function updateSegmentLabels(container, values) {
+  container.querySelectorAll("button").forEach((button) => {
+    const key = button.dataset.filter || button.dataset.mood;
+    if (values[key]) {
+      button.textContent = values[key];
+    }
+  });
+}
+
+function applyLanguage(previousLanguage = state.language) {
+  const copy = uiCopy[state.language];
+  if (document.documentElement) {
+    document.documentElement.lang = state.language;
+  }
+
+  setText(els.brandSubtitle, copy.brandSubtitle);
+  setText(els.roundLabel, copy.round);
+  setText(els.seenLabel, copy.seen);
+  setText(els.queuedLabel, copy.queued);
+  setText(els.playersTitle, copy.players);
+  setText(els.playerOneLabel, copy.playerOne);
+  setText(els.playerTwoLabel, copy.playerTwo);
+  setText(els.categoryTitle, copy.category);
+  setText(els.moodTitle, copy.mood);
+  setText(els.savedTitle, copy.saved);
+  setText(els.clearSavedButton, copy.clear);
+  setText(els.nextButtonText, copy.next);
+  setText(els.spaceKeyLabel, copy.space);
+  setText(els.languageButton, copy.languageButton);
+
+  if (els.languageButton) {
+    els.languageButton.title = copy.languageTitle;
+    els.languageButton.setAttribute("aria-label", copy.languageTitle);
+  }
+
+  setButtonTitle(els.previousButton, copy.previousTitle);
+  setButtonTitle(els.nextButton, copy.nextTitle);
+  setButtonTitle(els.shuffleButton, copy.shuffleTitle);
+  setButtonTitle(els.saveButton, copy.saveTitle);
+  updateSegmentLabels(els.categoryFilters, copy.filters);
+  updateSegmentLabels(els.moodFilters, copy.moods);
+  replaceDefaultPlayerNames(previousLanguage);
+  render();
+}
+
+function toggleLanguage() {
+  const previousLanguage = state.language;
+  state.language = state.language === "nl" ? "en" : "nl";
+  saveLanguage();
+  applyLanguage(previousLanguage);
 }
 
 function setActiveButton(container, attribute, value) {
@@ -1143,6 +1716,7 @@ els.nextButton.addEventListener("click", nextQuestion);
 els.previousButton.addEventListener("click", previousQuestion);
 els.shuffleButton.addEventListener("click", shuffleCurrentDeck);
 els.saveButton.addEventListener("click", toggleSaved);
+els.languageButton.addEventListener("click", toggleLanguage);
 els.clearSavedButton.addEventListener("click", () => {
   state.saved = [];
   saveSaved();
@@ -1203,7 +1777,7 @@ function handleGlobalKeydown(event) {
     toggleSaved();
   }
 
-  const categories = ["All", "Love", "Deep", "Mindbend", "Funny", "Future", "Flirty", "Wildcard"];
+  const categories = ["All", "Love", "Deep", "Weird", "Funny", "Future", "Flirty", "Wildcard"];
   const numericIndex = Number(event.key);
   if (numericIndex >= 1 && numericIndex <= categories.length) {
     state.filter = categories[numericIndex - 1];
@@ -1288,5 +1862,6 @@ document.addEventListener("keyup", handleGlobalKeyup, true);
 
 setupTouchControls();
 registerServiceWorker();
+applyLanguage("nl");
 resetRound();
 startVisualizer();

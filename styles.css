@@ -198,6 +198,26 @@ h1 {
   min-width: 0;
 }
 
+.language-button {
+  min-width: 3.25rem;
+  min-height: 2.55rem;
+  margin-left: auto;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid rgba(32, 232, 193, 0.4);
+  border-radius: 8px;
+  background: rgba(32, 232, 193, 0.12);
+  color: #cafff3;
+  font-weight: 900;
+  letter-spacing: 0;
+  box-shadow: inset 0 0 16px rgba(32, 232, 193, 0.08), 0 0 24px rgba(32, 232, 193, 0.1);
+}
+
+.language-button:hover {
+  border-color: rgba(255, 209, 102, 0.58);
+  background: rgba(255, 209, 102, 0.12);
+  color: #ffe39b;
+}
+
 .status-pill {
   min-width: 4.6rem;
   padding: 0.55rem 0.7rem;
@@ -709,6 +729,14 @@ svg {
 
   .brand p {
     display: none;
+  }
+
+  .language-button {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+    min-width: 3rem;
+    min-height: 2.35rem;
   }
 
   .status-row {

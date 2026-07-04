@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -24,92 +24,94 @@
           <div class="brand-mark" aria-hidden="true">?</div>
           <div>
             <h1>Love Loop</h1>
-            <p>Endless questions for two</p>
+            <p id="brandSubtitle">Eindeloze vragen voor twee</p>
           </div>
         </div>
 
-        <div class="status-row" aria-label="Game status">
+        <button id="languageButton" class="language-button" type="button" title="Switch to English" aria-label="Switch to English">EN</button>
+
+        <div class="status-row" aria-label="Spelstatus">
           <div class="status-pill">
             <strong id="roundNumber">1</strong>
-            <span>Round</span>
+            <span id="roundLabel">Ronde</span>
           </div>
           <div class="status-pill">
             <strong id="seenCount">0</strong>
-            <span>Seen</span>
+            <span id="seenLabel">Gezien</span>
           </div>
           <div class="status-pill accent">
             <strong id="deckLeft">0</strong>
-            <span>Queued</span>
+            <span id="queuedLabel">Over</span>
           </div>
         </div>
       </header>
 
       <section class="game-layout">
-        <aside class="control-panel" aria-label="Game controls">
+        <aside class="control-panel" aria-label="Spelbediening">
           <div class="panel-section">
-            <h2>Players</h2>
+            <h2 id="playersTitle">Spelers</h2>
             <label>
-              <span>Player 1</span>
-              <input id="playerOne" type="text" value="You" maxlength="18" autocomplete="off">
+              <span id="playerOneLabel">Speler 1</span>
+              <input id="playerOne" type="text" value="Jij" maxlength="18" autocomplete="off">
             </label>
             <label>
-              <span>Player 2</span>
-              <input id="playerTwo" type="text" value="Girlfriend" maxlength="18" autocomplete="off">
+              <span id="playerTwoLabel">Speler 2</span>
+              <input id="playerTwo" type="text" value="Vriendin" maxlength="18" autocomplete="off">
             </label>
           </div>
 
           <div class="panel-section">
-            <h2>Category</h2>
-            <div class="segmented" id="categoryFilters" role="group" aria-label="Question category">
-              <button class="is-active" type="button" data-filter="All">All</button>
-              <button type="button" data-filter="Love">Love</button>
-              <button type="button" data-filter="Deep">Deep</button>
-              <button type="button" data-filter="Mindbend">Mindbend</button>
-              <button type="button" data-filter="Funny">Funny</button>
-              <button type="button" data-filter="Future">Future</button>
+            <h2 id="categoryTitle">Categorie</h2>
+            <div class="segmented" id="categoryFilters" role="group" aria-label="Vraagcategorie">
+              <button class="is-active" type="button" data-filter="All">Alles</button>
+              <button type="button" data-filter="Love">Liefde</button>
+              <button type="button" data-filter="Deep">Diep</button>
+              <button type="button" data-filter="Weird">Raar</button>
+              <button type="button" data-filter="Funny">Grappen</button>
+              <button type="button" data-filter="Future">Toekomst</button>
               <button type="button" data-filter="Flirty">Flirty</button>
               <button type="button" data-filter="Wildcard">Wild</button>
             </div>
           </div>
 
           <div class="panel-section">
-            <h2>Mood</h2>
-            <div class="segmented two-col" id="moodFilters" role="group" aria-label="Question mood">
-              <button class="is-active" type="button" data-mood="Any">Any</button>
-              <button type="button" data-mood="Light">Light</button>
-              <button type="button" data-mood="Deep">Deep</button>
-              <button type="button" data-mood="Bold">Bold</button>
+            <h2 id="moodTitle">Sfeer</h2>
+            <div class="segmented two-col" id="moodFilters" role="group" aria-label="Vraagsfeer">
+              <button class="is-active" type="button" data-mood="Any">Alles</button>
+              <button type="button" data-mood="Light">Licht</button>
+              <button type="button" data-mood="Deep">Diep</button>
+              <button type="button" data-mood="Bold">Gedurfd</button>
             </div>
           </div>
         </aside>
 
         <section class="question-stage" aria-live="polite" tabindex="-1">
           <div class="stage-topline">
-            <span id="categoryBadge" class="category-badge">Love</span>
-            <span id="turnBadge" class="turn-badge">You ask Girlfriend</span>
+            <span id="categoryBadge" class="category-badge">Liefde</span>
+            <span id="turnBadge" class="turn-badge">Jij vraagt Vriendin</span>
           </div>
 
           <article class="question-card">
-            <p id="moodLabel" class="mood-label">Sweet</p>
-            <h2 id="questionText">Loading...</h2>
+            <p id="moodLabel" class="mood-label">Licht</p>
+            <h2 id="questionText">Laden...</h2>
             <p id="followText" class="follow-text"></p>
           </article>
 
-          <div class="action-row" aria-label="Question actions">
-            <button id="previousButton" class="icon-button" type="button" title="Previous question" aria-label="Previous question">
+          <div class="action-row" aria-label="Vraagacties">
+            <button id="previousButton" class="icon-button" type="button" title="Vorige vraag" aria-label="Vorige vraag">
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M15 18 9 12l6-6"></path>
               </svg>
             </button>
-            <button id="nextButton" class="primary-action" type="button" title="Next question">
+            <button id="nextButton" class="primary-action" type="button" title="Volgende vraag">
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="m13 6 6 6-6 6"></path>
               </svg>
-              <span>Next</span>
-              <kbd>Space</kbd>
+              <span id="nextButtonText">Volgende</span>
+              <kbd id="spaceKeyLabel">Spatie</kbd>
             </button>
-            <button id="shuffleButton" class="icon-button" type="button" title="Shuffle deck" aria-label="Shuffle deck">
+            <button id="shuffleButton" class="icon-button" type="button" title="Schud vragen" aria-label="Schud vragen">
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="m18 14 3 3-3 3"></path>
                 <path d="m18 4 3 3-3 3"></path>
@@ -118,7 +120,7 @@
                 <path d="m12.5 14.8 1 1.7c.9 1.5 2.3 2.5 4 2.5H21"></path>
               </svg>
             </button>
-            <button id="saveButton" class="icon-button" type="button" title="Save question" aria-label="Save question">
+            <button id="saveButton" class="icon-button" type="button" title="Vraag bewaren" aria-label="Vraag bewaren">
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M19 21 12 17 5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
               </svg>
@@ -126,13 +128,13 @@
           </div>
         </section>
 
-        <aside class="saved-panel" aria-label="Saved questions">
+        <aside class="saved-panel" aria-label="Bewaarde vragen">
           <div class="saved-header">
-            <h2>Saved</h2>
-            <button id="clearSavedButton" type="button">Clear</button>
+            <h2 id="savedTitle">Bewaard</h2>
+            <button id="clearSavedButton" type="button">Leeg</button>
           </div>
           <div id="savedList" class="saved-list">
-            <p class="empty-state">No saved questions yet.</p>
+            <p class="empty-state">Nog geen vragen bewaard.</p>
           </div>
         </aside>
       </section>
