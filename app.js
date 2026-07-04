@@ -486,7 +486,125 @@ const extraQuestionPacks = {
   }
 };
 
-Object.entries(extraQuestionPacks).forEach(([category, pack]) => {
+const partyQuestionPacks = {
+  Cash: {
+    mood: "Light",
+    items: [
+      "For $50, would you let me pick your profile picture for one day?",
+      "For $100, would you send your last selfie to a random friend with no context?",
+      "For $250, would you let me choose your outfit for our next date?",
+      "For $500, would you eat the same dinner every day for a month?",
+      "For $1,000, would you let me post a caption on your story?",
+      "For $2,000, would you let your mom read your last five emojis?",
+      "For $5,000, would you let your dad choose your haircut style for a week?",
+      "For $10,000, would you delete your favorite app for one year?",
+      "For $25,000, would you wear a shirt that says 'I miss my ex' for one full day?",
+      "For $50,000, would you let me plan your whole birthday with zero hints?",
+      "For $100,000, would you live without music for one year?",
+      "For $1,000,000, would you move to a random country with me for one year?",
+      "How much money would it take for you to let me rename your phone?",
+      "How much money would it take for you to give up pizza for life?",
+      "How much money would it take for you to let me read one random note in your notes app?",
+      "For $750, would you let me write your next three texts to your best friend?",
+      "For $3,000, would you go to dinner wearing whatever I choose?",
+      "For $8,000, would you let me choose your ringtone for six months?",
+      "For $15,000, would you let your family see your screen time report?",
+      "For $30,000, would you only speak in questions for one whole day?",
+      "For $60,000, would you let me pick your first tattoo idea, but not actually get it?",
+      "For $100, would you call a friend and say 'I have joined the potato business'?",
+      "For $10,000, would you let me control your playlist for a year?",
+      "For $20,000, would you swap phones with me for one hour, with permission?",
+      "For $100,000, would you let your search history be read out loud by a robot voice?"
+    ]
+  },
+  Choices: {
+    mood: "Bold",
+    items: [
+      "Would you rather tell your mom your most embarrassing crush or let your dad pick your date outfit?",
+      "Would you rather lose your phone for a week or let me rename every contact in it?",
+      "Would you rather have to sing every apology or dance every time you say sorry?",
+      "Would you rather be rich but always slightly bored, or broke but laughing every day?",
+      "Would you rather I read your mind once a month or your phone autocorrect for one day?",
+      "Would you rather be famous for a bad dance or for a weird laugh?",
+      "Would you rather eat dinner with all your exes or all my exes?",
+      "Would you rather have your parents read your last message to me or hear your last voice note?",
+      "Would you rather never lie again or never know when someone lies to you?",
+      "Would you rather have to wear matching outfits with me every weekend or let me pick your hairstyle?",
+      "Would you rather have a pause button for arguments or a rewind button for awkward moments?",
+      "Would you rather say every thought out loud for one hour or have no filter in your texts for one day?",
+      "Would you rather go viral for being romantic or for being extremely cringe?",
+      "Would you rather lose every game to me forever or admit I am funnier for a year?",
+      "Would you rather have to ask my permission before buying snacks or let me choose all snacks forever?",
+      "Would you rather get $10,000 now or one perfect date every month for five years?",
+      "Would you rather be able to see my dreams or let me see yours?",
+      "Would you rather always know when I miss you or never know when I am jealous?",
+      "Would you rather have a couple tattoo for a week or matching pajamas forever?",
+      "Would you rather tell one huge truth or answer five tiny awkward questions?"
+    ]
+  },
+  Dares: {
+    mood: "Bold",
+    items: [
+      "Dare: give me your most dramatic love confession in a movie voice.",
+      "Dare: let me choose one photo pose and take it right now.",
+      "Dare: send a friend only three emojis and let me pick them.",
+      "Dare: do your best fake proposal in ten seconds.",
+      "Dare: talk like a rich villain until the next question.",
+      "Dare: let me write a harmless fake dating-app bio for you.",
+      "Dare: show the weirdest safe photo in your camera roll.",
+      "Dare: make a fake apology to a spoon like it broke your heart.",
+      "Dare: give me a compliment that sounds like a threat but is still nice.",
+      "Dare: read the next question like you are hosting a game show.",
+      "Dare: let me pick a new nickname for you for the next five questions.",
+      "Dare: perform a five-second runway walk across the room.",
+      "Dare: explain why you are the best snack in the room.",
+      "Dare: say 'I was wrong' in the most dramatic way possible.",
+      "Dare: let me choose one word you cannot say for three questions.",
+      "Dare: make the worst romantic poem you can in 20 seconds.",
+      "Dare: do a serious speech about why potatoes deserve respect.",
+      "Dare: say the next answer while holding eye contact.",
+      "Dare: invent a secret handshake in 15 seconds.",
+      "Dare: let me choose your fake celebrity name.",
+      "Dare: make your best jealous face.",
+      "Dare: give me a compliment using the word banana.",
+      "Dare: answer the next question in a whisper.",
+      "Dare: pretend you are accepting an award for being difficult but cute.",
+      "Dare: make a fake voicemail to your future self."
+    ]
+  },
+  Chaos: {
+    mood: "Light",
+    items: [
+      "What is the most chaotic thing we could do tonight that is still harmless?",
+      "What secret should our couple government hide from the people?",
+      "If I was arrested for being too dramatic, what would the evidence be?",
+      "What is one thing I do that feels illegal but is actually normal?",
+      "What would our scandal be if we were tiny celebrities?",
+      "If our relationship had a fight scene, what object would start it?",
+      "What is one rule we should break only in our imagination?",
+      "What would you name our fake crime podcast?",
+      "If we had to start a cult around one snack, what snack wins?",
+      "What is the most cursed date idea that might still be fun?",
+      "If one of us had to wear a cape for a month, who deserves it?",
+      "What is the worst advice we could give another couple?",
+      "What would our emergency plan be during a boring dinner?",
+      "If we had a secret enemy, what tiny thing would they do to annoy us?",
+      "What is the funniest way to say 'I love you' without saying it?",
+      "If your family had to rate me on one weird skill, what skill should I show?",
+      "What is one thing I should never say in a serious meeting?",
+      "What would our fake breakup reason be if it had to be stupid?",
+      "What is the most dramatic way to ask for a snack?",
+      "What would happen if we had to swap personalities at a party?",
+      "What is one harmless thing that would make you immediately suspicious?",
+      "What would be our couple villain origin story?",
+      "If we were stuck in an elevator for an hour, what would get weird first?",
+      "What is the funniest lie we could tell strangers about how we met?",
+      "What is one question that would make both of us laugh and panic?"
+    ]
+  }
+};
+
+Object.entries({ ...extraQuestionPacks, ...partyQuestionPacks }).forEach(([category, pack]) => {
   if (!rawQuestions[category]) {
     rawQuestions[category] = { mood: pack.mood || "Deep", items: [] };
   }
@@ -509,6 +627,26 @@ const followUps = {
     "Bonus: make the answer funny if you can.",
     "Bonus: say the first weird answer that comes to mind.",
     "Bonus: ask one silly follow-up."
+  ],
+  Cash: [
+    "Bonus: name the lowest amount you would accept.",
+    "Bonus: say if you would really do it.",
+    "Bonus: raise or lower the money by one step."
+  ],
+  Choices: [
+    "Bonus: answer fast, no overthinking.",
+    "Bonus: explain why in one sentence.",
+    "Bonus: make the other option even worse."
+  ],
+  Dares: [
+    "Bonus: do it now or trade one saved question.",
+    "Bonus: make it extra dramatic.",
+    "Bonus: the other player can add one harmless rule."
+  ],
+  Chaos: [
+    "Bonus: give the normal answer and the chaotic answer.",
+    "Bonus: make it sound like breaking news.",
+    "Bonus: both players vote on who would do it first."
   ],
   Funny: [
     "Bonus: give the real answer, then the dumb answer.",
@@ -631,6 +769,26 @@ const generatedTemplates = {
     () => `What would ${pick(generatedParts.strangeSymbols)} say about us?`,
     () => `If ${pick(generatedParts.hiddenForces)} joined our date, what would go wrong?`
   ],
+  Cash: [
+    () => `For $${pick(["100", "500", "1,000", "5,000", "10,000", "50,000"])}, would you let me pick your outfit for a whole week?`,
+    () => `For $${pick(["250", "750", "2,000", "8,000", "25,000"])}, would you let me post one harmless story from your phone?`,
+    () => `How much money would it take for you to give up ${pick(["pizza", "music", "coffee", "your favorite app", "sweets"])} for a year?`
+  ],
+  Choices: [
+    () => `Would you rather let me read your last ${pick(["3", "5", "10"])} emojis or let your mom choose your next outfit?`,
+    () => `Would you rather get $${pick(["1,000", "10,000", "100,000"])} or have one perfect date every month?`,
+    () => `Would you rather say every thought out loud for ${pick(["10 minutes", "one hour", "one whole day"])} or let me answer your texts for five minutes?`
+  ],
+  Dares: [
+    () => `Dare: say your next answer like ${pick(["a game show host", "a rich villain", "a sad movie hero", "a dramatic lawyer"])}.`,
+    () => `Dare: let me choose a harmless nickname for you for the next ${pick(["3", "5", "7"])} questions.`,
+    () => `Dare: make a fake speech about why ${pick(generatedParts.sillyObjects)} is romantic.`
+  ],
+  Chaos: [
+    () => `What is the most chaotic thing we could do with ${pick(generatedParts.sillyObjects)} and still be fine?`,
+    () => `If our relationship had a fake scandal at ${pick(generatedParts.places)}, what would it be?`,
+    () => `What would our couple villain origin story be during ${pick(generatedParts.timeWindows)}?`
+  ],
   Funny: [
     () => `How would we survive for a day with only ${pick(generatedParts.sillyObjects)}?`,
     () => `What would our argument about ${pick(generatedParts.sillyObjects)} sound like?`,
@@ -751,6 +909,26 @@ const generatedTemplatesNl = {
     () => `Wat zou ${pick(generatedPartsNl.strangeSymbols)} over ons zeggen?`,
     () => `Als ${pick(generatedPartsNl.hiddenForces)} op onze date kwam, wat zou er misgaan?`
   ],
+  Cash: [
+    () => `Voor ${pick(["100", "500", "1.000", "5.000", "10.000", "50.000"])} euro: zou je mij je outfit laten kiezen voor een week?`,
+    () => `Voor ${pick(["250", "750", "2.000", "8.000", "25.000"])} euro: zou je mij een onschuldige story laten posten vanaf jouw telefoon?`,
+    () => `Hoeveel geld moet je krijgen om een jaar te stoppen met ${pick(["pizza", "muziek", "koffie", "je favoriete app", "snoep"])}?`
+  ],
+  Choices: [
+    () => `Wat kies je: ik lees je laatste ${pick(["3", "5", "10"])} emojis, of je moeder kiest je volgende outfit?`,
+    () => `Wat kies je: ${pick(["1.000", "10.000", "100.000"])} euro, of elke maand een perfecte date?`,
+    () => `Wat kies je: ${pick(["10 minuten", "een uur", "een hele dag"])} alles hardop zeggen, of ik antwoord vijf minuten op je appjes?`
+  ],
+  Dares: [
+    () => `Dare: geef je volgende antwoord als ${pick(["een spelshowhost", "een rijke slechterik", "een zielige filmheld", "een dramatische advocaat"])}.`,
+    () => `Dare: laat mij een onschuldige bijnaam kiezen voor de volgende ${pick(["3", "5", "7"])} vragen.`,
+    () => `Dare: geef een nep-speech over waarom ${pick(generatedPartsNl.sillyObjects)} romantisch is.`
+  ],
+  Chaos: [
+    () => `Wat is het meest chaotische dat wij kunnen doen met ${pick(generatedPartsNl.sillyObjects)} zonder problemen?`,
+    () => `Als wij een nep-schandaal hadden in ${pick(generatedPartsNl.places)}, wat was het?`,
+    () => `Wat is ons koppel-villain-verhaal tijdens ${pick(generatedPartsNl.timeWindows)}?`
+  ],
   Funny: [
     () => `Hoe zouden wij overleven met alleen ${pick(generatedPartsNl.sillyObjects)}?`,
     () => `Waar zouden wij ruzie over maken met ${pick(generatedPartsNl.sillyObjects)}?`,
@@ -777,6 +955,10 @@ const categoryStyles = {
   Love: { background: "rgba(255, 107, 92, 0.2)", color: "#ffb3a8" },
   Deep: { background: "rgba(76, 201, 240, 0.18)", color: "#c9f3ff" },
   Weird: { background: "rgba(245, 80, 255, 0.2)", color: "#f8c2ff" },
+  Cash: { background: "rgba(84, 255, 140, 0.2)", color: "#b9ffd0" },
+  Choices: { background: "rgba(255, 89, 180, 0.2)", color: "#ffc0e3" },
+  Dares: { background: "rgba(255, 140, 0, 0.22)", color: "#ffd4a1" },
+  Chaos: { background: "rgba(255, 45, 85, 0.22)", color: "#ffb6c4" },
   Funny: { background: "rgba(255, 209, 102, 0.18)", color: "#ffe39b" },
   Future: { background: "rgba(32, 232, 193, 0.18)", color: "#a8ffed" },
   Flirty: { background: "rgba(181, 116, 255, 0.2)", color: "#dec4ff" },
@@ -818,6 +1000,10 @@ const uiCopy = {
       Love: "Love",
       Deep: "Deep",
       Weird: "Weird",
+      Cash: "Cash",
+      Choices: "Choices",
+      Dares: "Dares",
+      Chaos: "Chaos",
       Funny: "Jokes",
       Future: "Future",
       Flirty: "Flirty",
@@ -858,6 +1044,10 @@ const uiCopy = {
       Love: "Liefde",
       Deep: "Diep",
       Weird: "Raar",
+      Cash: "Cash",
+      Choices: "Keuzes",
+      Dares: "Dares",
+      Chaos: "Chaos",
       Funny: "Grappen",
       Future: "Toekomst",
       Flirty: "Flirty",
@@ -887,6 +1077,26 @@ const followUpsNl = {
     "Bonus: maak het antwoord grappig als dat kan.",
     "Bonus: zeg het eerste rare antwoord dat in je hoofd komt.",
     "Bonus: stel daarna een domme vervolgvraag."
+  ],
+  Cash: [
+    "Bonus: noem het laagste bedrag waarvoor je het zou doen.",
+    "Bonus: zeg eerlijk of je het echt zou doen.",
+    "Bonus: maak het bedrag een stap hoger of lager."
+  ],
+  Choices: [
+    "Bonus: antwoord snel, niet te lang nadenken.",
+    "Bonus: leg het uit in een zin.",
+    "Bonus: maak de andere keuze nog erger."
+  ],
+  Dares: [
+    "Bonus: doe het nu of ruil voor een bewaarde vraag.",
+    "Bonus: maak het extra dramatisch.",
+    "Bonus: de ander mag een onschuldige regel toevoegen."
+  ],
+  Chaos: [
+    "Bonus: geef het normale antwoord en het chaosantwoord.",
+    "Bonus: zeg het alsof het breaking news is.",
+    "Bonus: stem samen wie dit als eerste zou doen."
   ],
   Funny: [
     "Bonus: geef het echte antwoord en daarna het domme antwoord.",
@@ -961,6 +1171,89 @@ const dutchQuestionDeck = {
     "Als wij van gedachten wisselden, wat zou jou verrassen?",
     "Wat is iets dat random lijkt maar eigenlijk belangrijk is?",
     "Wat zou future-us aan ons appen?"
+  ],
+  Cash: [
+    "Voor 50 euro: mag ik jouw profielfoto een dag kiezen?",
+    "Voor 100 euro: zou je je laatste selfie zonder context naar een vriend sturen?",
+    "Voor 250 euro: mag ik je outfit kiezen voor onze volgende date?",
+    "Voor 500 euro: zou je een maand lang elke dag hetzelfde eten?",
+    "Voor 1.000 euro: mag ik een caption op jouw story zetten?",
+    "Voor 2.000 euro: zou je je moeder je laatste vijf emojis laten zien?",
+    "Voor 5.000 euro: mag je vader je kapselstijl voor een week kiezen?",
+    "Voor 10.000 euro: verwijder je je favoriete app voor een jaar?",
+    "Voor 25.000 euro: draag je een shirt met 'ik mis mijn ex' erop voor een dag?",
+    "Voor 50.000 euro: mag ik je hele verjaardag plannen zonder hints?",
+    "Voor 100.000 euro: leef je een jaar zonder muziek?",
+    "Voor 1.000.000 euro: verhuis je een jaar met mij naar een random land?",
+    "Hoeveel geld moet je krijgen zodat ik je telefoon mag hernoemen?",
+    "Hoeveel geld moet je krijgen om nooit meer pizza te eten?",
+    "Hoeveel geld moet je krijgen zodat ik een random notitie in je notes mag lezen?",
+    "Voor 750 euro: mag ik je volgende drie appjes naar je beste vriend schrijven?",
+    "Voor 3.000 euro: ga je uit eten in een outfit die ik kies?",
+    "Voor 8.000 euro: mag ik je ringtone zes maanden kiezen?",
+    "Voor 15.000 euro: mag je familie je schermtijd zien?",
+    "Voor 30.000 euro: praat je een hele dag alleen in vragen?"
+  ],
+  Choices: [
+    "Wat kies je: je moeder je meest beschamende crush vertellen, of je vader je date-outfit laten kiezen?",
+    "Wat kies je: een week je telefoon kwijt, of ik hernoem al je contacten?",
+    "Wat kies je: elke sorry zingen, of dansen elke keer dat je sorry zegt?",
+    "Wat kies je: rijk maar vaak verveeld, of arm maar elke dag lachen?",
+    "Wat kies je: ik lees eens per maand je gedachten, of ik zie een dag je autocorrect?",
+    "Wat kies je: viral gaan door een slechte dans, of door je rare lach?",
+    "Wat kies je: eten met al jouw exen, of met al mijn exen?",
+    "Wat kies je: je ouders lezen je laatste appje naar mij, of horen je laatste voice note?",
+    "Wat kies je: nooit meer liegen, of nooit weten wanneer iemand liegt?",
+    "Wat kies je: elk weekend matchende outfits, of ik kies je kapsel?",
+    "Wat kies je: een pauzeknop voor ruzies, of een terugspoelknop voor awkward momenten?",
+    "Wat kies je: een uur elke gedachte hardop, of een dag geen filter in je appjes?",
+    "Wat kies je: bekend staan als romantisch, of extreem cringe?",
+    "Wat kies je: altijd verliezen van mij, of een jaar toegeven dat ik grappiger ben?",
+    "Wat kies je: 10.000 euro nu, of vijf jaar lang elke maand een perfecte date?"
+  ],
+  Dares: [
+    "Dare: doe je meest dramatische liefdesverklaring met filmstem.",
+    "Dare: laat mij een fotopose kiezen en maak die nu.",
+    "Dare: stuur een vriend drie emojis die ik kies.",
+    "Dare: doe een nep-aanzoek in tien seconden.",
+    "Dare: praat als een rijke slechterik tot de volgende vraag.",
+    "Dare: laat mij een onschuldige fake dating-bio voor je maken.",
+    "Dare: laat de raarste veilige foto in je filmrol zien.",
+    "Dare: bied je excuses aan aan een lepel alsof hij je hart brak.",
+    "Dare: geef mij een compliment dat klinkt als een bedreiging maar lief is.",
+    "Dare: lees de volgende vraag alsof je een spelshow presenteert.",
+    "Dare: laat mij je bijnaam kiezen voor de volgende vijf vragen.",
+    "Dare: doe een vijf-seconden catwalk door de kamer.",
+    "Dare: leg uit waarom jij de beste snack in de kamer bent.",
+    "Dare: zeg 'ik had ongelijk' zo dramatisch mogelijk.",
+    "Dare: ik kies een woord dat jij drie vragen niet mag zeggen.",
+    "Dare: maak in twintig seconden het slechtste liefdesgedicht.",
+    "Dare: geef een serieuze speech over waarom aardappels respect verdienen.",
+    "Dare: geef het volgende antwoord fluisterend.",
+    "Dare: bedenk een geheime handshake in vijftien seconden.",
+    "Dare: doe je beste jaloerse gezicht."
+  ],
+  Chaos: [
+    "Wat is het meest chaotische dat wij vanavond kunnen doen dat nog onschuldig is?",
+    "Welk geheim zou onze koppel-regering verbergen?",
+    "Als ik gearresteerd werd omdat ik te dramatisch ben, wat was het bewijs?",
+    "Wat doe ik dat illegaal voelt maar gewoon normaal is?",
+    "Wat zou ons schandaal zijn als wij mini-celebs waren?",
+    "Als onze relatie een vechtscene had, welk object startte alles?",
+    "Welke regel mogen wij alleen in onze fantasie breken?",
+    "Hoe heet onze neppe crime podcast?",
+    "Als wij een sekte rond een snack begonnen, welke snack wint?",
+    "Wat is de meest vervloekte date die toch leuk kan zijn?",
+    "Wie van ons verdient een maand lang een cape?",
+    "Wat is het slechtste advies dat wij een ander koppel kunnen geven?",
+    "Wat is ons noodplan tijdens een saai diner?",
+    "Wat zou een geheime vijand doen om ons expres te irriteren?",
+    "Wat is de grappigste manier om 'ik hou van jou' te zeggen zonder het te zeggen?",
+    "Welke rare skill moet ik aan je familie laten zien?",
+    "Wat moet ik nooit zeggen in een serieuze meeting?",
+    "Wat is onze domste fake break-up reden?",
+    "Wat is de meest dramatische manier om om een snack te vragen?",
+    "Wat gebeurt er als wij op een feestje van persoonlijkheid wisselen?"
   ],
   Funny: [
     "Als ik een broodje was, welk broodje was ik?",
@@ -1777,7 +2070,7 @@ function handleGlobalKeydown(event) {
     toggleSaved();
   }
 
-  const categories = ["All", "Love", "Deep", "Weird", "Funny", "Future", "Flirty", "Wildcard"];
+  const categories = ["All", "Love", "Deep", "Weird", "Cash", "Choices", "Dares", "Chaos", "Funny", "Future", "Flirty", "Wildcard"];
   const numericIndex = Number(event.key);
   if (numericIndex >= 1 && numericIndex <= categories.length) {
     state.filter = categories[numericIndex - 1];

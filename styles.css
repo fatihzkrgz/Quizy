@@ -400,6 +400,17 @@ input::selection {
     0 0 34px rgba(32, 232, 193, 0.08);
 }
 
+.question-card::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+  background:
+    linear-gradient(115deg, transparent 0 18%, rgba(255, 209, 102, 0.08) 23%, transparent 30% 100%),
+    linear-gradient(245deg, transparent 0 50%, rgba(255, 45, 85, 0.08) 56%, transparent 64% 100%);
+  mix-blend-mode: screen;
+}
+
 .question-card::before {
   position: absolute;
   inset: -45%;
@@ -432,6 +443,7 @@ input::selection {
   line-height: 1.08;
   letter-spacing: 0;
   overflow-wrap: anywhere;
+  text-wrap: balance;
   color: #ffffff;
   text-shadow:
     0 0 7px rgba(255, 255, 255, 0.42),
@@ -798,7 +810,7 @@ svg {
   }
 
   #categoryFilters button {
-    min-width: 5.2rem;
+    min-width: 6rem;
     scroll-snap-align: start;
   }
 
@@ -841,7 +853,7 @@ svg {
   }
 
   #questionText {
-    font-size: 1.72rem;
+    font-size: 1.58rem;
     line-height: 1.14;
   }
 
@@ -898,7 +910,7 @@ svg {
   }
 
   #questionText {
-    font-size: 1.5rem;
+    font-size: 1.38rem;
   }
 
   .follow-text {
