@@ -787,6 +787,11 @@ const followUps = {
     "Bonus: explain why in one sentence.",
     "Bonus: make the other option even worse."
   ],
+  Impossible: [
+    "Bonus: choose first, then explain what broke your brain.",
+    "Bonus: say what would make you change your answer.",
+    "Bonus: both players guess each other's answer before explaining."
+  ],
   Dares: [
     "Bonus: do it now or trade one saved question.",
     "Bonus: make it extra dramatic.",
@@ -1120,6 +1125,7 @@ const categoryStyles = {
   Weird: { background: "rgba(245, 80, 255, 0.2)", color: "#f8c2ff" },
   Cash: { background: "rgba(84, 255, 140, 0.2)", color: "#b9ffd0" },
   Choices: { background: "rgba(255, 89, 180, 0.2)", color: "#ffc0e3" },
+  Impossible: { background: "rgba(255, 34, 76, 0.26)", color: "#ffd0d8" },
   Dares: { background: "rgba(255, 140, 0, 0.22)", color: "#ffd4a1" },
   Chaos: { background: "rgba(255, 45, 85, 0.22)", color: "#ffb6c4" },
   Funny: { background: "rgba(255, 209, 102, 0.18)", color: "#ffe39b" },
@@ -1250,6 +1256,11 @@ const followUpsNl = {
     "Bonus: antwoord snel, niet te lang nadenken.",
     "Bonus: leg het uit in een zin.",
     "Bonus: maak de andere keuze nog erger."
+  ],
+  Impossible: [
+    "Bonus: kies eerst, leg daarna uit wat je hoofd kapotmaakte.",
+    "Bonus: zeg wat jouw antwoord zou veranderen.",
+    "Bonus: raad eerst elkaars antwoord voordat je uitlegt."
   ],
   Dares: [
     "Bonus: doe het nu of ruil voor een bewaarde vraag.",
@@ -1751,6 +1762,38 @@ const horrorDeckNl = {
     "Wat kies je: een nummer bellen dat zichzelf belt, of opnemen als jouw eigen nummer jou belt?",
     "Wat kies je: de waarheid weten over een oude foto, of hem nooit meer kunnen zien?"
   ],
+  Impossible: [
+    "Wat kies je: je moeder redden van een trein, of honderd kinderen met een beperking redden?",
+    "Wat kies je: je partner redden, of een bus vol onbekende gezinnen redden?",
+    "Wat kies je: een onschuldige laten haten door iedereen, of een schuldige laten ontsnappen?",
+    "Wat kies je: de waarheid zeggen en iemands leven breken, of liegen en zelf elke nacht wakker liggen?",
+    "Wat kies je: je grootste geheim openbaar maken, of nooit meer weten of mensen echt van je houden?",
+    "Wat kies je: een persoon terughalen die jij mist, of tien onbekenden redden die je nooit ontmoet?",
+    "Wat kies je: jezelf redden en iemand die je liefhebt verliezen, of andersom?",
+    "Wat kies je: altijd weten wanneer iemand sterft, of nooit meer kunnen zien wie liegt?",
+    "Wat kies je: een kind redden dat jou later haat, of een volwassene redden die later levens redt?",
+    "Wat kies je: een pijnlijke herinnering wissen, of hem houden omdat hij jou menselijk maakt?",
+    "Wat kies je: vijf jaar langer leven zonder liefde, of korter leven met echte liefde?",
+    "Wat kies je: je familie teleurstellen om eerlijk te blijven, of jezelf teleurstellen om vrede te houden?",
+    "Wat kies je: een ramp voorkomen maar niemand gelooft je, of niets doen en iedereen begrijpt je later?",
+    "Wat kies je: iemands slechtste daad weten, of nooit meer iemands beste kant kunnen zien?",
+    "Wat kies je: je partner alles in je hoofd laten horen, of jij alles in haar hoofd horen?",
+    "Wat kies je: een vriend redden die jou verraden heeft, of een vreemde redden die goed is?",
+    "Wat kies je: een nachtmerrie leven die iedereen overleeft, of een mooie leugen leven waarin een iemand verdwijnt?",
+    "Wat kies je: de laatste woorden van iedereen horen, of nooit meer afscheid kunnen nemen?",
+    "Wat kies je: rijk worden door een geheim te bewaren, of arm blijven door de waarheid te vertellen?",
+    "Wat kies je: een deur openen waarachter iemand huilt, of doorlopen terwijl je weet dat je kon helpen?",
+    "Wat kies je: herinnerd worden als slecht maar het juiste doen, of geliefd worden om iets dat fout was?",
+    "Wat kies je: een fout uit je verleden herstellen, of een fout uit onze toekomst voorkomen?",
+    "Wat kies je: een persoon redden die jij kent, of vijftig namenloze mensen redden?",
+    "Wat kies je: iemand pijn doen met eerlijkheid, of iemand beschermen met een leugen die groter wordt?",
+    "Wat kies je: weten dat jouw keuze iemand breekt, of niet weten wie jij gebroken hebt?",
+    "Wat kies je: een knop indrukken die een onbekende redt maar jou een jaar kost, of niets doen?",
+    "Wat kies je: je laatste dag samen weten, of nooit weten wanneer iets voor het laatst is?",
+    "Wat kies je: een monster zijn in iemands verhaal, of slachtoffer blijven in je eigen verhaal?",
+    "Wat kies je: de liefde van je leven vergeten, of herinneren dat zij jou vergeet?",
+    "Wat kies je: iedereen redden behalve jezelf, of jezelf redden en nooit meer rustig slapen?"
+  ],
   Dares: [
     "Dare: doe alle lichten tien seconden uit en zeg wat je het eerst dacht.",
     "Dare: fluister mijn naam alsof je mij niet wilt wakker maken.",
@@ -1941,6 +1984,38 @@ const horrorDeckEn = {
     "Would you rather call a number that calls itself or answer when your own number calls you?",
     "Would you rather know the truth about an old photo or never see it again?"
   ][index]),
+  Impossible: horrorDeckNl.Impossible.map((_, index) => [
+    "Would you save your mother from a train, or save one hundred children with disabilities?",
+    "Would you save your partner, or save a bus full of unknown families?",
+    "Would you let an innocent person be hated by everyone, or let a guilty person escape?",
+    "Would you tell the truth and break someone's life, or lie and stay awake every night?",
+    "Would you make your biggest secret public, or never know if people truly love you?",
+    "Would you bring back one person you miss, or save ten strangers you will never meet?",
+    "Would you save yourself and lose someone you love, or the other way around?",
+    "Would you always know when someone will die, or never know who is lying?",
+    "Would you save a child who later hates you, or an adult who later saves lives?",
+    "Would you erase a painful memory, or keep it because it made you human?",
+    "Would you live five extra years without love, or live shorter with real love?",
+    "Would you disappoint your family to stay honest, or disappoint yourself to keep peace?",
+    "Would you stop a disaster but nobody believes you, or do nothing and be understood later?",
+    "Would you know someone's worst act, or never see anyone's best side again?",
+    "Would you let your partner hear everything in your head, or hear everything in hers?",
+    "Would you save a friend who betrayed you, or a stranger who is good?",
+    "Would you live a nightmare where everyone survives, or a beautiful lie where one person disappears?",
+    "Would you hear everyone's last words, or never be able to say goodbye?",
+    "Would you get rich by keeping a secret, or stay poor by telling the truth?",
+    "Would you open a door with someone crying behind it, or walk away knowing you could help?",
+    "Would you be remembered as bad while doing the right thing, or loved for something wrong?",
+    "Would you fix a mistake from your past, or prevent a mistake from our future?",
+    "Would you save one person you know, or fifty nameless people?",
+    "Would you hurt someone with honesty, or protect them with a lie that keeps growing?",
+    "Would you know your choice breaks someone, or never know who you broke?",
+    "Would you press a button that saves a stranger but costs you one year, or do nothing?",
+    "Would you know your last day together, or never know when something is happening for the last time?",
+    "Would you be the monster in someone else's story, or stay the victim in your own?",
+    "Would you forget the love of your life, or remember that she forgets you?",
+    "Would you save everyone except yourself, or save yourself and never sleep peacefully again?"
+  ][index]),
   Dares: horrorDeckNl.Dares.map((_, index) => [
     "Dare: turn off all lights for ten seconds and say the first thing you thought.",
     "Dare: whisper my name like you do not want to wake me.",
@@ -2051,7 +2126,7 @@ Object.keys(rawQuestions).forEach((category) => {
 
 Object.entries(horrorDeckEn).forEach(([category, items]) => {
   rawQuestions[category] = {
-    mood: ["Cash", "Funny", "Chaos"].includes(category) ? "Light" : ["Choices", "Dares", "Flirty"].includes(category) ? "Bold" : "Deep",
+    mood: ["Cash", "Funny", "Chaos"].includes(category) ? "Light" : ["Choices", "Impossible", "Dares", "Flirty"].includes(category) ? "Bold" : "Deep",
     items
   };
 });
@@ -2068,6 +2143,7 @@ Object.assign(uiCopy.en.filters, {
   Weird: "Creepy",
   Cash: "Price",
   Choices: "Choices",
+  Impossible: "Impossible",
   Dares: "Rituals",
   Chaos: "Panic",
   Funny: "Twist",
@@ -2082,6 +2158,7 @@ Object.assign(uiCopy.nl.filters, {
   Weird: "Eng",
   Cash: "Prijs",
   Choices: "Keuzes",
+  Impossible: "Onmogelijk",
   Dares: "Rituelen",
   Chaos: "Paniek",
   Funny: "Twist",
@@ -2115,6 +2192,11 @@ Object.assign(generatedTemplates, {
     () => `Would you rather hear ${pick(["footsteps", "whispers", "scratching"])} or see ${pick(["a shadow", "a face", "a handprint"])}?`,
     () => `Would you rather know the secret or stay safe?`,
     () => `Would you rather open the wrong door or ignore the right warning?`
+  ],
+  Impossible: [
+    () => `Would you save ${pick(["one person you love", "yourself", "your partner"])} or ${pick(["ten strangers", "a bus full of families", "people who will never know your name"])}?`,
+    () => `Would you choose the truth that destroys peace, or the lie that saves tonight?`,
+    () => `Would you rather be hated for the right choice or loved for the wrong one?`
   ],
   Dares: [
     () => `Dare: whisper "${pick(["do not open it", "we should leave", "it knows us"])}" like you mean it.`,
@@ -2173,6 +2255,11 @@ Object.assign(generatedTemplatesNl, {
     () => `Wat kies je: ${pick(["voetstappen", "gefluister", "gekrab"])} horen, of ${pick(["een schaduw", "een gezicht", "een handafdruk"])} zien?`,
     () => `Wat kies je: het geheim weten, of veilig blijven?`,
     () => `Wat kies je: de verkeerde deur openen, of de juiste waarschuwing negeren?`
+  ],
+  Impossible: [
+    () => `Wat kies je: ${pick(["iemand van wie je houdt", "jezelf", "je partner"])} redden, of ${pick(["tien vreemden", "een bus vol gezinnen", "mensen die jouw naam nooit weten"])}?`,
+    () => `Wat kies je: de waarheid die rust kapotmaakt, of de leugen die vanavond redt?`,
+    () => `Wat kies je: gehaat worden om de juiste keuze, of geliefd worden om de foute?`
   ],
   Dares: [
     () => `Dare: fluister "${pick(["doe hem niet open", "we moeten weg", "het kent ons"])}" alsof je het meent.`,
